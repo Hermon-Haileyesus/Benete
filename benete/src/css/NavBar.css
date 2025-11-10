@@ -1,0 +1,137 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  transition: all 0.3s ease;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.nav.scrolled {
+  background-color: #4d1edf;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.nav-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  padding: 0 20px;
+  color: white;
+  position: relative;
+}
+
+.header.scrolled .nav-content {
+  color: black;
+}
+.nav-logo{
+   line-height: 70px; 
+}
+.logo-image{
+    height: 40px;
+    vertical-align: middle;
+}
+.nav-links{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 1.7px;
+}
+.nav-link {
+  text-decoration: none;
+  font-weight: bold;
+  color: inherit;
+}
+
+
+.language-select {
+  padding: 5px;
+  border: 1px solid;
+  background-color: transparent;
+  color: inherit;
+  font-weight: 500;
+}
+
+.menu-icon {
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+  display: none;
+}
+
+.mobile-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 250px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 20px;
+  background-color: white;
+  color: rgb(77, 30, 223);
+  box-shadow: -4px 0 12px rgba(0, 0, 0, 0.1);
+  border-left: 1px solid #eee;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 16px;
+  z-index: 999;
+}
+
+.mobile-menu a,
+.mobile-menu select {
+  text-decoration: none;
+  color: rgb(77, 30, 223);
+  font-weight: bold;
+  background: none;
+  font-size: 17px;
+  letter-spacing: 1.7px;
+  border: none;
+  padding: 8px 0;
+  text-align: left;
+  width: 100%;
+}
+
+.mobile-menu select {
+  border: 1px solid #ccc;
+  padding: 6px;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}
+.close{
+    display: flex;
+    justify-content: right;
+}
+.close-button {
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: #960c0c;
+  cursor: pointer;
+  
+}
+
+
+
+
+/* Responsive rules */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+ 
+}

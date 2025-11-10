@@ -1,4 +1,4 @@
-import '../css/Sevices.css';
+import '../css/Services.css';
 function Services () {
     return(
         <div></div>
