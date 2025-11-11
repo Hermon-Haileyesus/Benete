@@ -8,6 +8,7 @@ import Services from './pages/Services';
 import Team from './pages/Team';
 import Contact from './pages/Contact';
 import './css/App.css';
+import '@fontsource/rubik';
 
 function App() {
   return (

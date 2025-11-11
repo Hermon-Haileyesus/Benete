@@ -4,6 +4,8 @@ export default {
     "nav.service": "Palvelu",
     "nav.team": "Tiimi",
     "nav.contact": "Yhteystiedot",
+    "header.title":"BeneCare",
+    "header.subtitle":"Yhdistävä tekijä"
 
     
   };

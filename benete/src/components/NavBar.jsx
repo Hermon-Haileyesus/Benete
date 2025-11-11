@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import { useLanguage } from "../contexts/LanguageContext";
 import "../css/NavBar.css";
 import Logo from '../assets/Benete_logo.png'
+import LanguageBar from "./LanguageBar";
+import {FaTimes, FaBars} from "react-icons/fa"
 
 function NavBar() {
   const { t, language, setLanguage } = useLanguage();
@@ -41,22 +43,14 @@ function NavBar() {
             <Link to="/contact" className="nav-link">
               {t("nav.contact")}
             </Link>
-            <select
-              value={language}
-              onChange={(e) => setLanguage(e.target.value)}
-              className="language-select desktop-only"
-            >
-              <option value="fi">Suomi</option>
-              <option value="en">English</option>
-              <option value="sv">Svenska</option>
-            </select>
+            <LanguageBar className="language-bar-desktop"/>
           </div>
             <button
               className="menu-icon"
               onClick={() => setIsMobileMenuOpen(true)}
               aria-label="Open menu"
             >
-              ☰
+               <FaBars/>
             </button>
         </div>
 
@@ -68,7 +62,7 @@ function NavBar() {
               className="close-button"
               onClick={() => setIsMobileMenuOpen(false)}
               aria-label="Close menu">
-                 ✕
+                 <FaTimes/>
               </button>
             </div>
             <Link to="/" className="nav-link" onClick={() => setIsMobileMenuOpen(false)}>
@@ -86,17 +80,7 @@ function NavBar() {
             <Link to="/contact" className="nav-link" onClick={() => setIsMobileMenuOpen(false)}>
               {t("nav.contact")}
             </Link>
-            <select
-              value={language}
-              onChange={(e) => {setLanguage(e.target.value);
-                setIsMobileMenuOpen(false)
-              }}
-              className="language-select mobile-only"
-            >
-              <option value="fi" >Suomi</option>
-              <option value="en" >English</option>
-              <option value="sv" >Svenska</option>
-            </select>
+            <LanguageBar className="language-bar-mobile"/>
           </div>
         )}
      </nav>
