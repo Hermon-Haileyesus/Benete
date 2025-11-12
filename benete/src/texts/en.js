@@ -5,7 +5,24 @@ export default {
     "nav.team": "Our team",
     "nav.contact": "Contact",
     "header.title":"BeneCare",
-    "header.subtitle":"The link in-between"
-
-    
+    "header.subtitle":"We ensure that elderly people receive the right care at the right time.",
+    "homepage.introduction_title":"BeneCare – Smart Support for Care Work and Everyday Wellbeing",
+    "homepage.introduction_p1" : "BeneCare is designed for healthcare professionals — including elderly care staff, nurses, doctors, and physiotherapists — as well as private users who want to monitor the wellbeing of their loved ones safely and unobtrusively.",
+    "homepage.introduction_p2": "The service provides round-the-clock monitoring without wearable devices, making both professional care and everyday support more efficient and meaningful. BeneCare uses sensor technology and intelligent algorithms to model a person’s daily rhythm and behavior.",
+    "homepage.introduction_p3" :"This data helps detect changes in health, wellbeing, functional ability, and cognition — enabling timely responses before urgent care is needed.",
+    "selector.title": "Choose Customer Type",
+    "selector.subtitle": "We tailor our services to your needs",
+    "selector.private.title": "Private Customers",
+    "selector.private.description": "Secure your loved one's wellbeing and monitoring at home",
+    "selector.company.title": "Business Customers",
+    "selector.company.description": "Improve care efficiency and enhance service quality",
+    // Carousel
+    "carousel.elderly.title": "Safe daily life for the elderly",
+    "carousel.elderly.desc": "BeneCare supports independent living and provides a sense of security in everyday life.",
+    "carousel.family.title": "Peace of mind for families",
+    "carousel.family.desc": "Families can monitor their loved ones' well-being and receive up-to-date information about their health.",
+    "carousel.nurse.title": "Professional care work",
+    "carousel.nurse.desc": "Healthcare staff receive accurate information about residents' functional capacity and can respond to changes quickly.",
+    "carousel.assistant.title": "Smart technology assistance",
+    "carousel.assistant.desc": "The BeneCare system provides an easy-to-use platform for managing and analyzing all information.",
   };

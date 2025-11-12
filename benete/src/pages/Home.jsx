@@ -1,7 +1,11 @@
-import homeImage from "../assets/header_img/homeImage.jpg";
+import headerImg from "../assets/header_img/homepage_header.jpg";
 import { useLanguage } from "../contexts/LanguageContext";
 import Header from "../components/Header";
 import '@fontsource/rubik';
+import '../css/Home.css'
+import sensorImage from "../assets/images/sensor.jpg"
+import CustomerTypeSelector from "../components/CustomerTypeSelector";
+import Carousel from "../components/Carousel";
 
 
 
@@ -11,34 +15,25 @@ function Home() {
   return (
     <>
       <Header
-        image={homeImage}
+        image={headerImg}
         title={t("header.title")}
         subtitle={t("header.subtitle")}
       />
-      <section className="container mx-auto px-4 py-16">
-        <h2 className="text-3xl font-bold mb-4">Welcome to BeneCare</h2>
-        <p className="text-lg text-muted-foreground">
-          Add more homepage content here.
-        </p>
-      </section>
-      <section className="container mx-auto px-4 py-16">
-        <h2 className="text-3xl font-bold mb-4">Welcome to BeneCare</h2>
-        <p className="text-lg text-muted-foreground">
-          Add more homepage content here.
-        </p>
-      </section>
-      <section className="container mx-auto px-4 py-16">
-        <h2 className="text-3xl font-bold mb-4">Welcome to BeneCare</h2>
-        <p className="text-lg text-muted-foreground">
-          Add more homepage content here.
-        </p>
-      </section>
-      <section className="container mx-auto px-4 py-16">
-        <h2 className="text-3xl font-bold mb-4">Welcome to BeneCare</h2>
-        <p className="text-lg text-muted-foreground">
-          Add more homepage content here.
-        </p>
-      </section>
+      <div className="main-content">
+        <div className="introduction-container">
+          <div className="introduction-content">
+            <h4>{t("homepage.introduction_title")}</h4>
+            <h5>{t("homepage.introduction_p1")}</h5>
+            <h5>{t("homepage.introduction_p2")}</h5>
+            <h5>{t("homepage.introduction_p3")}</h5>
+          </div>
+          <div className="introduction-img" >
+            <img src={sensorImage} alt="Sensor Image" className="sensor-image" />
+          </div>
+        </div>
+        <CustomerTypeSelector/>
+        <Carousel/>
+      </div>
       
       
     </>

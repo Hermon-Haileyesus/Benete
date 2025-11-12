@@ -5,7 +5,25 @@ export default {
     "nav.team": "Tiimi",
     "nav.contact": "Yhteystiedot",
     "header.title":"BeneCare",
-    "header.subtitle":"Yhdistävä tekijä"
-
+    "header.subtitle":"Varmistamme, että ikäihmiset saavat oikeanlaista hoitoa oikea-aikaisesti.",
+    "homepage.introduction_title":"BeneCare – Älykäs tuki hoitotyöhön ja arjen hyvinvointiin",
+    "homepage.introduction_p1" : "BeneCare on kehitetty hoitotyön ammattilaisille – vanhustenhoidon henkilöstölle,  sairaanhoitajille, lääkäreille ja fysioterapeuteille – sekä yksityiskäyttäjille, jotka haluavat seurata läheistensä hyvinvointia turvallisesti ja huomaamattomasti.",
+    "homepage.introduction_p2": "Palvelu tarjoaa ympärivuorokautisen seurannan ilman puettavia laitteita, tehden hoitotyöstä ja arjen huolenpidosta tehokkaampaa ja mielekkäämpää. BeneCare hyödyntää sensoriteknologiaa ja älykkäitä algoritmeja mallintaakseen henkilön päivittäistä rytmiä ja toimintatapoja.",
+    "homepage.introduction_p3" :"Näiden tietojen avulla voidaan havaita muutoksia terveydessä, hyvinvoinnissa, toimintakyvyssä ja kognitiossa – ja reagoida ajoissa ennen kuin tilanne vaatii akuuttia hoitoa.",
+    "selector.title": "Valitse asiakastyyppi",
+    "selector.subtitle": "Räätälöimme palvelumme tarpeidesi mukaan",
+    "selector.private.title": "Yksityisasiakkaat",
+    "selector.private.description": "Turvaa läheisesi hyvinvointi ja seuranta kotona",
+    "selector.company.title": "Yritysasiakkaat",
+    "selector.company.description": "Tehosta hoitotyötä ja paranna palvelun laatua",
+    // Carousel
+    "carousel.elderly.title": "Turvallinen arki ikäihmisille",
+    "carousel.elderly.desc": "BeneCare tukee itsenäistä asumista ja antaa turvallisuuden tunteen päivittäisessä elämässä.",
+    "carousel.family.title": "Mielenrauha omaisille",
+    "carousel.family.desc": "Perheet voivat seurata läheistensä vointia ja saada ajantasaista tietoa heidän hyvinvoinnistaan.",
+    "carousel.nurse.title": "Ammattitaitoinen hoitotyö",
+    "carousel.nurse.desc": "Hoitohenkilöstö saa tarkat tiedot asukkaiden toimintakyvystä ja voi reagoida muutoksiin nopeasti.",
+    "carousel.assistant.title": "Älykäs teknologia avuksi",
+    "carousel.assistant.desc": "BeneCare-järjestelmä tarjoaa helppokäyttöisen alustan kaiken tiedon hallintaan ja analysointiin.",
     
   };

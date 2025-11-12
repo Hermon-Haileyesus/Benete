@@ -14,7 +14,7 @@ function App() {
   return (
     <LanguageProvider>
       <NavBar />
-      <main className="main-content">
+      <main >
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/ideology" element={<Ideology />} />

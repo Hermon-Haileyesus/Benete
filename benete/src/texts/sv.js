@@ -5,7 +5,24 @@ export default {
   "nav.team": "Teamet",
   "nav.contact": "Kontakt",
   "header.title":"BeneCare",
-  "header.subtitle": "Den förenande länken"
-
-
+  "header.subtitle": "Vi säkerställer att äldre får rätt vård i rätt tid.",
+  "homepage.introduction_title":"BeneCare — Smart stöd för vårdarbete och vardagligt välbefinnande",
+  "homepage.introduction_p1" : "BeneCare är utvecklat för vårdpersonal — inklusive personal inom äldrevård, sjuksköterskor, läkare och sjukgymnaster — samt privatanvändare som vill övervaka sina närståendes välbefinnande säkert och diskret.",
+  "homepage.introduction_p2": "Tjänsten erbjuder dygnet-runt-övervakning utan bärbara enheter, vilket gör både professionell vård och vardagligt stöd mer effektivt och meningsfullt. BeneCare använder sensorteknik och intelligenta algoritmer för att modellera en persons dagliga rytm och beteende.",
+  "homepage.introduction_p3" :"Denna data hjälper till att upptäcka förändringar i hälsa, välbefinnande, funktionsförmåga och kognition — vilket möjliggör snabba åtgärder innan akut vård behövs.",
+  "selector.title": "Välj kundtyp",
+  "selector.subtitle": "Vi skräddarsyr våra tjänster efter dina behov",
+  "selector.private.title": "Privatkunder",
+  "selector.private.description": "Säkra din närståendes välbefinnande och övervakning hemma",
+  "selector.company.title": "Företagskunder",
+  "selector.company.description": "Förbättra vårdeffektiviteten och höj servicekvaliteten",
+   // Carousel
+    "carousel.elderly.title": "Säkert dagligt liv för äldre",
+    "carousel.elderly.desc": "BeneCare stöder självständigt boende och ger en känsla av trygghet i vardagen.",
+    "carousel.family.title": "Sinnesro för familjer",
+    "carousel.family.desc": "Familjer kan övervaka sina närståendes välbefinnande och få uppdaterad information om deras hälsa.",
+    "carousel.nurse.title": "Professionellt vårdarbete",
+    "carousel.nurse.desc": "Vårdpersonal får exakt information om invånares funktionsförmåga och kan svara snabbt på förändringar.",
+    "carousel.assistant.title": "Smart teknikassistans",
+    "carousel.assistant.desc": "BeneCare-systemet tillhandahåller en lättanvänd plattform för att hantera och analysera all information.",
 };
