@@ -10,6 +10,9 @@ export default {
     "homepage.introduction_p1" : "BeneCare on kehitetty hoitotyön ammattilaisille – vanhustenhoidon henkilöstölle,  sairaanhoitajille, lääkäreille ja fysioterapeuteille – sekä yksityiskäyttäjille, jotka haluavat seurata läheistensä hyvinvointia turvallisesti ja huomaamattomasti.",
     "homepage.introduction_p2": "Palvelu tarjoaa ympärivuorokautisen seurannan ilman puettavia laitteita, tehden hoitotyöstä ja arjen huolenpidosta tehokkaampaa ja mielekkäämpää. BeneCare hyödyntää sensoriteknologiaa ja älykkäitä algoritmeja mallintaakseen henkilön päivittäistä rytmiä ja toimintatapoja.",
     "homepage.introduction_p3" :"Näiden tietojen avulla voidaan havaita muutoksia terveydessä, hyvinvoinnissa, toimintakyvyssä ja kognitiossa – ja reagoida ajoissa ennen kuin tilanne vaatii akuuttia hoitoa.",
+    "service.privacyTitle": "Pidämme henkilötiedot turvassa",
+    "service.privacyText": "BeneCare -palvelun tuottamat analyysit ovat seniorin, hänen omaistensa ja hoitohenkilökunnan nähtävissä verkkopalvelun kautta tai tulosteena. Palvelun käyttö ja datan kerääminen perustuvat aina henkilön suostumukseen. Kerättyä henkilötietoa ei käytetä tai välitetä muuhun kuin palvelun käyttöön liittyvään tarkoitukseen. Tietosuojalain mukaisesti seniorilla on oikeus omiin henkilötietoihinsa ja hän voi pyytää henkilötietojensa poistamista tai palvelun lopettamista milloin tahansa.",
+    
     "selector.title": "Valitse asiakastyyppi",
     "selector.subtitle": "Räätälöimme palvelumme tarpeidesi mukaan",
     "selector.private.title": "Yksityisasiakkaat",
@@ -25,5 +28,32 @@ export default {
     "carousel.nurse.desc": "Hoitohenkilöstö saa tarkat tiedot asukkaiden toimintakyvystä ja voi reagoida muutoksiin nopeasti.",
     "carousel.assistant.title": "Älykäs teknologia avuksi",
     "carousel.assistant.desc": "BeneCare-järjestelmä tarjoaa helppokäyttöisen alustan kaiken tiedon hallintaan ja analysointiin.",
+    // Features
+    "features.title": "Mitä BeneCare seuraa?",
+    "features.subtitle": "Palvelumme tarjoaa jatkuvasti päivittyvää tietoa henkilön toimintakyvystä ja hyvinvoinnista",
+    "features.activity.title": "Aktiivisuuden seuranta",
+    "features.activity.desc": "Huoneessa vietetty aika, liikkuminen sisällä ja ulkona, päivittäinen aktiivisuus",
+    "features.sleep.title": "Unen laatu",
+    "features.sleep.desc": "Unen ja levon määrä, laatu ja ajankohdat. Yöllisen käyttäytymisen muutokset",
+    "features.hygiene.title": "Hygienian seuranta",
+    "features.hygiene.desc": "Suihkussa käynti ja pesualtaan käyttö. Hygienian hoidon muutosten tunnistus",
+    "features.wc.title": "WC-käynnit",
+    "features.wc.desc": "WC-käyntien määrä, ajankohdat ja kesto. Tihentyneiden käyntien havaitseminen",
+    "features.health.title": "Terveysmittarit",
+    "features.health.desc": "Paino, BMI, verenpaine ja muut terveysmittarit integroituna järjestelmään",
+    "features.alerts.title": "Hälytykset",
+    "features.alerts.desc": "Hälytysranneke akuutin avun saamiseksi. Kaikki tapahtumat kirjautuvat järjestelmään",
+     // How It Works
+    "how.title": "Kuinka BeneCare toimii?",
+    "how.subtitle": "Yksinkertainen ja tehokas prosessi, joka ei vaadi toimenpiteitä henkilöltä",
+    "how.step1.title": "Asennus",
+    "how.step1.desc": "Huomaamattomat sensorit asennetaan henkilön asuntoon ilman häiriötä arkeen",
+    "how.step2.title": "Tiedon keruu",
+    "how.step2.desc": "Sensorit keräävät tietoa päivittäisestä toiminnasta automaattisesti",
+    "how.step3.title": "Analysointi",
+    "how.step3.desc": "Sofistikoituneet algoritmit tunnistavat toimintoja ja mallintavat toimintatapoja",
+    "how.step4.title": "Raportointi",
+    "how.step4.desc": "Hoitajat, lääkärit ja omaiset saavat ajankohtaista tietoa toimintakyvystä",
+    
     
   };
