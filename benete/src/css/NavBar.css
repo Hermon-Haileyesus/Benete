@@ -13,8 +13,12 @@
 .nav.scrolled {
   background-color: #4d1edf;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+ 
 }
-
+.nav.scrolled .nav-link{
+  font-size: 17px;
+  
+}
 
 .nav-content {
   display: flex;
@@ -46,11 +50,12 @@
   text-decoration: none;
   color: inherit;
   margin: 0 20px;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 20px;
-  letter-spacing: 1.7px;
+  letter-spacing: 2px;
   cursor: pointer;
   border-bottom: 3px solid transparent;
+  
 }
 .nav-link:hover, .nav-link:focus{
   border-bottom: 3px solid #fff;
@@ -83,7 +88,7 @@
   color: #4d1edf;
   box-shadow: -4px 0 12px rgba(0, 0, 0, 0.1);
   border-left: 1px solid #eee;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Rubik', sans-serif;
   font-size: 16px;
   z-index: 999;
 }
@@ -91,7 +96,7 @@
 .mobile-menu a{
   text-decoration: none;
   color: #4d1edf;
-  font-weight: bold;
+  font-weight: 600;
   background: none;
   font-size: 17px;
   letter-spacing: 1.7px;
@@ -100,6 +105,7 @@
   text-align: left;
   width: 50%;
   border-bottom: 3px solid transparent;
+  
 }
 .mobile-menu a:hover, .mobile-menu a:focus{
   border-bottom: 3px solid #4d1edf;

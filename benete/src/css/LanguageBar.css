@@ -16,8 +16,8 @@
   border-bottom: 3px solid transparent;
   transition: border-bottom 0.2s ease;
   font-size: 20px;
-  font-weight: 500;
-  letter-spacing: 1.7px;
+  font-weight: 600;
+  letter-spacing: 2px;
   margin: 0 20px;
   color: inherit;
 }
@@ -75,24 +75,27 @@
 }
 
 .language-bar-desktop .language-select-button {
-  font-weight: 500;
   color: #fff;
+}
+.language-select-wrapper.scrolled .language-select-button {
+  font-size: 17px;
+  
 }
 
 .language-bar-desktop .language-label {
-  font-weight: 500;
+  font-weight: 600;
   color: #4d1edf;
 }
 
 /* Mobile variant */
 .language-bar-mobile .language-select-button {
-  font-weight: bold;
+  font-weight: 600;
   color: #4d1edf;
   font-size: 17px;
 }
 
 .language-bar-mobile .language-label {
-  font-weight: 500;
+  font-weight: 600;
   color: #4d1edf;
 }
 .language-bar-mobile .language-select-button:hover,

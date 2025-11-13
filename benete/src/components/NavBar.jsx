@@ -43,7 +43,7 @@ function NavBar() {
             <Link to="/contact" className="nav-link">
               {t("nav.contact")}
             </Link>
-            <LanguageBar className="language-bar-desktop"/>
+            <LanguageBar className="language-bar-desktop" isScrolled={isScrolled} />
           </div>
             <button
               className="menu-icon"
