@@ -1,7 +1,21 @@
 import '../css/Contact.css';
+import Header from "../components/Header";
+import headerImg from "../assets/header_img/phone.jpg";
+import { useLanguage } from "../contexts/LanguageContext";
+import BeneteContact from '../components/BeneteContact';
+
+
 function Contact () {
+    const { t } = useLanguage();
     return(
-        <div></div>
+        <>
+        <Header
+        image={headerImg}
+        title={t("header.title")}
+        subtitle={t("header.subtitle")}
+      />
+      <BeneteContact/>
+      </>
     )
 }
 export default Contact

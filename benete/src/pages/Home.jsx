@@ -25,11 +25,8 @@ function Home() {
           <div className="introduction-content">
             <h4>{t("homepage.introduction_title")}</h4>
             <h5>{t("homepage.introduction_p1")}</h5>
-            <h5>{t("homepage.introduction_p2")}</h5>
-            <h5>{t("homepage.introduction_p3")}</h5>
-          </div>
-          <div className="introduction-img" >
-            <img src={sensorImage} alt="Sensor Image" className="sensor-image" />
+            <h5>{t("homepage.introduction_p2")}{t("homepage.introduction_p3")}</h5>
+            <h5></h5>
           </div>
         </div>
         <CustomerTypeSelector/>

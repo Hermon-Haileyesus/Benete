@@ -6,6 +6,7 @@ import '@fontsource/rubik';
 import Features from "../components/Features";
 import HowItWorks from '../components/HowItWorks';
 import Security from '../components/Security';
+import ContactForm from '../components/ContactForm';
 function Services () {
     const { t } = useLanguage();
     return(
@@ -18,6 +19,7 @@ function Services () {
       <Features/>
       <HowItWorks/>
       <Security/>
+      <ContactForm/>
       </>
     )
 }
