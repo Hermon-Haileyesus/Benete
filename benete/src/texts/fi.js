@@ -54,6 +54,21 @@ export default {
     "how.step3.desc": "Sofistikoituneet algoritmit tunnistavat toimintoja ja mallintavat toimintatapoja",
     "how.step4.title": "Raportointi",
     "how.step4.desc": "Hoitajat, lääkärit ja omaiset saavat ajankohtaista tietoa toimintakyvystä",
-    
+    //Contact
+    "contact.form.title": "Ota yhteyttä",
+"contact.form.type": "Olen kiinnostunut:",
+"contact.form.type.general": "Yleinen yhteydenotto",
+"contact.form.type.assessment": "Toimintakyvyn arviointi",
+"contact.form.firstName": "Etunimi",
+"contact.form.lastName": "Sukunimi",
+"contact.form.email": "Sähköposti",
+"contact.form.phone": "Puhelinnumero (valinnainen)",
+"contact.form.organization": "Organisaatio (valinnainen)",
+"contact.form.role": "Roolisi (valinnainen)",
+"contact.form.message": "Kirjoita viesti...",
+"contact.form.submit": "Lähetä",
+"contact.form.successH1": "Kiitos yhteydenotosta!",
+"contact.form.successP": "Otamme sinuun yhteyttä vuorokauden sisällä",
+"contact.form.successB": "Sulje"
     
   };

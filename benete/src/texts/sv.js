@@ -54,5 +54,20 @@ export default {
     "how.step3.desc": "Sofistikerade algoritmer identifierar aktiviteter och modellerar beteendemönster",
     "how.step4.title": "Rapportering",
     "how.step4.desc": "Vårdgivare, läkare och familjemedlemmar får uppdaterad information om funktionsförmåga",
-    
+    //Contact
+    "contact.form.title": "Kontakta oss",
+"contact.form.type": "Jag är intresserad av:",
+"contact.form.type.general": "Allmän kontakt",
+"contact.form.type.assessment": "Funktionsbedömning",
+"contact.form.firstName": "Förnamn",
+"contact.form.lastName": "Efternamn",
+"contact.form.email": "E-post",
+"contact.form.phone": "Telefonnummer (valfritt)",
+"contact.form.organization": "Organisation (valfritt)",
+"contact.form.role": "Din roll (valfritt)",
+"contact.form.message": "Skriv ditt meddelande...",
+"contact.form.submit": "Skicka",
+"contact.form.successH1": "Tack för att du kontaktade oss!",
+"contact.form.successP": "Vi återkommer till dig inom 24 timmar",
+"contact.form.successB": "Stäng"
 };

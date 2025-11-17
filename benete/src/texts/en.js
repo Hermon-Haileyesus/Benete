@@ -54,5 +54,20 @@ export default {
     "how.step3.desc": "Sophisticated algorithms identify activities and model behavior patterns",
     "how.step4.title": "Reporting",
     "how.step4.desc": "Caregivers, doctors and family members receive up-to-date information about functional capacity",
-    
+    //Conatct
+    "contact.form.title": "Contact us",
+    "contact.form.type": "I'm interested in:",
+    "contact.form.type.general": "General contact",
+    "contact.form.type.assessment": "Functionality assessment",
+    "contact.form.firstName": "First name",
+    "contact.form.lastName": "Last name",
+    "contact.form.email": "Email",
+    "contact.form.phone": "Phone number (optional)",
+    "contact.form.organization": "Organization (optional)",
+    "contact.form.role": "Your role (optional)",
+    "contact.form.message": "Write your message...",
+   "contact.form.submit": "Send",
+   "contact.form.successH1": "Thank you for contacting us!",
+   "contact.form.successP": "We will get back to you within 24 hours",
+   "contact.form.successB": "Close"
   };
