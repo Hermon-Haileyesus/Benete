@@ -7,14 +7,14 @@
   border-radius: 8px;
   max-width: 1300px;
   font-family: 'Rubik',sans-serif;
-  margin: 20px auto;
+  margin: 60px auto;
 }
 
 .contact-info {
-
+  
   color: #333;
-  
-  
+  margin-bottom: 30px;
+
 }
 
 
@@ -22,7 +22,7 @@
 .contact-info h2 {
   font-size: 40PX;
   margin-bottom: 30px;
-  margin-top: 30px;
+  margin-top: 0;
   font-family: 'Rubik';
   color: #162016;
   font-weight: 600;
@@ -83,8 +83,8 @@
   max-height: 400px;
   overflow: hidden;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .map-container iframe {

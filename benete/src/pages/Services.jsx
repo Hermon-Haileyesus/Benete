@@ -13,9 +13,10 @@ function Services () {
         <>
         <Header
         image={headerImg}
-        title={t("header.title")}
-        subtitle={t("header.subtitle")}
+        title={t("service.heading.intro")}
+        subtitle={t("service.heading.title")}
         isWhite={false}
+        isCentered={false} 
       />
       <Features/>
       <HowItWorks/>

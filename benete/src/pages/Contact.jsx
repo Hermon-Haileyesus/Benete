@@ -1,6 +1,6 @@
 import '../css/Contact.css';
 import Header from "../components/Header";
-import headerImg from "../assets/header_img/Phone1.jpg";
+import headerImg from "../assets/header_img/Contact_banner.jpg";
 import { useLanguage } from "../contexts/LanguageContext";
 import BeneteContact from '../components/BeneteContact';
 import ContactForm from '../components/ContactForm';
@@ -12,9 +12,10 @@ function Contact () {
         <>
         <Header
         image={headerImg}
-        title={t("header.title")}
-        subtitle={t("header.subtitle")}
+        title={t("contact.heading.intro")}
+        subtitle={t("contact.heading.title")}
         isWhite={true}
+        isCentered={true} 
       />
       <ContactForm/>
       <BeneteContact/>

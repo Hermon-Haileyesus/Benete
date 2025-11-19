@@ -28,7 +28,9 @@ export default {
     "carousel.nurse.desc": "Vårdpersonal får exakt information om invånares funktionsförmåga och kan svara snabbt på förändringar.",
     "carousel.assistant.title": "Smart teknikassistans",
     "carousel.assistant.desc": "BeneCare-systemet tillhandahåller en lättanvänd plattform för att hantera och analysera all information.",
-     // Features
+    // service
+    "service.heading.intro": "Funktionsbedömning",
+    "service.heading.title": "BeneCare",
     "features.title": "Vad övervakar BeneCare?",
     "features.subtitle": "Vår tjänst tillhandahåller kontinuerligt uppdaterad information om en persons funktionsförmåga och välbefinnande",
     "features.activity.title": "Aktivitetsövervakning",
@@ -56,18 +58,31 @@ export default {
     "how.step4.desc": "Vårdgivare, läkare och familjemedlemmar får uppdaterad information om funktionsförmåga",
     //Contact
     "contact.form.title": "Kontakta oss",
-"contact.form.type": "Jag är intresserad av:",
-"contact.form.type.general": "Allmän kontakt",
-"contact.form.type.assessment": "Funktionsbedömning",
-"contact.form.firstName": "Förnamn",
-"contact.form.lastName": "Efternamn",
-"contact.form.email": "E-post",
-"contact.form.phone": "Telefonnummer (valfritt)",
-"contact.form.organization": "Organisation (valfritt)",
-"contact.form.role": "Din roll (valfritt)",
-"contact.form.message": "Skriv ditt meddelande...",
-"contact.form.submit": "Skicka",
-"contact.form.successH1": "Tack för att du kontaktade oss!",
-"contact.form.successP": "Vi återkommer till dig inom 24 timmar",
-"contact.form.successB": "Stäng"
+    "contact.form.type": "Jag är intresserad av:",
+    "contact.form.type.general": "Allmän kontakt",
+    "contact.form.type.assessment": "Funktionsbedömning",
+    "contact.form.firstName": "Förnamn",
+    "contact.form.lastName": "Efternamn",
+    "contact.form.email": "E-post",
+    "contact.form.phone": "Telefonnummer (valfritt)",
+    "contact.form.organization": "Organisation (valfritt)",
+    "contact.form.role": "Din roll (valfritt)",
+    "contact.form.message": "Skriv ditt meddelande...",
+    "contact.form.submit": "Skicka",
+    "contact.form.successH1": "Tack för att du kontaktade oss!",
+    "contact.form.successP": "Vi återkommer till dig inom 24 timmar",
+    "contact.form.successB": "Stäng",
+    "contact.company": "Benete Oy",
+    "contact.address1": "Artillerigatan 4b",
+    "contact.address2": "20520 Åbo, Finland",
+    "contact.floor": "(5:e våningen)",
+    "contact.ceo": "Kari Bäckman, Verkställande direktör",
+    "contact.phone": "+358 50 052 4514",
+    "contact.email": "kari.backman@benete.com",
+    "contact.heading.intro": "Låt oss prata",
+    "contact.heading.title": "Hur kan vi hjälpa till?"
+
+
+
+
 };

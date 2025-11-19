@@ -30,33 +30,52 @@
 .header-content {
   position: absolute;
   top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  max-width: 600px;
+  padding-right: 1rem;
+}
+.header-content {
+  position: absolute;
+  top: 50%;
   left: 10%;
   transform: translateY(-50%);
   z-index: 2;
   max-width: 600px;
   padding-right: 1rem;
 }
+
+.header-content.centered {
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
 .header-content.white{
   color: white;
 }
 
 .header-content.black {
-  color: black;
+  color: #0D1114;
 }
 
 
 .header-content h1 {
   font-size: 40px;
   font-weight: bold;
-  margin-bottom: 1rem;
-  letter-spacing: 1.7px;
+  margin-bottom: 0;
+  letter-spacing: 0.8px;
+  margin-top: 2px;
 }
 
 .header-content p {
   font-size: 1.25rem;
   line-height: 1.6;
-  letter-spacing: 1.7px;
+  letter-spacing: 0.8px;
   font-weight: 600;
+  margin-bottom: 2px;
 }
 
 

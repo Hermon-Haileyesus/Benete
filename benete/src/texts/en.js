@@ -28,7 +28,9 @@ export default {
     "carousel.nurse.desc": "Healthcare staff receive accurate information about residents' functional capacity and can respond to changes quickly.",
     "carousel.assistant.title": "Smart technology assistance",
     "carousel.assistant.desc": "The BeneCare system provides an easy-to-use platform for managing and analyzing all information.",
-    // Features
+    // service
+    "service.heading.intro": "Functionality assessment",
+    "service.heading.title": "BeneCare",
     "features.title": "What does BeneCare monitor?",
     "features.subtitle": "Our service provides continuously updated information about a person's functional capacity and well-being",
     "features.activity.title": "Activity Monitoring",
@@ -66,8 +68,24 @@ export default {
     "contact.form.organization": "Organization (optional)",
     "contact.form.role": "Your role (optional)",
     "contact.form.message": "Write your message...",
-   "contact.form.submit": "Send",
-   "contact.form.successH1": "Thank you for contacting us!",
-   "contact.form.successP": "We will get back to you within 24 hours",
-   "contact.form.successB": "Close"
+    "contact.form.submit": "Send",
+    "contact.form.successH1": "Thank you for contacting us!",
+    "contact.form.successP": "We will get back to you within 24 hours",
+    "contact.form.successB": "Close",
+    "contact.company": "Benete Ltd",
+    "contact.address1": "Tykistökatu 4b",
+    "contact.address2": "20520 Turku, Finland",
+    "contact.floor": "(5th floor)",
+    "contact.ceo": "Kari Bäckman, CEO",
+    "contact.phone": "+358 50 052 4514",
+    "contact.email": "kari.backman@benete.com",
+    "contact.heading.intro": "Let’s talk",
+    "contact.heading.title": "How can we help?"
+
+
+
+
+    
+
+
   };

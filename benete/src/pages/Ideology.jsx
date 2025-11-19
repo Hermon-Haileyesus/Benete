@@ -10,6 +10,8 @@ function Ideology () {
         image={headerImg}
         title={t("header.title")}
         subtitle={t("header.subtitle")}
+        isWhite={false}
+        isCentered={false} 
       />
 
         </>

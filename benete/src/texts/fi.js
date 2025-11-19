@@ -28,7 +28,9 @@ export default {
     "carousel.nurse.desc": "Hoitohenkilöstö saa tarkat tiedot asukkaiden toimintakyvystä ja voi reagoida muutoksiin nopeasti.",
     "carousel.assistant.title": "Älykäs teknologia avuksi",
     "carousel.assistant.desc": "BeneCare-järjestelmä tarjoaa helppokäyttöisen alustan kaiken tiedon hallintaan ja analysointiin.",
-    // Features
+    // service
+    "service.heading.intro": "Toimintakyvyn arviointi",
+    "service.heading.title": "BeneCare",
     "features.title": "Mitä BeneCare seuraa?",
     "features.subtitle": "Palvelumme tarjoaa jatkuvasti päivittyvää tietoa henkilön toimintakyvystä ja hyvinvoinnista",
     "features.activity.title": "Aktiivisuuden seuranta",
@@ -56,19 +58,30 @@ export default {
     "how.step4.desc": "Hoitajat, lääkärit ja omaiset saavat ajankohtaista tietoa toimintakyvystä",
     //Contact
     "contact.form.title": "Ota yhteyttä",
-"contact.form.type": "Olen kiinnostunut:",
-"contact.form.type.general": "Yleinen yhteydenotto",
-"contact.form.type.assessment": "Toimintakyvyn arviointi",
-"contact.form.firstName": "Etunimi",
-"contact.form.lastName": "Sukunimi",
-"contact.form.email": "Sähköposti",
-"contact.form.phone": "Puhelinnumero (valinnainen)",
-"contact.form.organization": "Organisaatio (valinnainen)",
-"contact.form.role": "Roolisi (valinnainen)",
-"contact.form.message": "Kirjoita viesti...",
-"contact.form.submit": "Lähetä",
-"contact.form.successH1": "Kiitos yhteydenotosta!",
-"contact.form.successP": "Otamme sinuun yhteyttä vuorokauden sisällä",
-"contact.form.successB": "Sulje"
+    "contact.form.type": "Olen kiinnostunut:",
+    "contact.form.type.general": "Yleinen yhteydenotto",
+    "contact.form.type.assessment": "Toimintakyvyn arviointi",
+    "contact.form.firstName": "Etunimi",
+    "contact.form.lastName": "Sukunimi",
+    "contact.form.email": "Sähköposti",
+    "contact.form.phone": "Puhelinnumero (valinnainen)",
+    "contact.form.organization": "Organisaatio (valinnainen)",
+    "contact.form.role": "Roolisi (valinnainen)",
+    "contact.form.message": "Kirjoita viesti...",
+    "contact.form.submit": "Lähetä",
+    "contact.form.successH1": "Kiitos yhteydenotosta!",
+    "contact.form.successP": "Otamme sinuun yhteyttä vuorokauden sisällä",
+    "contact.form.successB": "Sulje",
+    "contact.company": "Benete Oy",
+    "contact.address1": "Tykistökatu 4b",
+    "contact.address2": "20520 Turku, Suomi",
+    "contact.floor": "(5. kerros)",
+    "contact.ceo": "Kari Bäckman, Toimitusjohtaja",
+    "contact.phone": "+358 50 052 4514",
+    "contact.email": "kari.backman@benete.com",
+    "contact.heading.intro": "Jutellaan",
+    "contact.heading.title": "Kuinka voimme auttaa?"
+
+
     
   };

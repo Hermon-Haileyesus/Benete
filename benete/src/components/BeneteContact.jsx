@@ -8,17 +8,17 @@ export default function BeneteContact() {
   return (
     <section className="benete-contact">
       <div className="contact-info">
-        <h2>Benete Oy</h2>
+        <h2>{t("contact.company")}</h2>
         <p>
-            <a href="https://goo.gl/maps/aG2SfvwMmmHQTetq8" target="_blank">Tykistökatu 4b<br/>20520 Turku, Suomi</a><br/> (5th kerros)
+            <a href="https://goo.gl/maps/aG2SfvwMmmHQTetq8" target="_blank">{t("contact.address1")}<br/>{t("contact.address2")}</a><br/> {t("contact.floor")}
         </p>
-        <p className="contact-page-text">Kari Bäckman, Toimitusjohtaja</p>
+        <p className="contact-page-text">{t("contact.ceo")}</p>
         <div className="info-pack"> 
             <div className="icon-box icon">
                 <FaPhoneAlt />
             </div> 
             <div>
-                <p className="phone"> +358 50 052 4514</p>
+                <p className="phone"> {t("contact.phone")}</p>
             </div>
             
         </div>
@@ -28,7 +28,7 @@ export default function BeneteContact() {
             </div> 
             
             <div>
-                <p><a href="mailto:kari.backman@benete.com"> kari.backman@benete.com</a></p>
+                <p><a href={`mailto:${t("contact.email")}`}> {t("contact.email")}</a></p>
             </div>
         </div>    
       </div>
