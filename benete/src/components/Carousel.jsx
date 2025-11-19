@@ -7,7 +7,8 @@ import assistantImage from "../assets/images/carousel-assistant.jpg";
 import "../css/Carousel.css";
 import '@fontsource/rubik';
 
-function Carousel  ()  {
+
+function Carousel() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const { t } = useLanguage();
 
@@ -37,52 +38,47 @@ function Carousel  ()  {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 10000);
+    }, 100000);
 
     return () => clearInterval(timer);
   }, [slides.length]);
 
   return (
-    <section className="carousel-section">
-      <div className="carousel-container">
-        <div className="carousel-wrapper">
-          <div className="carousel-slides">
-            {slides.map((slide, index) => (
-              <div
-                key={index}
-                className={`carousel-slide ${
-                  index === currentSlide ? "active" : ""
-                }`}
-              >
-                <img
-                  src={slide.image}
-                  alt={slide.title}
-                  className="carousel-image"
-                />
-                <div className="carousel-overlay" />
-                <div className="carousel-content">
-                  <h3 className="carousel-title">{slide.title}</h3>
-                  <p className="carousel-description">{slide.description}</p>
-                </div>
+    <div className="carousel-wrapper">
+      <div className="carousel-slides">
+        {slides.map((slide, index) => (
+          <div
+            key={index}
+            className={`carousel-slide ${index === currentSlide ? "active" : ""}`}
+          >
+            <img
+              src={slide.image}
+              alt={slide.title}
+              className="carousel-image"
+            />
+            <div className="carousel-overlay" />
+            <div className="carousel-content">
+              <h3 className="carousel-title">{slide.title}</h3>
+              <p className="carousel-description">{slide.description}</p>
+            </div>
+            {index === currentSlide && (
+              <div className="carousel-dots">
+                {slides.map((_, dotIndex) => (
+                  <button
+                    key={dotIndex}
+                    onClick={() => setCurrentSlide(dotIndex)}
+                    className={`carousel-dot ${dotIndex === currentSlide ? "active" : ""}`}
+                    aria-label={`Go to slide ${dotIndex + 1}`}
+                  />
+                ))}
               </div>
-            ))}
+            )}
           </div>
-
-          <div className="carousel-dots">
-            {slides.map((_, index) => (
-              <button
-                key={index}
-                onClick={() => setCurrentSlide(index)}
-                className={`carousel-dot ${
-                  index === currentSlide ? "active" : ""
-                }`}
-                aria-label={`Go to slide ${index + 1}`}
-              />
-            ))}
-          </div>
-        </div>
+        ))}
       </div>
-    </section>
+
+    </div>
   );
-};
-export default Carousel
+}
+
+export default Carousel;

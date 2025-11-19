@@ -15,7 +15,7 @@
   align-items: center;
   border-bottom: 3px solid transparent;
   transition: border-bottom 0.2s ease;
-  font-size: 20px;
+  font-size: 17px;
   font-weight: 600;
   letter-spacing: 2px;
   margin: 0 20px;
@@ -26,6 +26,18 @@
 .language-select-button:focus {
   border-bottom: 3px solid #fff;
 }
+.language-select-wrapper.ideology-style {
+  color: #4d1edf;
+}
+
+.language-select-wrapper.ideology-style .language-select-button {
+  color: #4d1edf;
+}
+.language-select-wrapper.ideology-style .language-select-button:hover,
+.language-select-wrapper.ideology-style .language-select-button:focus {
+  border-bottom: 3px solid #4d1edf;
+}
+
 
 
 .language-select-arrow {

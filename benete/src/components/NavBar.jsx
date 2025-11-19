@@ -2,14 +2,18 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useLanguage } from "../contexts/LanguageContext";
 import "../css/NavBar.css";
-import Logo from '../assets/Benete_logo.png'
+import Logo from '../assets/Benete_whitetransparent.png'
 import LanguageBar from "./LanguageBar";
 import {FaTimes, FaBars} from "react-icons/fa"
-
+import { useLocation } from "react-router-dom";
 function NavBar() {
   const { t, language, setLanguage } = useLanguage();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const location = useLocation();
+  const isIdologyPage = location.pathname === "/ideology";
+
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,7 +24,7 @@ function NavBar() {
   }, []);
 
   return (
-      <nav className={`nav ${isScrolled ? "scrolled" : ""}`}>
+      <nav className={`nav ${isScrolled ? "scrolled" : ""} ${isIdologyPage ? "ideology-style" : ""}`}>
         <div className="nav-content">
           <div className="nav-logo">
                 <Link to="/">
@@ -37,13 +41,10 @@ function NavBar() {
             <Link to="/services" className="nav-link">
               {t("nav.service")}
             </Link>
-            <Link to="/team" className="nav-link">
-              {t("nav.team")}
-            </Link>
             <Link to="/contact" className="nav-link">
               {t("nav.contact")}
             </Link>
-            <LanguageBar className="language-bar-desktop" isScrolled={isScrolled} />
+            <LanguageBar className="language-bar-desktop" isScrolled={isScrolled} isIdologyPage={isIdologyPage} />
           </div>
             <button
               className="menu-icon"
@@ -71,11 +72,8 @@ function NavBar() {
             <Link to="/ideology" className="nav-link" onClick={() => setIsMobileMenuOpen(false)}>
               {t("nav.ideology")}
             </Link>
-            <Link to="/service" className="nav-link" onClick={() => setIsMobileMenuOpen(false)}>
+            <Link to="/services" className="nav-link" onClick={() => setIsMobileMenuOpen(false)}>
               {t("nav.service")}
-            </Link>
-            <Link to="/team" className="nav-link" onClick={() => setIsMobileMenuOpen(false)}>
-              {t("nav.team")}
             </Link>
             <Link to="/contact" className="nav-link" onClick={() => setIsMobileMenuOpen(false)}>
               {t("nav.contact")}

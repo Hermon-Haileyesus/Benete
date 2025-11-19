@@ -1,9 +1,6 @@
-import headerImg from "../assets/header_img/homepage_header.jpg";
 import { useLanguage } from "../contexts/LanguageContext";
-import Header from "../components/Header";
 import '@fontsource/rubik';
 import '../css/Home.css'
-import sensorImage from "../assets/images/sensor.jpg"
 import CustomerTypeSelector from "../components/CustomerTypeSelector";
 import Carousel from "../components/Carousel";
 
@@ -15,11 +12,7 @@ function Home() {
 
   return (
     <>
-      <Header
-        image={headerImg}
-        title={t("header.title")}
-        subtitle={t("header.subtitle")}
-      />
+      <Carousel/>
       <div className="main-content">
         <div className="introduction-container">
           <div className="introduction-content">
@@ -30,7 +23,7 @@ function Home() {
           </div>
         </div>
         <CustomerTypeSelector/>
-        <Carousel/>
+        
       </div>
       
       

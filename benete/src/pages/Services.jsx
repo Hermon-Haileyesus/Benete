@@ -6,7 +6,7 @@ import '@fontsource/rubik';
 import Features from "../components/Features";
 import HowItWorks from '../components/HowItWorks';
 import Security from '../components/Security';
-import ContactForm from '../components/ContactForm';
+import ContactFormServices from '../components/ContactFormServices';
 function Services () {
     const { t } = useLanguage();
     return(
@@ -15,11 +15,12 @@ function Services () {
         image={headerImg}
         title={t("header.title")}
         subtitle={t("header.subtitle")}
+        isWhite={false}
       />
       <Features/>
       <HowItWorks/>
       <Security/>
-      <ContactForm/>
+      <ContactFormServices/>
       </>
     )
 }

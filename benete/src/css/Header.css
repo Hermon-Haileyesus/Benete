@@ -24,6 +24,7 @@
   height: 100%;
   background-color: rgb(45 45 46 / 50%);
   z-index: 1;
+  display: none;
 }
 
 .header-content {
@@ -31,11 +32,18 @@
   top: 50%;
   left: 10%;
   transform: translateY(-50%);
-  color: #fff;
   z-index: 2;
   max-width: 600px;
   padding-right: 1rem;
 }
+.header-content.white{
+  color: white;
+}
+
+.header-content.black {
+  color: black;
+}
+
 
 .header-content h1 {
   font-size: 40px;

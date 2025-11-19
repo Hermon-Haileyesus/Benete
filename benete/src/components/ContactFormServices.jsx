@@ -1,4 +1,3 @@
-import React from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
@@ -18,10 +17,9 @@ const schema = z.object({
   message: z.string().optional(),
 });
 
-export default function ContactForm() {
+export default function ContactFormServices() {
   const { t } = useLanguage();
   const [showPopup, setShowPopup] = useState(false);
-  const [showForm, setShowForm] = useState(false);
   useEffect(() => {
   if (showPopup) {
     const timer = setTimeout(() => {
@@ -65,13 +63,13 @@ export default function ContactForm() {
   ];
 
   return (
-    <section className="contact-section Contact">
+    <section className="contact-section Service">
       <h2>{t("contact.form.title")}</h2>
-      <div className="contact-btn"onClick={() => setShowForm((prev) => !prev)}>
+      <div className="contact-btn">
         <h3 className="how-step-title">{t("contact.form.type")}</h3>
-        <FaChevronDown className={showForm ? "arrow rotated" : "arrow"} />
+        <FaChevronDown />
       </div>
-      {showForm && (<form onSubmit={handleSubmit(onSubmit)} className="contact-form">
+      <form onSubmit={handleSubmit(onSubmit)} className="contact-form">
         {/* Contact Type Checkboxes */}
         <div className="form-row">
           {contactOptions.map((opt) => (
@@ -127,8 +125,7 @@ export default function ContactForm() {
         <button type="submit" className={`submit-button ${isValid ? "active" : "inactive"}`}>
           {t("contact.form.submit")}
         </button>
-      </form>)}
-      
+      </form>
       {showPopup && (
         <div className="popup-overlay">
           <div className="popup-box">

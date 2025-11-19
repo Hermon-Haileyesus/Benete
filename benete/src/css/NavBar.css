@@ -38,7 +38,7 @@
    line-height: 70px; 
 }
 .logo-image{
-    height: 40px;
+    height: 30px;
     vertical-align: middle;
 }
 .nav-links{
@@ -51,7 +51,7 @@
   color: inherit;
   margin: 0 20px;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 17px;
   letter-spacing: 2px;
   cursor: pointer;
   border-bottom: 3px solid transparent;
@@ -61,6 +61,34 @@
   border-bottom: 3px solid #fff;
 }
 
+
+
+nav.scrolled.ideology-style {
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.nav.ideology-style .nav-link {
+  color: #4d1edf;
+}
+
+.nav.ideology-style .logo-image {
+  content: url('../assets/Benete_logoblue.png'); /* Replace with your blue logo path */
+  height: 30px;
+  vertical-align: middle;
+}
+.nav.ideology-style .nav-content {
+  color: #4d1edf;
+}
+
+.nav.nav.ideology-style.nav-logo{
+   line-height: 70px; 
+}
+.nav.ideology-style .nav-link:hover,
+.nav.ideology-style .nav-link:focus {
+  border-bottom: 3px solid #4d1edf;
+}
 
 
 
@@ -89,7 +117,7 @@
   box-shadow: -4px 0 12px rgba(0, 0, 0, 0.1);
   border-left: 1px solid #eee;
   font-family: 'Rubik', sans-serif;
-  font-size: 16px;
+  font-size: 17px;
   z-index: 999;
 }
 

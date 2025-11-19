@@ -1,12 +1,9 @@
 import "../css/BeneteContact.css";
 import { FaPhoneAlt, FaEnvelope } from "react-icons/fa";
-import { useNavigate } from "react-router-dom";
 import { useLanguage } from "../contexts/LanguageContext";
-import { FiChevronRight } from "react-icons/fi";
 
 
 export default function BeneteContact() {
-  const navigate = useNavigate();
   const { t } = useLanguage();
   return (
     <section className="benete-contact">
@@ -34,10 +31,6 @@ export default function BeneteContact() {
                 <p><a href="mailto:kari.backman@benete.com"> kari.backman@benete.com</a></p>
             </div>
         </div>    
-        <p><span className="contact-link" onClick={() => navigate("/team")}>
-            Ota yhteyttä tiimiimme <FiChevronRight style={{verticalAlign: "middle" }} />
-         </span>
-        </p>
       </div>
 
       <div className="map-container">
