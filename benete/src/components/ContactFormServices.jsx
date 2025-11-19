@@ -24,7 +24,7 @@ export default function ContactFormServices() {
   if (showPopup) {
     const timer = setTimeout(() => {
       setShowPopup(false);
-    }, 5000); 
+    }, 10000); 
 
     return () => clearTimeout(timer); 
   }
