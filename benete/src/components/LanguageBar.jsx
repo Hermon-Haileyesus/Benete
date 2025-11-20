@@ -3,7 +3,7 @@ import { useState, useRef, useEffect } from "react";
 import { FaChevronDown } from "react-icons/fa";
 import '../css/LanguageBar.css'
 
-function LanguageBar({ className,isIdologyPage, isScrolled }) {
+function LanguageBar({ className,isSpecialStylePage, isScrolled }) {
   const { language, setLanguage } = useLanguage();
   const [isOpen, setIsOpen] = useState(false);
   const wrapperRef = useRef(null);
@@ -26,7 +26,7 @@ function LanguageBar({ className,isIdologyPage, isScrolled }) {
   }, []);
 
   return (
-    <div className={`language-select-wrapper ${className || ""} ${isScrolled ? "scrolled" : ""} ${isIdologyPage ? "ideology-style" : ""}`} ref={wrapperRef}>
+    <div className={`language-select-wrapper ${className || ""} ${isScrolled ? "scrolled" : ""} ${isSpecialStylePage ? "ideology-style" : ""}`} ref={wrapperRef}>
       <button
         className="language-select-button"
         onClick={() => setIsOpen(prev => !prev)}

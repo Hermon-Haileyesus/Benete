@@ -1,0 +1,83 @@
+.private-container{
+  margin: 40px auto;
+  font-family: 'Rubik', sans-serif;
+  padding: 10px;
+}
+.private-container h2{
+  text-align: center;
+  margin-bottom: 0;
+  font-size: 25px;
+  letter-spacing: 0.7px;
+}
+.private-container h5{
+  text-align: center;
+  margin-bottom: 0;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+.private-wrap {
+  display: grid;
+  gap: 20px; 
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.private-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 5px;
+}
+
+.private-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #4d1edf;
+  background-color: #fff;
+}
+
+.private-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: 'Rubik', sans-serif;
+  letter-spacing: 0.7px;
+  color: #16202d;
+  margin: 0;
+}
+
+.private-description {
+  color: #666;
+  font-size: 1rem;
+  font-family: 'Rubik', sans-serif;
+  letter-spacing: 0.4px;
+  margin: 0;
+}
+
+
+@media (min-width: 568px) {
+  .private-wrap {
+    
+    grid-template-columns: repeat(2, 1fr); /* Two columns on medium screens */
+  }
+  .private-container{
+    padding: 50px;
+  }
+  .private-container h2{
+  font-size: 35px;
+}
+}
+
+@media (min-width: 920px) {
+  .private-wrap {
+   
+    grid-template-columns: repeat(4, 1fr); /* Four columns on large screens */
+  }
+}

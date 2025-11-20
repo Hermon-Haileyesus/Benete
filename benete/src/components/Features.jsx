@@ -1,4 +1,4 @@
-import Card from "./Card";
+
 import { Activity, Moon, Droplets, Clock, TrendingUp, Shield } from "lucide-react";
 import { useLanguage } from "../contexts/LanguageContext";
 import "../css/Features.css"; // Import the CSS file
@@ -27,13 +27,13 @@ function Features  () {
           {features.map((feature, index) => {
             const Icon = feature.icon;
             return (
-              <Card key={index} className="feature-card">
+              <div key={index} className="feature-card">
                 <div className="feature-icon-wrapper">
                   <Icon className="feature-icon" size={28} />
                 </div>
                 <h3 className="feature-title">{t(feature.titleKey)}</h3>
                 <p className="feature-description">{t(feature.descKey)}</p>
-              </Card>
+              </div>
             );
           })}
         </div>

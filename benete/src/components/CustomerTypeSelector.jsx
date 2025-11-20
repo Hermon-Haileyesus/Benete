@@ -21,7 +21,7 @@ function CustomerTypeSelector ()  {
         <div className="selector-grid">
           <div
             className="selector-card private"
-            onClick={() => navigate("/private")}
+            onClick={() => navigate("/privatecustomers")}
           >
             <div className="selector-card-content">
               <div className="selector-icon private-icon">
@@ -36,7 +36,7 @@ function CustomerTypeSelector ()  {
 
           <div
             className="selector-card company"
-            onClick={() => navigate("/company")}
+            onClick={() => navigate("/businesscustomers")}
           >
             <div className="selector-card-content">
               <div className="selector-icon company-icon">

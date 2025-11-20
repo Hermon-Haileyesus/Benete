@@ -11,20 +11,20 @@ function NavBar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
-  const isIdologyPage = location.pathname === "/ideology";
+  const isSpecialStylePage = ["/ideology", "/privateustomers"].includes(location.pathname);
 
 
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 220);
+      setIsScrolled(window.scrollY > 180);
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
-      <nav className={`nav ${isScrolled ? "scrolled" : ""} ${isIdologyPage ? "ideology-style" : ""}`}>
+      <nav className={`nav ${isScrolled ? "scrolled" : ""}  ${isSpecialStylePage ? "ideology-style" : ""}`}>
         <div className="nav-content">
           <div className="nav-logo">
                 <Link to="/">
@@ -44,7 +44,7 @@ function NavBar() {
             <Link to="/contact" className="nav-link">
               {t("nav.contact")}
             </Link>
-            <LanguageBar className="language-bar-desktop" isScrolled={isScrolled} isIdologyPage={isIdologyPage} />
+            <LanguageBar className="language-bar-desktop" isScrolled={isScrolled} isSpecialStylePage={isSpecialStylePage} />
           </div>
             <button
               className="menu-icon"
