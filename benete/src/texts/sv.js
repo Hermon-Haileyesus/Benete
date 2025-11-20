@@ -6,7 +6,7 @@ export default {
   "nav.contact": "Kontakt",
   "header.title":"BeneCare",
   "header.subtitle": "Vi säkerställer att äldre får rätt vård i rätt tid.",
-  "homepage.introduction_title":"BeneCare — Smart stöd för vårdarbete och vardagligt välbefinnande",
+  "homepage.introduction_title":"Smart stöd för vårdarbete och vardagligt välbefinnande",
   "homepage.introduction_p1" : "BeneCare är utvecklat för vårdpersonal — inklusive personal inom äldrevård, sjuksköterskor, läkare och sjukgymnaster — samt privatanvändare som vill övervaka sina närståendes välbefinnande säkert och diskret.",
   "homepage.introduction_p2": "Tjänsten erbjuder dygnet-runt-övervakning utan bärbara enheter, vilket gör både professionell vård och vardagligt stöd mer effektivt och meningsfullt. BeneCare använder sensorteknik och intelligenta algoritmer för att modellera en persons dagliga rytm och beteende. ",
   "homepage.introduction_p3" :"Denna data hjälper till att upptäcka förändringar i hälsa, välbefinnande, funktionsförmåga och kognition — vilket möjliggör snabba åtgärder innan akut vård behövs.",

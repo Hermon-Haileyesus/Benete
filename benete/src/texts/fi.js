@@ -6,7 +6,7 @@ export default {
     "nav.contact": "Yhteystiedot",
     "header.title":"BeneCare",
     "header.subtitle":"Varmistamme, että ikäihmiset saavat oikeanlaista hoitoa oikea-aikaisesti.",
-    "homepage.introduction_title":"BeneCare – Älykäs tuki hoitotyöhön ja arjen hyvinvointiin",
+    "homepage.introduction_title":"Älykäs tuki hoitotyöhön ja arjen hyvinvointiin",
     "homepage.introduction_p1" : "BeneCare on kehitetty hoitotyön ammattilaisille – vanhustenhoidon henkilöstölle,  sairaanhoitajille, lääkäreille ja fysioterapeuteille – sekä yksityiskäyttäjille, jotka haluavat seurata läheistensä hyvinvointia turvallisesti ja huomaamattomasti.",
     "homepage.introduction_p2": "Palvelu tarjoaa ympärivuorokautisen seurannan ilman puettavia laitteita, tehden hoitotyöstä ja arjen huolenpidosta tehokkaampaa ja mielekkäämpää. BeneCare hyödyntää sensoriteknologiaa ja älykkäitä algoritmeja mallintaakseen henkilön päivittäistä rytmiä ja toimintatapoja. ",
     "homepage.introduction_p3" :"Näiden tietojen avulla voidaan havaita muutoksia terveydessä, hyvinvoinnissa, toimintakyvyssä ja kognitiossa – ja reagoida ajoissa ennen kuin tilanne vaatii akuuttia hoitoa.",

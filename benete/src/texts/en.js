@@ -6,7 +6,7 @@ export default {
     "nav.contact": "Contact",
     "header.title":"BeneCare",
     "header.subtitle":"We ensure that elderly people receive the right care at the right time.",
-    "homepage.introduction_title":"BeneCare – Smart Support for Care Work and Everyday Wellbeing",
+    "homepage.introduction_title":"Smart Support for Care Work and Everyday Wellbeing",
     "homepage.introduction_p1" : "BeneCare is designed for healthcare professionals — including elderly care staff, nurses, doctors, and physiotherapists — as well as private users who want to monitor the wellbeing of their loved ones safely and unobtrusively.",
     "homepage.introduction_p2": "The service provides round-the-clock monitoring without wearable devices, making both professional care and everyday support more efficient and meaningful. BeneCare uses sensor technology and intelligent algorithms to model a person’s daily rhythm and behavior. ",
     "homepage.introduction_p3" :"This data helps detect changes in health, wellbeing, functional ability, and cognition — enabling timely responses before urgent care is needed.",
