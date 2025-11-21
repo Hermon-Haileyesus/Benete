@@ -19,6 +19,7 @@ export default {
     "selector.private.description": "Secure your loved one's wellbeing and monitoring at home",
     "selector.company.title": "Business Customers",
     "selector.company.description": "Improve care efficiency and enhance service quality",
+    "common.readMore":"Read more",
     // Carousel
     "carousel.elderly.title": "Safe daily life for the elderly",
     "carousel.elderly.desc": "BeneCare supports independent living and provides a sense of security in everyday life.",

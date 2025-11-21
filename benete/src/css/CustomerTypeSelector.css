@@ -45,7 +45,7 @@
   background-color: #fff;
   border: 2px solid #e5e7eb;
   border-radius: 12px;
-  padding: 0.5remrem;
+  padding: 0.5rem;
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -91,6 +91,26 @@
   font-family: 'Rubik', sans-serif;
   letter-spacing: 0.4px;
 }
+.selector-readmore {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #4d1edf;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: 'Rubik', sans-serif;
+  letter-spacing: 1.7px;
+  font-weight: 600;
+}
+
+.selector-readmore .arrow {
+  display: flex;              
+  align-items: center; 
+  transform: scaleX(2);
+  
+}
+
+
 
 @media (max-width:320px) {
   .selector-card {

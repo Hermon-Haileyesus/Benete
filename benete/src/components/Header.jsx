@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom";
 
 function Header({ image, title, subtitle, isWhite,isYellow, isCentered }) {
   const location = useLocation();
-  const isSpecialStylePage = ["/businesscustomers", "/privatecustomers"].includes(location.pathname);
+  const isSpecialStylePage = ["/companycustomers", "/privatecustomers"].includes(location.pathname);
   return (
     <section className="header">
       <img src={image} alt="header background" className="header-image" />

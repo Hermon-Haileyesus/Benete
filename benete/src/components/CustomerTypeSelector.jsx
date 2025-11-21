@@ -1,6 +1,6 @@
 import { useLanguage } from "../contexts/LanguageContext";
 import { useNavigate } from "react-router-dom";
-import { Users, Building2 } from "lucide-react";
+import { Users, Building2, ArrowRight } from "lucide-react";
 import "../css/CustomerTypeSelector.css";
 import '@fontsource/rubik';
 
@@ -31,12 +31,13 @@ function CustomerTypeSelector ()  {
               <p className="selector-card-description">
                 {t("selector.private.description")}
               </p>
+              <p className="selector-readmore"> {t("common.readMore")}<span className="arrow"><ArrowRight size={16} strokeWidth={2} /></span></p>
             </div>
           </div>
 
           <div
             className="selector-card company"
-            onClick={() => navigate("/businesscustomers")}
+            onClick={() => navigate("/companycustomers")}
           >
             <div className="selector-card-content">
               <div className="selector-icon">
@@ -46,6 +47,8 @@ function CustomerTypeSelector ()  {
               <p className="selector-card-description">
                 {t("selector.company.description")}
               </p>
+              <p className="selector-readmore"> {t("common.readMore")}<span className="arrow"><ArrowRight size={16} strokeWidth={2} /></span></p>
+
             </div>
           </div>
         </div>

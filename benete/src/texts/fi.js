@@ -19,6 +19,7 @@ export default {
     "selector.private.description": "Turvaa läheisesi hyvinvointi ja seuranta kotona",
     "selector.company.title": "Yritysasiakkaat",
     "selector.company.description": "Tehosta hoitotyötä ja paranna palvelun laatua",
+    "common.readMore":"Lue lisää",
     // Carousel
     "carousel.elderly.title": "Turvallinen arki ikäihmisille",
     "carousel.elderly.desc": "BeneCare tukee itsenäistä asumista ja antaa turvallisuuden tunteen päivittäisessä elämässä.",
