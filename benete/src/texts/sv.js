@@ -109,9 +109,39 @@ export default {
     "contact.phone": "+358 50 052 4514",
     "contact.email": "kari.backman@benete.com",
     "contact.heading.intro": "Låt oss prata",
-    "contact.heading.title": "Hur kan vi hjälpa till?"
+    "contact.heading.title": "Hur kan vi hjälpa till?",
 
-
+  // Ideology Page
+    "ideology.hero.subtitle": "Som vårdexpert",
+    "ideology.hero.title1": "Förenklar vardagen",
+    "ideology.hero.title1b": "och ökar tryggheten",
+    "ideology.hero.title2": "Ger sinnesro",
+    "ideology.hero.title2b": "till familjer och anhöriga",
+    "ideology.hero.title3": "Stödjer aktivt",
+    "ideology.hero.title3b": "och självständigt boende för äldre",
+    
+    "ideology.values.care": "Omsorg",
+    "ideology.values.careDesc": "Varje person förtjänar uppmärksamhet, värme och individualiserad vård",
+    "ideology.values.safety": "Säkerhet",
+    "ideology.values.safetyDesc": "Pålitlig teknologi och övervakning dygnet runt garanterar sinnesro",
+    "ideology.values.quality": "Kvalitet",
+    "ideology.values.qualityDesc": "Vi är engagerade i högsta kvalitet i allt vi gör",
+    "ideology.section1.title": "Insikter från dagliga rutiner",
+    "ideology.section1.p1": "Enkla dagliga aktiviteter skapar rytmen i vårt vardagliga liv, såsom matlagning, vila och personlig hygien. Dessa är en del av vårt normala liv, men de har också en större betydelse än vi tror. Kombinerade och analyserade ger de värdefulla insikter om vårt fysiska och emotionella välbefinnande.",
+    "ideology.section1.p2": "Med BeneCare-tjänsten är det möjligt att identifiera förändringar i funktionsförmåga och kognition i ett tidigt skede. Till skillnad från allmänna hälso- och välbefinnandetjänster analyserar vi en persons liv holistiskt och täcker mycket mer än bara fysiologisk data.",
+    "ideology.section2.title": "Livsmiljö",
+    "ideology.section2.p1": "Livsmiljön har känt stor påverkan på vårt välbefinnande och kan också berätta mycket om vårt dagliga liv. Användningen av smarta teknologier ökar ständigt och det är bara en tidsfråga innan våra hem är utrustade med olika sensorteknologier som möjliggör realtidsövervakning av livet.",
+    "ideology.section2.p2": "BeneCare-tjänstens sofistikerade algoritmer känner igen en persons dagliga aktiviteter, modellerar beteenden i deras egen livsmiljö och bedömer möjliga förändringar i funktionsförmåga. Genom att observera och analysera dagliga aktiviteter kan skadliga förändringar i funktionsförmåga upptäckas i ett mycket tidigare skede än vad som är möjligt med konventionella metoder.",
+    "ideology.section3.title": "Aktivt åldrande",
+    "ideology.section3.p1": "Livskvaliteten förbättras när en person kan fungera självständigt i sin egen välbekanta miljö. Det skapar en känsla av trygghet och oberoende från andra. Grunden för aktivt åldrande är egen aktivitet och motivation för livet.",
+    "ideology.section3.p2": "Tidig identifiering av förändringar i funktionsförmåga och kognitiva störningar hjälper till att tillhandahålla tidig och precis vård. Detta har stor påverkan på människors liv och lägger till aktiva och oberoende dagar i livet. Att möjliggöra mild omsorg och vårda känslan av oberoende är våra huvudmål.",
+    "ideology.section3.p3": "Som ett resultat av vår verksamhet gynnas sociala och hälsovården avsevärt av minskade vårdkostnader för äldre och nya, mer effektiva tjänster.",
+    "ideology.section4.title": "MinData",
+    "ideology.section4.p1": "Data som samlas in från individer är extremt känslig. Vår tjänst gör det möjligt för våra kunder att ha full tillgång och kontroll över sina egna data. Vår tjänst följer de senaste kraven på dataskydd och informationssäkerhet och tar hänsyn till dessa redan i utformningen av tjänster, tillsammans med våra egna etiska data- och digitala värdighets principer.",
+    "ideology.section5.title": "Våra värderingar",
+    "ideology.section5.p1": "Personliga förändringar i funktionsförmåga övervakas eller registreras vanligtvis inte förrän det är för sent och en diagnos har ställts. Många människor är beroende av andra för att klara dagen, vilket försvagar deras känsla av oberoende. Det är viktigt att inse vad individuellt oberoende betyder för varje person.",
+    "ideology.section5.p2": "Med vår tjänst är det möjligt att identifiera funktionella och minnesrelaterade störningar så tidigt som möjligt och påbörja nödvändiga behandlingsåtgärder så tidigt som möjligt.",
+ 
 
 
 };

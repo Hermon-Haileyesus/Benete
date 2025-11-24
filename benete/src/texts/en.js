@@ -110,9 +110,39 @@ export default {
     "contact.phone": "+358 50 052 4514",
     "contact.email": "kari.backman@benete.com",
     "contact.heading.intro": "Let’s talk",
-    "contact.heading.title": "How can we help?"
+    "contact.heading.title": "How can we help?",
 
-
+   // Ideology Page
+    "ideology.hero.subtitle": "As a care expert",
+    "ideology.hero.title1": "Makes everyday life easier",
+    "ideology.hero.title1b": "and increases security",
+    "ideology.hero.title2": "Brings peace of mind",
+    "ideology.hero.title2b": "to families and loved ones",
+    "ideology.hero.title3": "Supports active",
+    "ideology.hero.title3b": "and independent living for seniors",
+    
+    "ideology.values.care": "Caring",
+    "ideology.values.careDesc": "Every person deserves attention, warmth, and individualized care",
+    "ideology.values.safety": "Security",
+    "ideology.values.safetyDesc": "Reliable technology and 24/7 monitoring ensure peace of mind",
+    "ideology.values.quality": "Quality",
+    "ideology.values.qualityDesc": "We are committed to the highest quality in everything we do",
+    "ideology.section1.title": "Insights from daily routines",
+    "ideology.section1.p1": "Simple daily activities create the rhythm of our everyday life, such as cooking, rest, and personal hygiene. These are part of our normal lives, but they also have a greater significance than we think. Combined and analyzed, they provide valuable insights into our physical and emotional well-being.",
+    "ideology.section1.p2": "With the BeneCare service, it is possible to identify changes in functional capacity and cognition at an early stage. Unlike general health and wellness services, we analyze a person's life holistically, covering much more than just physiological data.",
+    "ideology.section2.title": "Living environment",
+    "ideology.section2.p1": "The living environment is known to have a great impact on our well-being and can also tell a lot about our daily life. The use of smart technologies is constantly increasing and it is only a matter of time before our homes are equipped with various sensor technologies enabling real-time life monitoring.",
+    "ideology.section2.p2": "BeneCare service's sophisticated algorithms recognize a person's daily activities, model behaviors in their own living environment, and assess possible changes in functional capacity. By observing and analyzing daily activities, harmful changes in functional capacity can be detected at a much earlier stage than is possible with conventional methods.",
+    "ideology.section3.title": "Active aging",
+    "ideology.section3.p1": "Quality of life improves when a person can function independently in their own familiar environment. It creates a sense of security and independence from others. The foundation of active aging is one's own activity and motivation for life.",
+    "ideology.section3.p2": "Early identification of changes in functional capacity and cognitive disorders helps in providing early and precise care. This has a great impact on people's lives, adding active and independent days to life. Enabling gentle care and cherishing the sense of independence are our key goals.",
+    "ideology.section3.p3": "As a result of our activities, social and healthcare benefits significantly from reduced elderly care costs and new, more effective services.",
+    "ideology.section4.title": "MyData",
+    "ideology.section4.p1": "Data collected from individuals is extremely sensitive. Our service enables our customers to have full access and control over their own data. Our service complies with the latest data protection and information security requirements, taking these into account already in the design of services, together with our own ethical data and digital dignity principles.",
+    "ideology.section5.title": "Our values",
+    "ideology.section5.p1": "Personal changes in functional capacity are usually not monitored or recorded until it is too late and a diagnosis has been given. Many people are dependent on others to get through the day, which weakens their sense of independence. It is important to recognize what individual independence means for each person.",
+    "ideology.section5.p2": "With our service, it is possible to identify functional and memory-related disorders as early as possible and start the necessary treatment measures as early as possible.",
+ 
 
 
     

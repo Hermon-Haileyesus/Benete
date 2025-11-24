@@ -128,7 +128,7 @@
 /* Small phones (≤480px) */
 @media (max-width: 480px) {
   .header-content h1 {
-    font-size: 40px;
+    font-size: 35px;
   }
 
   .header-content p {

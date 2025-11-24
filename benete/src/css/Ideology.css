@@ -1,0 +1,124 @@
+.ideology-container{
+    padding: 80px 10px;
+}
+.ideology-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.ideology-content img {
+  width: 100%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  flex: 1;
+  max-width: 500px;
+  height: auto;
+  object-fit: cover;
+}
+
+.ideology-text {
+  flex: 1;
+  margin-top: 60px;
+}
+
+.ideology-text h2 {
+  font-size: 35px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #16202d;
+  letter-spacing: 0.7px;
+  font-family: 'Rubik';
+  margin-top: 10px;
+  line-height: 1.2;
+}
+
+.ideology-text h5 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-size: 17px;
+    font-weight: 400;
+    color: #16202d;
+    line-height: 1.6;
+    letter-spacing: 0.3px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.ideology-container2{
+    background-color: #f3efe9;
+    padding: 80px 10px;
+}
+
+.ideology-content2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 1000px;
+    margin: auto;
+}
+.ideology-title{
+    width: 30%;
+}
+.ideology-discription{
+    width: 70%;
+}
+.ideology-title h2 {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #2B1096;
+  letter-spacing: 0.7px;
+  font-family: 'Rubik';
+  margin-top: 10px;
+  line-height: 1.2;
+}
+.ideology-discription h5{
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-size: 17px;
+    font-weight: 400;
+    color: #16202d;
+    line-height: 1.6;
+    letter-spacing: 0.3px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+@media  (max-width:860px) {
+    .ideology-content{
+        flex-direction: column;
+        gap: 2px;
+    }
+    .ideology-content img {
+    max-height:200px ;
+    max-width: 100%;
+    order: -1;}
+    .ideology-text {
+  flex: 1;
+  margin-top: 0;
+}
+
+.ideology-text h2 {
+  font-size: 30px;
+}
+
+.ideology-text h5 {
+font-size: 16px;
+}
+.ideology-content2{
+    flex-direction: column;
+}
+.ideology-title{
+    width: 100%;
+    
+}
+.ideology-title h2{
+    font-size: 30px;
+}
+.ideology-discription{
+    width: 100%;
+}
+.ideology-discription h5{
+    font-size: 16px;
+}
+}

@@ -109,7 +109,38 @@ export default {
     "contact.phone": "+358 50 052 4514",
     "contact.email": "kari.backman@benete.com",
     "contact.heading.intro": "Jutellaan",
-    "contact.heading.title": "Kuinka voimme auttaa?"
+    "contact.heading.title": "Kuinka voimme auttaa?",
+    // Ideology Page
+    "ideology.hero.subtitle": "Hoitotyön asiantuntijana",
+    "ideology.hero.title1": "Helpottaa arkea",
+    "ideology.hero.title1b": "ja lisää turvallisuutta",
+    "ideology.hero.title2": "Tuo mielen rauhaa",
+    "ideology.hero.title2b": "perheille ja omaisille",
+    "ideology.hero.title3": "Tukee ikäihmisten aktiivista",
+    "ideology.hero.title3b": "ja vapaata elämää",
+    
+    "ideology.values.care": "Välittäminen",
+    "ideology.values.careDesc": "Jokainen ihminen ansaitsee huomiota, lämpöä ja yksilöllistä hoivaa",
+    "ideology.values.safety": "Turvallisuus",
+    "ideology.values.safetyDesc": "Luotettava teknologia ja ympärivuorokautinen valvonta takaavat rauhan mielen",
+    "ideology.values.quality": "Laatu",
+    "ideology.values.qualityDesc": "Sitoudumme korkeimpaan laatuun kaikessa tekemisessämme",
+    "ideology.section1.title": "Oivalluksia päivittäisistä rutiineista",
+    "ideology.section1.p1": "Yksinkertaiset arkipäivän toiminnot luovat rytmin jokapäiväiseen elämäämme, kuten ruoan valmistus, lepo sekä hygieniasta huolehtiminen. Nämä ovat osa tavallista elämäämme, mutta niillä on myös ajateltua suurempi merkitys. Yhdistettynä ja analysoituna ne tuottavat arvokkaita havaintoja fyysisestä ja emotionaalisesta hyvinvoinnistamme.",
+    "ideology.section1.p2": "BeneCare palvelun avulla on mahdollista tunnistaa toimintakyvyssä ja kognitiossa tapahtuvia muutoksia jo aikaisessa vaiheessa. Yleisistä terveys- ja hyvinvointipalveluista poiketen analysoimme henkilön elämää kokonaisvaltaisesti kattaen paljon enemmän kuin pelkkiä fysiologisia tietoja.",
+    "ideology.section2.title": "Elinympäristö",
+    "ideology.section2.p1": "Elinympäristöllä on tunnetusti suuri vaikutus hyvinvointiimme ja se voi myös kertoa paljon jokapäiväisestä elämästämme. Älyteknologioiden käyttö yleistyy jatkuvasti ja on vain ajan kysmys, kun kotimme ovat varustettuja moninaisilla sensoriteknologioilla mahdollistaen reaaliaikaisen elämän seuraamisen.",
+    "ideology.section2.p2": "BeneCare palvelun sofistikoituneet algoritmit tunnistavat ihmisen päivittäisiä toimintoja, mallintavat toimintatapoja tämän omassa elinympäristössä ja arvioivat toimintakyvyssä tapahtuvia mahdollisia muutoksia. Päivittäistä toimintaa havainnoimalla ja analysoimalla haitalliset muutokset toimintakyvyssä pystytään havaitsemaan paljon aikaisemmassa vaiheessa, kuin mitä tavanomaisten menetelmien avulla on mahdollista.",
+    "ideology.section3.title": "Elinvoimainen ikääntyminen",
+    "ideology.section3.p1": "Elämänlaatu paranee kun henkilö voi toimia itsenäisesti omassa tutussa ympäristössä. Se luo turvallisuudentunnetta ja riippumattomuutta muista. Elinvoimaisen ikääntymisen perusta on oma aktiivisuus ja motivaatio elämään.",
+    "ideology.section3.p2": "Toimintakyvyn muutosten ja kognitiivisten häiriöiden varhainen tunnistaminen auttaa aikaisen ja täsmällisen hoidon tuottamisessa. Tällä on suuri vaikutus ihmisten elämään lisäten elämän aktiivisia ja itsenäisiä päiviä. Hellän huolenpidon mahdollistaminen ja itsenäisyyden tunteen vaaliminen ovat keskeisiä tavoitteitamme.",
+    "ideology.section3.p3": "Toimintamme tuloksena sosiaali- ja terveydenhuolto hyötyy merkittävästi alentuneista vanhusten hoitokustannuksista ja uusista tehokkaammista palveluista.",
+    "ideology.section4.title": "OmaData",
+    "ideology.section4.p1": "Henkilöistä kerätty data on erittäin sensitiivistä. Palvelumme mahdollistaa asiakkaillemme täyden pääsyn ja kontrollin heidän omiin tietoihinsa. Palvelumme noudattaa uusimpia tietosuojan ja tietoturvallisuuden vaatimuksia huomioimalla nämä jo palvelujen suunnittelussa yhdessä meidän omien datan eettisten ja digitaalisen arvokkuuden periaatteiden kanssa.",
+    "ideology.section5.title": "Arvomme",
+    "ideology.section5.p1": "Henkilökohtaisten toimintakyvyn muutoksia ei yleensä seurata tai kirjata ennen kuin on liian myöhäistä ja diagnoosi on annettu. Monet ihmiset ovat riippuvaisia toisista selvitäkseen päivästä mikä heikentää heidän itsenäisyyden tunnettansa. On tärkeää havaita mitä yksilöllinen itsenäisyys merkitsee jokaiselle.",
+    "ideology.section5.p2": "Palvelumme avulla on mahdollista tunnistaa toimintaan ja muistiin liittyviä häiriöitä mahdollisimman varhaisessa vaiheessa ja aloittaa tarvittavat hoitotoimenpiteet mahdollisimman aikaisin.",
+ 
 
 
     
