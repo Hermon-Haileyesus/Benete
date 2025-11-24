@@ -5,6 +5,7 @@ import { Heart, Shield, Clock, Users } from "lucide-react";
 import Header from '../components/Header';
 import headerImg from '../assets/header_img/privateCustomer_header.jpg';
 import ContactFormServices from '../components/ContactFormServices';
+import ReadMoreButton from '../components/ReadMore';
 
 function CustomerSection() {
   const { t } = useLanguage();
@@ -61,7 +62,13 @@ function CustomerSection() {
           </Card>
         </div>
       </div>
-      <ContactFormServices />
+      <div className='readMore'>
+        <div className='readMore-content'>
+          <h2>{t("readMore.description")}</h2>
+          <ReadMoreButton to="/services" />
+        </div>  
+      </div>
+      
     </section>
   );
 }

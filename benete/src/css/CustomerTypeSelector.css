@@ -106,7 +106,7 @@
 .selector-readmore .arrow {
   display: flex;              
   align-items: center; 
-  transform: scaleX(2);
+  transform: scaleX(1.5);
   
 }
 

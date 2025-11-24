@@ -20,6 +20,7 @@ export default {
   "selector.company.title": "Företagskunder",
   "selector.company.description": "Förbättra vårdeffektiviteten och höj servicekvaliteten",
   "common.readMore":"Läs mer",
+  "readMore.description":"Läs mer om våra tjänster och hur vi erbjuder ett unikt sätt att analysera livet.",
    // Carousel
     "carousel.elderly.title": "Säkert dagligt liv för äldre",
     "carousel.elderly.desc": "BeneCare stöder självständigt boende och ger en känsla av trygghet i vardagen.",

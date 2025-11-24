@@ -20,6 +20,8 @@ export default {
     "selector.company.title": "Business Customers",
     "selector.company.description": "Improve care efficiency and enhance service quality",
     "common.readMore":"Read more",
+    "readMore.description":"Learn more about our services and how we offer a unique way to analyze life.",
+    
     // Carousel
     "carousel.elderly.title": "Safe daily life for the elderly",
     "carousel.elderly.desc": "BeneCare supports independent living and provides a sense of security in everyday life.",

@@ -20,6 +20,7 @@ export default {
     "selector.company.title": "Yritysasiakkaat",
     "selector.company.description": "Tehosta hoitotyötä ja paranna palvelun laatua",
     "common.readMore":"Lue lisää",
+    "readMore.description":"Lue lisää palveluistamme ja miten tarjoamme ainutlaatuisen tavan analysoida elämää.",
     // Carousel
     "carousel.elderly.title": "Turvallinen arki ikäihmisille",
     "carousel.elderly.desc": "BeneCare tukee itsenäistä asumista ja antaa turvallisuuden tunteen päivittäisessä elämässä.",
