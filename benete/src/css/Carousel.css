@@ -81,9 +81,8 @@
   
   transition: all 0.3s ease;
   background-color: #fff;
-  border-radius: 50%;   /* makes it a circle */
-  width: 15px;          /* equal width and height */
-  height: 15px;
+  border-radius: 50%;   
+  width: 15px;         
   border: none;
   cursor: pointer;
   margin-left: 10px;
