@@ -37,16 +37,31 @@
   gap: 1rem;
 }
 
+
 .benefit-description {
   position: relative;
-
+  padding-left: 20px;
   margin: 6px 0;
-  color: #161616;
+  color: #6b7280;
   line-height: 1.6;
   letter-spacing: 0.4px;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  text-align: center;
 }
+
+.benefit-description::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.35em; 
+  width: 8px;
+  height: 8px;
+  background-color: #4d1edf;
+  border-radius: 50%;
+}
+
+
+
+
 
 
 
@@ -62,11 +77,12 @@
   background-color: #fff;
   padding: 2rem;
   transition: all 0.3s ease;
+  box-shadow: 0 10px 20px rgba(33, 5, 144, 0.08);
   
 }
 
 .benefit-card:hover {
-  box-shadow: 0 10px 20px rgba(33, 5, 144, 0.08);
+
   transform: translateY(-4px);
 }
 
@@ -74,8 +90,7 @@
   width: 100%;
   height: 3.5rem;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  
   margin-bottom: 1rem;
 }
 
@@ -87,10 +102,10 @@
 
 
 .benefit-title {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
   font-family: 'Rubik', sans-serif;
   letter-spacing: 0.7px;
-  text-align: center;
+  
 }

@@ -3,7 +3,7 @@ import { useLanguage } from "../contexts/LanguageContext";
 import elderlyImage from "../assets/images/carousel-elderly.jpg";
 import familyImage from "../assets/images/carousel-family.jpg";
 import nurseImage from "../assets/images/carousel-nurse.jpg";
-import assistantImage from "../assets/images/sensor.jpg";
+import assistantImage from "../assets/images/dataAnlz.jpg";
 import "../css/Carousel.css";
 import '@fontsource/rubik';
 
