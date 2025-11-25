@@ -1,7 +1,7 @@
 import { useLanguage } from "../contexts/LanguageContext";
 import "../css/FundingBlock.css"; // Create this CSS file
-import Eu from "../assets/images/EU.SVG";
-import Ely from "../assets/images/ELY.SVG";
+import Eu from "../assets/images/EU.svg";
+import Ely from "../assets/images/ELY.svg";
 
 function FundingBlock() {
   const { t } = useLanguage();
