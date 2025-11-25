@@ -142,6 +142,23 @@ export default {
     "ideology.section5.p1": "Personliga förändringar i funktionsförmåga övervakas eller registreras vanligtvis inte förrän det är för sent och en diagnos har ställts. Många människor är beroende av andra för att klara dagen, vilket försvagar deras känsla av oberoende. Det är viktigt att inse vad individuellt oberoende betyder för varje person.",
     "ideology.section5.p2": "Med vår tjänst är det möjligt att identifiera funktionella och minnesrelaterade störningar så tidigt som möjligt och påbörja nödvändiga behandlingsåtgärder så tidigt som möjligt.",
  
-
+    // Benefits
+    "benefits.title": "Fördelar för alla parter",
+    "benefits.subtitle": "BeneCare förbättrar vårdens kvalitet och stöder äldres välbefinnande",
+    "benefits.caregivers": "För vårdgivare",
+    "benefits.caregivers.1": "Mer effektivt och meningsfullt vårdarbete",
+    "benefits.caregivers.2": "Tidigare intervention vid problem",
+    "benefits.caregivers.3": "Mer exakt respons på invånares behov",
+    "benefits.caregivers.4": "24/7 säker övervakning",
+    "benefits.elderly": "För äldre",
+    "benefits.elderly.1": "Normalt dagligt liv utan påträngande enheter",
+    "benefits.elderly.2": "Ingen bärbar teknik",
+    "benefits.elderly.3": "Bättre livskvalitet",
+    "benefits.elderly.4": "Känsla av trygghet",
+    "benefits.family": "För familjer och professionella",
+    "benefits.family.1": "Uppdaterad information om funktionsförmåga",
+    "benefits.family.2": "Tidig upptäckt av uppkommande problem",
+    "benefits.family.3": "Datadrivna vårdbeslut",
+    "benefits.family.4": "Transparent rapportering",
 
 };

@@ -3,6 +3,7 @@ import '@fontsource/rubik';
 import '../css/Home.css'
 import CustomerTypeSelector from "../components/CustomerTypeSelector";
 import Carousel from "../components/Carousel";
+import Benefits from "../components/Benefit";
 
 
 
@@ -23,6 +24,7 @@ function Home() {
           </div>
         </div>
         <CustomerTypeSelector/>
+        <Benefits/>
         
       </div>
       

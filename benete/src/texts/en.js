@@ -142,7 +142,25 @@ export default {
     "ideology.section5.title": "Our values",
     "ideology.section5.p1": "Personal changes in functional capacity are usually not monitored or recorded until it is too late and a diagnosis has been given. Many people are dependent on others to get through the day, which weakens their sense of independence. It is important to recognize what individual independence means for each person.",
     "ideology.section5.p2": "With our service, it is possible to identify functional and memory-related disorders as early as possible and start the necessary treatment measures as early as possible.",
- 
+    // Benefits
+    "benefits.title": "Benefits for all parties",
+    "benefits.subtitle": "BeneCare improves the quality of care and supports the well-being of elderly people",
+    "benefits.caregivers": "For Caregivers",
+    "benefits.caregivers.1": "More efficient and meaningful care work",
+    "benefits.caregivers.2": "Earlier intervention in problems",
+    "benefits.caregivers.3": "More precise response to residents' needs",
+    "benefits.caregivers.4": "24/7 secure monitoring",
+    "benefits.elderly": "For the Elderly",
+    "benefits.elderly.1": "Normal daily life without intrusive devices",
+    "benefits.elderly.2": "No wearable technology",
+    "benefits.elderly.3": "Better quality of life",
+    "benefits.elderly.4": "Sense of security",
+    "benefits.family": "For Families & Professionals",
+    "benefits.family.1": "Up-to-date information on functional capacity",
+    "benefits.family.2": "Early detection of emerging problems",
+    "benefits.family.3": "Data-driven care decisions",
+    "benefits.family.4": "Transparent reporting",
+    
 
 
     

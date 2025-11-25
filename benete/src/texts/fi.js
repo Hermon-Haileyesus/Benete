@@ -140,7 +140,24 @@ export default {
     "ideology.section5.title": "Arvomme",
     "ideology.section5.p1": "Henkilökohtaisten toimintakyvyn muutoksia ei yleensä seurata tai kirjata ennen kuin on liian myöhäistä ja diagnoosi on annettu. Monet ihmiset ovat riippuvaisia toisista selvitäkseen päivästä mikä heikentää heidän itsenäisyyden tunnettansa. On tärkeää havaita mitä yksilöllinen itsenäisyys merkitsee jokaiselle.",
     "ideology.section5.p2": "Palvelumme avulla on mahdollista tunnistaa toimintaan ja muistiin liittyviä häiriöitä mahdollisimman varhaisessa vaiheessa ja aloittaa tarvittavat hoitotoimenpiteet mahdollisimman aikaisin.",
- 
+    // Benefits
+    "benefits.title": "Hyödyt kaikille osapuolille",
+    "benefits.subtitle": "BeneCare parantaa hoitotyön laatua ja tukee ikäihmisten hyvinvointia",
+    "benefits.caregivers": "Hoitajille",
+    "benefits.caregivers.1": "Tehokkaampaa ja mielekkäämpää hoitotyötä",
+    "benefits.caregivers.2": "Aikaisempi puuttuminen ongelmiin",
+    "benefits.caregivers.3": "Täsmällisempi vastaus asukkaiden tarpeisiin",
+    "benefits.caregivers.4": "Ympärivuorokautinen turvallinen seuranta",
+    "benefits.elderly": "Ikäihmisille",
+    "benefits.elderly.1": "Normaali arki ilman häiritseviä laitteita",
+    "benefits.elderly.2": "Ei puettavaa teknologiaa",
+    "benefits.elderly.3": "Parempi elämänlaatu",
+    "benefits.elderly.4": "Turvallisuuden tunne",
+    "benefits.family": "Omaisille & Ammattilaisille",
+    "benefits.family.1": "Ajankohtainen tieto toimintakyvystä",
+    "benefits.family.2": "Varhaisessa vaiheessa olevien ongelmien havaitseminen",
+    "benefits.family.3": "Datan pohjalta tehdyt hoitopäätökset",
+    "benefits.family.4": "Läpinäkyvä raportointi",
 
 
     
