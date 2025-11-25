@@ -7,9 +7,9 @@ export default {
     "header.title":"BeneCare",
     "header.subtitle":"We ensure that elderly people receive the right care at the right time.",
     "homepage.introduction_title":"Smart Support for Care Work and Everyday Wellbeing",
-    "homepage.introduction_p1" : "BeneCare is designed for healthcare professionals — including elderly care staff, nurses, doctors, and physiotherapists — as well as private users who want to monitor the wellbeing of their loved ones safely and unobtrusively.",
+    "homepage.introduction_p1" : "BeneCare is designed for healthcare professionals including elderly care staff, nurses, doctors, and physiotherapists  as well as private users who want to monitor the wellbeing of their loved ones safely and unobtrusively.",
     "homepage.introduction_p2": "The service provides round-the-clock monitoring without wearable devices, making both professional care and everyday support more efficient and meaningful. BeneCare uses sensor technology and intelligent algorithms to model a person’s daily rhythm and behavior. ",
-    "homepage.introduction_p3" :"This data helps detect changes in health, wellbeing, functional ability, and cognition — enabling timely responses before urgent care is needed.",
+    "homepage.introduction_p3" :"This data helps detect changes in health, wellbeing, functional ability, and cognition  enabling timely responses before urgent care is needed.",
     "service.privacyTitle": "We Keep Personal Data Safe",
     "service.privacyText": "The analyses produced by BeneCare service are available to the senior, their relatives, and care staff through the web service or as printouts. The use of the service and data collection are always based on the person's consent. The collected personal data is not used or transmitted for any purpose other than related to the use of the service. In accordance with data protection law, the senior has the right to their own personal data and can request deletion of their personal data or termination of the service at any time.",
   
@@ -160,6 +160,12 @@ export default {
     "benefits.family.2": "Early detection of emerging problems",
     "benefits.family.3": "Data-driven care decisions",
     "benefits.family.4": "Transparent reporting",
+    
+    // Funding
+    "funding.horizon.title": "Horizon 2020 Research",
+    "funding.horizon.text": "Benete Oy has received funding from the European Union's Horizon 2020 research and innovation programme under grant agreement No 877503.",
+    "funding.ely.title": "ELY Funding",
+    "funding.ely.text": "Benete Oy has received funding from the Centre for Economic Development, Transport and the Environment for the BNT-MDR project. The project involves the further development of Benete Oy's elderly functional capacity analysis service.",
     
 
 

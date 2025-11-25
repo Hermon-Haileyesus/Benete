@@ -19,11 +19,11 @@ function Benefits  () {
           <p className="benefits-subtitle">{t("benefits.subtitle")}</p>
         </div>
 
-        <div className="features-grid">
+        <div className="benefits-grid">
           {benefits.map((benefit, index) => {
             const Icon = benefit.icon;
             return (
-              <div key={index} className="feature-card">
+              <div key={index} className="benefit-card">
                 <div className="benefit-icon-wrapper">
                   <Icon className="benefit-icon" size={28} />
                 </div>

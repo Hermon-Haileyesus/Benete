@@ -25,6 +25,7 @@
 .benefits-subtitle {
   font-size: 1.25rem;
   color: #6b7280;
+
   max-width: 48rem;
   margin: 0 auto;
   letter-spacing: 0.4px;
@@ -38,55 +39,39 @@
 
 .benefit-description {
   position: relative;
-  padding-left: 20px; /* space for the dot */
+
   margin: 6px 0;
-  color: #6b7280;
+  color: #161616;
   line-height: 1.6;
   letter-spacing: 0.4px;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-align: center;
 }
 
-/* Add the blue circle before each <p> */
-.benefit-description::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0.4em; /* align to top */
-  width: 8px;
-  height: 8px;
-  background-color: #4d1edf; /* blue color */
-  border-radius: 50%; /* circle */
-}
 
-@media (min-width: 768px) {
-  .benefits-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
 
-@media (min-width: 1024px) {
+
+@media (min-width: 871px) {
   .benefits-grid {
     grid-template-columns: repeat(3, 1fr);
   }
+  
 }
 
 .benefit-card {
-  background-color: #f3f4f6;
-  border: 1px solid #e5e7eb;
+  background-color: #fff;
   padding: 2rem;
   transition: all 0.3s ease;
-  margin: auto;
-  max-width: 200px;
+  
 }
 
 .benefit-card:hover {
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 10px 20px rgba(33, 5, 144, 0.08);
   transform: translateY(-4px);
 }
 
 .benefit-icon-wrapper {
-  background-color: #fff;
-  width: 3.5rem;
+  width: 100%;
   height: 3.5rem;
   display: flex;
   align-items: center;
@@ -98,10 +83,14 @@
   color: #4d1edf;
 }
 
+
+
+
 .benefit-title {
   font-size: 1.25rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
   font-family: 'Rubik', sans-serif;
   letter-spacing: 0.7px;
+  text-align: center;
 }

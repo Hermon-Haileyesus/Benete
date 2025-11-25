@@ -82,7 +82,8 @@
   transition: all 0.3s ease;
   background-color: #fff;
   border-radius: 50%;   
-  width: 15px;         
+  width: 12px;    
+  height: 12px;     
   border: none;
   cursor: pointer;
   margin-left: 10px;
@@ -93,7 +94,7 @@
   background-color: #fff;
   width: 50px;
   border-radius: 10px;
-  height: 15px;
+  height: 12px;
   
 }
 

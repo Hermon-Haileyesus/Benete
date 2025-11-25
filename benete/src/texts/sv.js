@@ -7,9 +7,9 @@ export default {
   "header.title":"BeneCare",
   "header.subtitle": "Vi säkerställer att äldre får rätt vård i rätt tid.",
   "homepage.introduction_title":"Smart stöd för vårdarbete och vardagligt välbefinnande",
-  "homepage.introduction_p1" : "BeneCare är utvecklat för vårdpersonal — inklusive personal inom äldrevård, sjuksköterskor, läkare och sjukgymnaster — samt privatanvändare som vill övervaka sina närståendes välbefinnande säkert och diskret.",
+  "homepage.introduction_p1" : "BeneCare är utvecklat för vårdpersonal inklusive personal inom äldrevård, sjuksköterskor, läkare och sjukgymnaster  samt privatanvändare som vill övervaka sina närståendes välbefinnande säkert och diskret.",
   "homepage.introduction_p2": "Tjänsten erbjuder dygnet-runt-övervakning utan bärbara enheter, vilket gör både professionell vård och vardagligt stöd mer effektivt och meningsfullt. BeneCare använder sensorteknik och intelligenta algoritmer för att modellera en persons dagliga rytm och beteende. ",
-  "homepage.introduction_p3" :"Denna data hjälper till att upptäcka förändringar i hälsa, välbefinnande, funktionsförmåga och kognition — vilket möjliggör snabba åtgärder innan akut vård behövs.",
+  "homepage.introduction_p3" :"Denna data hjälper till att upptäcka förändringar i hälsa, välbefinnande, funktionsförmåga och kognition  vilket möjliggör snabba åtgärder innan akut vård behövs.",
   "service.privacyTitle": "Vi håller personuppgifter säkra",
   "service.privacyText": "Analyserna som produceras av BeneCare-tjänsten är tillgängliga för senioren, deras anhöriga och vårdpersonal via webbtjänsten eller som utskrifter. Användningen av tjänsten och datainsamlingen baseras alltid på personens samtycke. Insamlade personuppgifter används eller överförs inte för något annat syfte än relaterat till användningen av tjänsten. I enlighet med dataskyddslagen har senioren rätt till sina egna personuppgifter och kan när som helst begära radering av sina personuppgifter eller avslutande av tjänsten.",
     
@@ -160,5 +160,11 @@ export default {
     "benefits.family.2": "Tidig upptäckt av uppkommande problem",
     "benefits.family.3": "Datadrivna vårdbeslut",
     "benefits.family.4": "Transparent rapportering",
+     // Funding
+    "funding.horizon.title": "Horizon 2020 forskning",
+    "funding.horizon.text": "Benete Oy har erhållit finansiering från Europeiska unionens Horizon 2020 forsknings- och innovationsprogram enligt bidragsavtal nr 877503.",
+    "funding.ely.title": "ELY-finansiering",
+    "funding.ely.text": "Benete Oy har erhållit finansiering från Närings-, trafik- och miljöcentralen för projektet BNT-MDR. Projektet handlar om vidareutveckling av Benete Oy:s analystjänst för äldres funktionsförmåga.",
+    
 
 };

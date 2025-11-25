@@ -7,9 +7,9 @@ export default {
     "header.title":"BeneCare",
     "header.subtitle":"Varmistamme, että ikäihmiset saavat oikeanlaista hoitoa oikea-aikaisesti.",
     "homepage.introduction_title":"Älykäs tuki hoitotyöhön ja arjen hyvinvointiin",
-    "homepage.introduction_p1" : "BeneCare on kehitetty hoitotyön ammattilaisille – vanhustenhoidon henkilöstölle,  sairaanhoitajille, lääkäreille ja fysioterapeuteille – sekä yksityiskäyttäjille, jotka haluavat seurata läheistensä hyvinvointia turvallisesti ja huomaamattomasti.",
+    "homepage.introduction_p1" : "BeneCare on kehitetty hoitotyön ammattilaisille  sekä yksityiskäyttäjille, jotka haluavat seurata läheistensä hyvinvointia turvallisesti ja huomaamattomasti.",
     "homepage.introduction_p2": "Palvelu tarjoaa ympärivuorokautisen seurannan ilman puettavia laitteita, tehden hoitotyöstä ja arjen huolenpidosta tehokkaampaa ja mielekkäämpää. BeneCare hyödyntää sensoriteknologiaa ja älykkäitä algoritmeja mallintaakseen henkilön päivittäistä rytmiä ja toimintatapoja. ",
-    "homepage.introduction_p3" :"Näiden tietojen avulla voidaan havaita muutoksia terveydessä, hyvinvoinnissa, toimintakyvyssä ja kognitiossa – ja reagoida ajoissa ennen kuin tilanne vaatii akuuttia hoitoa.",
+    "homepage.introduction_p3" :"Näiden tietojen avulla voidaan havaita muutoksia terveydessä, hyvinvoinnissa, toimintakyvyssä ja kognitiossa  ja reagoida ajoissa ennen kuin tilanne vaatii akuuttia hoitoa.",
     "service.privacyTitle": "Pidämme henkilötiedot turvassa",
     "service.privacyText": "BeneCare -palvelun tuottamat analyysit ovat seniorin, hänen omaistensa ja hoitohenkilökunnan nähtävissä verkkopalvelun kautta tai tulosteena. Palvelun käyttö ja datan kerääminen perustuvat aina henkilön suostumukseen. Kerättyä henkilötietoa ei käytetä tai välitetä muuhun kuin palvelun käyttöön liittyvään tarkoitukseen. Tietosuojalain mukaisesti seniorilla on oikeus omiin henkilötietoihinsa ja hän voi pyytää henkilötietojensa poistamista tai palvelun lopettamista milloin tahansa.",
     
@@ -158,6 +158,12 @@ export default {
     "benefits.family.2": "Varhaisessa vaiheessa olevien ongelmien havaitseminen",
     "benefits.family.3": "Datan pohjalta tehdyt hoitopäätökset",
     "benefits.family.4": "Läpinäkyvä raportointi",
+    // Funding
+    "funding.horizon.title": "Horizon 2020 tutkimus",
+    "funding.horizon.text": "Benete Oy on saanut rahoitusta Euroopan unionin Horizon 2020 -tutkimus ja innovaatio-ohjelman avustussopimuksen Nro 877503 mukaisesti.",
+    "funding.ely.title": "ELY rahoitus",
+    "funding.ely.text": "Benete Oy on saanut rahoitusta Elinkeino-, liikenne- ja ympäristökeskukselta BNT-MDR hankkeeseen. Hankkeessa on kyseessä Benete Oy:n ikääntyneiden toimintakyvyn analysointipalvelun jatkokehitys.",
+    
 
 
     

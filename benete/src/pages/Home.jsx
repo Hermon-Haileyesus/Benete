@@ -4,7 +4,7 @@ import '../css/Home.css'
 import CustomerTypeSelector from "../components/CustomerTypeSelector";
 import Carousel from "../components/Carousel";
 import Benefits from "../components/Benefit";
-
+import FundingBlock from "../components/FundingBlock";
 
 
 
@@ -25,6 +25,7 @@ function Home() {
         </div>
         <CustomerTypeSelector/>
         <Benefits/>
+        <FundingBlock/>
         
       </div>
       
