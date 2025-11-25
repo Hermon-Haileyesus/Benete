@@ -58,9 +58,7 @@
   transform: translate(-50%, -50%);
 }
 
-.header-content.yellow h1{
-  color:#e8ff00;
-}
+
 
 .header-content.white{
   color: white;
@@ -68,6 +66,9 @@
 
 .header-content.black {
   color: #0D1114;
+}
+.header-content.black p {
+  color:#4d1edf ;
 }
 
 

@@ -17,7 +17,7 @@ function Ideology () {
         subtitle={t("header.title")}
         isWhite={false}
         isCentered={false} 
-        isYellow={true}
+        isBlack={true}
       />
       <div className='ideology-container'>
         <div className='ideology-content'>
