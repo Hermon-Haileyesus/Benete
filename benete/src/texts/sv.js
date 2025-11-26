@@ -119,7 +119,21 @@ export default {
     "ideology.hero.title2b": "till familjer och anhöriga",
     "ideology.hero.title3": "Stödjer aktivt",
     "ideology.hero.title3b": "och självständigt boende för äldre",
-    
+    "ideology.title":"På dina villkor",
+    "hero.subtitleLines": [
+  [
+    { "text": "Individuell", "color": "black" },
+    { "text": "självständighet", "color": "blue" }
+  ],
+  [
+    { "text": "Digital", "color": "black" },
+    { "text": "värdighet", "color": "blue" }
+  ],
+  [
+    { "text": "Värdefullt", "color": "black" },
+    { "text": "liv", "color": "blue" }
+  ]
+],
     "ideology.values.care": "Omsorg",
     "ideology.values.careDesc": "Varje person förtjänar uppmärksamhet, värme och individualiserad vård",
     "ideology.values.safety": "Säkerhet",

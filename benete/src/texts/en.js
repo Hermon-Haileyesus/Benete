@@ -120,7 +120,21 @@ export default {
     "ideology.hero.title2b": "to families and loved ones",
     "ideology.hero.title3": "Supports active",
     "ideology.hero.title3b": "and independent living for seniors",
-    
+    "ideology.title":"On your terms",
+    "hero.subtitleLines": [
+  [
+    { "text": "Individual", "color": "black" },
+    { "text": "independence", "color": "blue" }
+  ],
+  [
+    { "text": "Digital", "color": "black" },
+    { "text": "dignity", "color": "blue" }
+  ],
+  [
+    { "text": "Valuable", "color": "black" },
+    { "text": "life", "color": "blue" }
+  ]
+],
     "ideology.values.care": "Caring",
     "ideology.values.careDesc": "Every person deserves attention, warmth, and individualized care",
     "ideology.values.safety": "Security",

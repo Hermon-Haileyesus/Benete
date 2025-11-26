@@ -1,7 +1,7 @@
 .header {
   position: relative;
   width: 100%;
-  height: 90vh; /* full viewport height */
+  height: 90vh;
   overflow: hidden;
   font-family: 'Rubik', sans-serif;
 }
@@ -25,6 +25,7 @@
   background-color: rgb(45 45 46 / 50%);
   z-index: 1;
 }
+
 .header-overlay.visible {
   display: block;
 }
@@ -33,16 +34,6 @@
   display: none;
 }
 
-
-.header-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  max-width: 600px;
-  padding-right: 1rem;
-}
 .header-content {
   position: absolute;
   top: 50%;
@@ -58,81 +49,77 @@
   transform: translate(-50%, -50%);
 }
 
-
-
-.header-content.white{
-  color: white;
+.header-title {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.8px;
 }
 
-.header-content.black {
-  color: #0D1114;
-}
-.header-content.black p {
-  color:#4d1edf ;
-}
+.header-title.white { color: white; }
+.header-title.blue { color: #4d1edf; }
+.header-title.black { color: #0D1114; }
 
 
-.header-content h1 {
+.subtitle-line {
   font-size: 40px;
   font-weight: bold;
-  margin-bottom: 0;
+  line-height: 1.4;
+  margin: 0.2rem 0;
   letter-spacing: 0.8px;
-  margin-top: 2px;
+}
+.subtitle-word {
+  display: inline;
 }
 
-.header-content p {
-  font-size: 1.25rem;
-  line-height: 1.6;
-  letter-spacing: 0.8px;
-  font-weight: 600;
-  margin-bottom: 2px;
-}
+.subtitle-word.white { color: white; }
+.subtitle-word.blue { color: #4d1edf; }
+.subtitle-word.black { color: #16202d; }
 
 
-
-/* Tablets (≤1024px) */
 @media (max-width: 1024px) {
   .header-content {
     left: 8%;
     max-width: 500px;
   }
 
-  .header-content h1 {
-    font-size: 2.5rem;
-  }
-
-  .header-content p {
-    font-size: 20px;
-  }
+  
 }
 
-/* Mobile (≤768px) */
+
 @media (max-width: 768px) {
   .header {
-    height: 80vh; /* smaller height on mobile */
+    height: 80vh;
   }
 
   .header-content {
     left: 5%;
     max-width: 90%;
+    bottom: 90px;
   }
 
-  .header-content h1 {
-    font-size: 2rem;
-  }
-
-  .header-content p {
+  .header-title {
     font-size: 17px;
   }
+
+  .subtitle-line {
+    font-size: 40px;
+  }
+  .subtitle-word {
+    display: block;
+    width: 100%;
+  }
+
+
 }
 
-/* Small phones (≤480px) */
+
 @media (max-width: 480px) {
-  .header-content h1 {
-    font-size: 35px;
+  .header-title {
+    font-size: 17px;
   }
 
-  .header-content p {
-    font-size: 17px;
+  .subtitle-line {
+    font-size: 35px;
   }
 }

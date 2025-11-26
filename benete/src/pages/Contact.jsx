@@ -12,8 +12,9 @@ function Contact () {
         <>
         <Header
         image={headerImg}
-        title={t("contact.heading.intro")}
-        subtitle={t("contact.heading.title")}
+        title={t("contact.heading.title")}
+        titleColor="white"
+        subtitle={t("contact.heading.intro")}
         isWhite={true}
         isCentered={true} 
       />

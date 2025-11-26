@@ -1,8 +1,8 @@
 import '../css/Ideology.css';
-import headerImg from "../assets/header_img/ideology.jpg";
+import headerImg from "../assets/header_img/old_woman.jpg";
 import Header from "../components/Header";
 import { useLanguage } from "../contexts/LanguageContext";
-import coffee from '../assets/images/cook.jpg';
+import cooking from '../assets/images/old_man.jpg';
 import door from '../assets/images/door.jpg';
 import couple from '../assets/images/couple.jpg';
 import hand_shake from '../assets/images/hand_shake.jpg';
@@ -13,8 +13,9 @@ function Ideology () {
         <section>
         <Header
         image={headerImg}
-        title={t("header.subtitle")}
-        subtitle={t("header.title")}
+        title={t("ideology.title")}
+        titleColor='blue'
+        subtitleLines={t("hero.subtitleLines", { returnObjects: true })}
         isWhite={false}
         isCentered={false} 
         isBlack={true}
@@ -27,7 +28,7 @@ function Ideology () {
             <h5>{t("ideology.section1.p2")}</h5>
           </div>
          
-          <img src={coffee} alt='Coffee-picture'/>
+          <img src={cooking} alt='Coffee-picture'/>
       
         </div>   
         <div className='ideology-content'>

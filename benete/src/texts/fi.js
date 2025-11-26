@@ -118,7 +118,23 @@ export default {
     "ideology.hero.title2b": "perheille ja omaisille",
     "ideology.hero.title3": "Tukee ikäihmisten aktiivista",
     "ideology.hero.title3b": "ja vapaata elämää",
-    
+    "ideology.title":"Sinun ehdoillasi",
+    "hero.subtitleLines": [
+  [
+    { "text": "Yksilöllinen", "color": "black" },
+    { "text": "itsenäisyys", "color": "blue" }
+  ],
+  [
+    { "text": "Digitaalinen", "color": "black" },
+    { "text": "arvokkuus", "color": "blue" }
+  ],
+  [
+    { "text": "Arvokas", "color": "black" },
+    { "text": "elämä", "color": "blue" }
+  ]
+],
+
+
     "ideology.values.care": "Välittäminen",
     "ideology.values.careDesc": "Jokainen ihminen ansaitsee huomiota, lämpöä ja yksilöllistä hoivaa",
     "ideology.values.safety": "Turvallisuus",
