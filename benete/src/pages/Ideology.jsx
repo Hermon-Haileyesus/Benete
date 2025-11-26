@@ -1,8 +1,8 @@
 import '../css/Ideology.css';
-import headerImg from "../assets/header_img/old_woman.jpg";
+import headerImg from '../assets/header_img/oldWoman.jpg';
 import Header from "../components/Header";
 import { useLanguage } from "../contexts/LanguageContext";
-import cooking from '../assets/images/old_man.jpg';
+import cooking from '../assets/images/oldMan.jpg';
 import door from '../assets/images/door.jpg';
 import couple from '../assets/images/couple.jpg';
 import hand_shake from '../assets/images/hand_shake.jpg';
@@ -28,7 +28,7 @@ function Ideology () {
             <h5>{t("ideology.section1.p2")}</h5>
           </div>
          
-          <img src={cooking} alt='Coffee-picture'/>
+          <img src={cooking} alt='Cooking-picture'/>
       
         </div>   
         <div className='ideology-content'>
