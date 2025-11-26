@@ -8,6 +8,8 @@ import Services from './pages/Services';
 import PrivateCustomers from './pages/PrivateCustomers';
 import Contact from './pages/Contact';
 import CompanyCustomers from './pages/CompanyCustomers';
+import Terms from './pages/Terms';
+import PrivacyPolicy from './pages/PrivacyPolicy';
 import './css/App.css';
 import '@fontsource/rubik';
 
@@ -23,6 +25,8 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/privatecustomers" element={<PrivateCustomers />} />
           <Route path="/companycustomers" element={<CompanyCustomers/>} />
+          <Route path="/terms" element={<Terms/>} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy/>} />
         </Routes>
       </main>
       <Footer />

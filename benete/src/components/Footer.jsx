@@ -3,8 +3,11 @@ import Fb from '../assets/images/fb.svg';
 import Ins from '../assets/images/ins-white.svg';
 import Linkedin from '../assets/images/linkedin.svg';
 import Tw from '../assets/images/tw.svg';
+import { useLanguage } from '../contexts/LanguageContext';
+import { Link } from "react-router-dom";
 
 function Footer() {
+  const {t} = useLanguage()
   return (
     <section className="footer">
       <div className='footer-b1'>
@@ -64,7 +67,17 @@ function Footer() {
         </p>
        </div>
      </div>
-     <div className='footer-b2'></div>
+    <div className="footer-b2">
+      <div>
+        <h5>
+          <Link to="/privacy-policy" className="footerB2-link">Privacy policy</Link>
+          &nbsp;&amp;&nbsp;
+          <Link to="/terms" className="footerB2-link">Terms</Link>
+        </h5>
+      </div>
+    </div>
+
+
     </section>
   );
 }

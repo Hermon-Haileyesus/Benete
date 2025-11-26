@@ -180,7 +180,54 @@ export default {
     "funding.ely.title": "ELY rahoitus",
     "funding.ely.text": "Benete Oy on saanut rahoitusta Elinkeino-, liikenne- ja ympäristökeskukselta BNT-MDR hankkeeseen. Hankkeessa on kyseessä Benete Oy:n ikääntyneiden toimintakyvyn analysointipalvelun jatkokehitys.",
     
-
+privacy: {
+      title: "Tietosuojakäytäntö",
+      customerInfo: {
+        title: "Asiakastiedot",
+        content: "Pysyäksemme yhteydessä nykyisiin tai potentiaalisiin asiakkaisiimme keräämme tietoja, joita annat ottaessasi meihin yhteyttä."
+      },
+      analytics: {
+        title: "Analytiikkapalvelut",
+        content: "Parantaaksemme vuorovaikutustasi verkkosivustomme kanssa voimme saada tietoa verkossa tapahtuvasta käyttäytymisestäsi ja käyttötiedoistasi. Emme yhdistä tältä verkkosivustolta kerättyjä tietoja mihinkään henkilökohtaisesti tunnistettaviin tietoihin muista lähteistä. Verkossa tapahtuva käyttäytymistieto poistetaan automaattisesti, jos se on yli 6 kuukautta vanhaa."
+      },
+      dataSecurity: {
+        title: "Tietoturva",
+        content: "Noudattaen yleisesti hyväksyttyjä verkkotietoturvastandardeja olemme varmistaneet, että keräämämme henkilötiedot tallennetaan turvallisiin käyttöympäristöihin. Henkilötietoihisi pääsevät käsiksi vain henkilöt, joiden on käsiteltävä niitä työtehtäviensä suorittamiseksi."
+      },
+      access: {
+        title: "Pääsy ja siirto ETA:n ulkopuolelle",
+        content1: "Henkilökohtaisia tietojasi ei paljasteta tai myydä kolmansille osapuolille. Analytiikkapalveluiden kautta kerättyjä tietoja voidaan tallentaa Euroopan talousalueen ulkopuolelle, jos analytiikkapalvelun tai ohjelmiston tarjoaja tallentaa tiedot ETA:n ulkopuolelle. Muutoin emme säännöllisesti siirrä tietojasi Euroopan talousalueen ulkopuolelle.",
+        content2: "Toteutamme aina vahvimmat meille saatavilla olevat oikeudelliset, menettelylliset, fyysiset ja tekniset toimenpiteet parantaaksemme anonymiteettiäsi ja välttääksemme tietojesi ei-toivotun paljastamisen muille henkilöille, yrityksille ja hallinnolle, ellei laki, oikeuselin tai valtion virasto vaadi meitä paljastamaan niitä."
+      },
+      updates: {
+        title: "Käytännön päivitykset",
+        content: "Saatamme päivittää tätä tietosuojakäytäntöä ajoittain ja kannustamme sinua tarkistamaan uusimman version säännöllisesti osoitteessa www.benete.com. Pyrimme parhaaamme mukaan tiedottamaan sinulle kaikista tähän tietosuojakäytäntöön tehtävistä päivityksistä."
+      },
+      contact: {
+        title: "Ota yhteyttä",
+        content: "Jos sinulla on kysyttävää tai haluat pyytää pääsyä, poistamista tai korjaamista antamiisi tietoihin, ota meihin yhteyttä osoitteessa privacy@benete.com."
+      }
+    },
+    terms: {
+      title: "Käyttöehdot",
+      introduction: {
+        title: "Johdanto",
+        content: "Nämä käyttöehdot koskevat tämän verkkosivuston käyttöä; käyttämällä tätä verkkosivustoa hyväksyt nämä käyttöehdot kokonaisuudessaan. Jos olet eri mieltä näistä käyttöehdoista tai mistä tahansa osasta näitä käyttöehtoja, et saa käyttää tätä verkkosivustoa."
+      },
+      intellectual: {
+        title: "Immateriaalioikeudet",
+        content: "Ellei toisin mainita, Benete Oy omistaa immateriaalioikeudet verkkosivustoon ja kaikkeen siinä julkaistuun materiaaliin (mukaan lukien mutta ei rajoittuen tekstiin, valokuviin ja muihin kuviin, tavaramerkkeihin ja logoihin)."
+      },
+      warranties: {
+        title: "Ei takuita",
+        content1: "Tämä verkkosivusto tarjotaan \"sellaisena kuin se on\" ilman mitään edustuksia tai takuita, ilmaistuja tai oletettuja. Benete Oy ei anna mitään edustuksia tai takuita tähän verkkosivustoon tai tällä verkkosivustolla tarjottuihin tietoihin ja materiaaleihin liittyen.",
+        content2: "Tällä verkkosivustolla olevat tiedot tarjotaan vain tiedotustarkoituksiin ja Benete Oy käyttää kohtuullista huolellisuutta ja taitoa varmistaakseen, että ne ovat oikein julkaisupäivänä. Mikään tällä verkkosivustolla ei ole, tai ole tarkoitettu olemaan, minkäänlaista neuvontaa. Benete Oy ei siksi hyväksy mitään vastuuta, joka aiheutuu verkkosivustolla tarjottuihin tietoihin luottamisesta minkään vierailijan tai kolmannen osapuolen toimesta, joka saattaa saada tietoa sen sisällöstä."
+      },
+      law: {
+        title: "Laki ja lainkäyttövalta",
+        content: "Näitä käyttöehtoja sääntelevät ja tulkitaan Suomen lain mukaisesti, ja kaikki näihin käyttöehtoihin liittyvät riidat kuuluvat Suomen tuomioistuinten yksinomaiseen toimivaltaan."
+      }
+    },
 
     
   };

@@ -14,8 +14,25 @@ export const LanguageProvider = ({ children }) => {
   const [language, setLanguage] = useState("fi");
 
   const t = (key) => {
-    return translations[language][key] || key;
-  };
+  if (translations[language][key]) {
+    return translations[language][key];
+  }
+
+  const keys = key.split(".");
+  let value = translations[language];
+
+  for (const k of keys) {
+    if (value && typeof value === "object" && k in value) {
+      value = value[k];
+    } else {
+      return key; // fallback: return the key itself
+    }
+  }
+
+  return value;
+};
+
+
 
   return (
     <LanguageContext.Provider value={{ language, setLanguage, t }}>

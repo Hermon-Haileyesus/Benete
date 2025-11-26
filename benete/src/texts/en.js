@@ -182,7 +182,54 @@ export default {
     "funding.ely.text": "Benete Oy has received funding from the Centre for Economic Development, Transport and the Environment for the BNT-MDR project. The project involves the further development of Benete Oy's elderly functional capacity analysis service.",
     
 
-
+privacy: {
+      title: "Privacy policy",
+      customerInfo: {
+        title: "Customer information",
+        content: "To stay in touch with our current or prospective customers, we will collect information you provide when contacting us."
+      },
+      analytics: {
+        title: "Analytics services",
+        content: "To improve your interaction with our website, we can get information about your online behavioural and usage data. We will not associate any data gathered from this website with any personally identifying information from any other source. Online behavioural data will be automatically deleted if older than 6 months."
+      },
+      dataSecurity: {
+        title: "Data security",
+        content: "Complying with generally accepted online security standards, we have ensured that the personal data we collect is stored in secure operating environments. Your personal data can only be accessed by individuals who need to process it for the performance of their work duties."
+      },
+      access: {
+        title: "Access and transfer outside EEA",
+        content1: "Your personal information will not be disclosed or sold to third parties. Information collected through analytics services can be stored outside the European Economic Area if the analytics services or software provider stores the data outside the EEA. Otherwise, we do not regularly transfer your data outside the European Economic Area.",
+        content2: "We will always implement the most robust legal, procedural, physical and technical measures available to us in order to improve your anonymity and avoid unwanted disclosure of your data to other individuals, corporations and administrations, unless we are required to disclose it by law, judicial body or government agency."
+      },
+      updates: {
+        title: "Policy updates",
+        content: "We may periodically update this Privacy Policy and encourage you to check the latest version regularly at www.benete.com. We will put our best effort to inform you about any updates to this Privacy policy."
+      },
+      contact: {
+        title: "Contact us",
+        content: "In case you have any questions or would like to request access, removal or correction of the information you have provided, please contact us at privacy@benete.com."
+      }
+    },
+    terms: {
+      title: "Terms & Conditions",
+      introduction: {
+        title: "Introduction",
+        content: "These terms and conditions govern your use of this website; by using this website, you accept these terms and conditions in full. If you disagree with these terms and conditions or any part of these terms and conditions, you must not use this website."
+      },
+      intellectual: {
+        title: "Intellectual property rights",
+        content: "Unless otherwise stated, Benete Oy owns the intellectual property rights in the website and in any material published on it (including but not limited to text, photographs and other images, trademarks and logos)."
+      },
+      warranties: {
+        title: "No warranties",
+        content1: "This website is provided \"as is\" without any representations or warranties, express or implied. Benete Oy makes no representations or warranties in relation to this website or the information and materials provided on this website.",
+        content2: "The information contained on this website is provided for information purposes only and Benete Oy will use reasonable care and skill to ensure that it is accurate at the date of publication. Nothing on this website constitutes, or is meant to constitute, advice of any kind. Benete Oy, therefore, accepts no liability or responsibility arising from any reliance placed on information provided on the website by any visitor, or by any third party who may be informed of any of its contents."
+      },
+      law: {
+        title: "Law and jurisdiction",
+        content: "These terms and conditions will be governed by and construed in accordance with Finnish law, and any disputes relating to these terms and conditions will be subject to the exclusive jurisdiction of the courts of Finland."
+      }
+    },
     
 
 

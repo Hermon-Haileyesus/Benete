@@ -59,13 +59,31 @@
 }
 .footer-b2{
     background-color: #ffffff;
-    height: 100px;
+    padding: 5px 200px;
+    color: #16202d;
+    font-family: 'Rubik', sans-serif;
+    font-size: 17px;
 }
+.footer-b2 >div {
+  margin: 1rem;
+}
+.footerB2-link{
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.76;
+  letter-spacing: 0.4px;
+  text-decoration: none;
+  color: #16202d;
+  
+}
+
 @media (max-width:1214px) {
     .footer-b1{
         padding: 80px 0;
     }
-    
+    .footer-b2{
+        padding: 5px 0;
+    }
 }
 @media (max-width:780px) {
     .footer-b1{

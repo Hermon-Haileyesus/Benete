@@ -180,5 +180,52 @@ export default {
     "funding.ely.title": "ELY-finansiering",
     "funding.ely.text": "Benete Oy har erhållit finansiering från Närings-, trafik- och miljöcentralen för projektet BNT-MDR. Projektet handlar om vidareutveckling av Benete Oy:s analystjänst för äldres funktionsförmåga.",
     
-
+privacy: {
+      title: "Integritetspolicy",
+      customerInfo: {
+        title: "Kundinformation",
+        content: "För att hålla kontakten med våra nuvarande eller potentiella kunder samlar vi in information som du tillhandahåller när du kontaktar oss."
+      },
+      analytics: {
+        title: "Analystjänster",
+        content: "För att förbättra din interaktion med vår webbplats kan vi få information om ditt onlinebeteende och användningsdata. Vi kommer inte att associera någon data som samlas in från denna webbplats med någon personligt identifierande information från någon annan källa. Onlinebeteendedata raderas automatiskt om den är äldre än 6 månader."
+      },
+      dataSecurity: {
+        title: "Datasäkerhet",
+        content: "I enlighet med allmänt accepterade onlinesäkerhetsstandarder har vi säkerställt att de personuppgifter vi samlar in lagras i säkra driftsmiljöer. Dina personuppgifter kan endast nås av personer som behöver behandla dem för att utföra sina arbetsuppgifter."
+      },
+      access: {
+        title: "Åtkomst och överföring utanför EES",
+        content1: "Din personliga information kommer inte att avslöjas eller säljas till tredje part. Information som samlas in genom analystjänster kan lagras utanför Europeiska ekonomiska samarbetsområdet om analystjänsten eller mjukvaruleverantören lagrar data utanför EES. Annars överför vi inte regelbundet dina uppgifter utanför Europeiska ekonomiska samarbetsområdet.",
+        content2: "Vi kommer alltid att implementera de mest robusta juridiska, procedurella, fysiska och tekniska åtgärder som är tillgängliga för oss för att förbättra din anonymitet och undvika oönskad avslöjande av dina uppgifter till andra individer, företag och administrationer, såvida vi inte är skyldiga att avslöja det enligt lag, rättslig myndighet eller statlig myndighet."
+      },
+      updates: {
+        title: "Policyuppdateringar",
+        content: "Vi kan periodiskt uppdatera denna integritetspolicy och uppmuntrar dig att regelbundet kontrollera den senaste versionen på www.benete.com. Vi kommer att göra vårt bästa för att informera dig om eventuella uppdateringar av denna integritetspolicy."
+      },
+      contact: {
+        title: "Kontakta oss",
+        content: "Om du har några frågor eller vill begära åtkomst, borttagning eller korrigering av den information du har tillhandahållit, kontakta oss på privacy@benete.com."
+      }
+    },
+    terms: {
+      title: "Villkor",
+      introduction: {
+        title: "Introduktion",
+        content: "Dessa villkor styr din användning av denna webbplats; genom att använda denna webbplats accepterar du dessa villkor i sin helhet. Om du inte håller med om dessa villkor eller någon del av dessa villkor får du inte använda denna webbplats."
+      },
+      intellectual: {
+        title: "Immateriella rättigheter",
+        content: "Om inte annat anges äger Benete Oy de immateriella rättigheterna till webbplatsen och till allt material som publiceras på den (inklusive men inte begränsat till text, fotografier och andra bilder, varumärken och logotyper)."
+      },
+      warranties: {
+        title: "Inga garantier",
+        content1: "Denna webbplats tillhandahålls \"som den är\" utan några representationer eller garantier, uttryckliga eller underförstådda. Benete Oy lämnar inga representationer eller garantier i förhållande till denna webbplats eller informationen och materialet som tillhandahålls på denna webbplats.",
+        content2: "Informationen som finns på denna webbplats tillhandahålls endast i informationssyfte och Benete Oy kommer att använda rimlig omsorg och skicklighet för att säkerställa att den är korrekt vid publiceringsdatumet. Ingenting på denna webbplats utgör, eller är avsett att utgöra, råd av något slag. Benete Oy accepterar därför inget ansvar eller ansvar som uppstår från något förlitande på information som tillhandahålls på webbplatsen av någon besökare, eller av någon tredje part som kan informeras om något av dess innehåll."
+      },
+      law: {
+        title: "Lag och jurisdiktion",
+        content: "Dessa villkor kommer att regleras av och tolkas i enlighet med finsk lag, och alla tvister som rör dessa villkor kommer att vara föremål för den exklusiva jurisdiktionen hos domstolarna i Finland."
+      }
+    },
 };
