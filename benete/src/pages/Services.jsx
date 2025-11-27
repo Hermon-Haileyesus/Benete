@@ -1,4 +1,4 @@
-import '../css/Services.css';
+
 import headerImg from "../assets/header_img/servicepage_header.jpg";
 import { useLanguage } from "../contexts/LanguageContext";
 import Header from "../components/Header";
@@ -13,8 +13,8 @@ function Services () {
         <>
         <Header
         image={headerImg}
-        title={t("service.heading.intro")}
-        subtitle={t("service.heading.title")}
+        title={t("service.heading.title")}
+        subtitle={t("service.heading.intro")}
         isWhite={false}
         isCentered={false} 
       />

@@ -16,7 +16,7 @@
 /* Heading */
 .contact-section h2 {
   font-size: 30px;
-  font-weight: 600;
+  font-weight: 500;
   font-family: 'Rubik', sans-serif;
   color: #16202d;
   letter-spacing: 0.7px;
@@ -51,8 +51,6 @@
   transform: rotate(180deg);
 }
 
-
-/* Form layout */
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -60,7 +58,7 @@
   margin-top: 20px;
 }
 
-/* Form group */
+
 .form-group {
   display: flex;
   flex-direction: column;

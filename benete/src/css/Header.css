@@ -51,7 +51,7 @@
 
 .header-title {
   font-size: 17px;
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 0.5rem;
   letter-spacing: 0.8px;
 }
@@ -63,7 +63,7 @@
 
 .subtitle-line {
   font-size: 40px;
-  font-weight: bold;
+  font-weight: 500;
   line-height: 1.4;
   margin: 0.2rem 0;
   letter-spacing: 0.8px;

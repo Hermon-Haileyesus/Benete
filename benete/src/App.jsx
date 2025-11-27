@@ -11,7 +11,11 @@ import CompanyCustomers from './pages/CompanyCustomers';
 import Terms from './pages/Terms';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import './css/App.css';
-import '@fontsource/rubik';
+import "@fontsource/rubik/400.css"; 
+import "@fontsource/rubik/500.css"; 
+import "@fontsource/rubik/700.css"; 
+
+
 
 function App() {
   return (

@@ -52,7 +52,7 @@
 
 .carousel-title {
   font-size: 35px;
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 1rem;
   color: #fff;
   font-family: 'Rubik', sans-serif;
@@ -62,7 +62,7 @@
 .carousel-description {
   font-size: 20px;
   color: #fff;
-  font-weight: 600;
+  font-weight: 500;
   font-family: 'Rubik', sans-serif;
   letter-spacing: 1.4px;
 }

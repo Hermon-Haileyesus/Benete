@@ -1,4 +1,4 @@
-import '../css/Contact.css';
+
 import Header from "../components/Header";
 import headerImg from "../assets/header_img/Contact_banner.jpg";
 import { useLanguage } from "../contexts/LanguageContext";

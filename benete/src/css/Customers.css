@@ -13,7 +13,7 @@
   text-align: center;
   margin-bottom: 0;
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 400;
   letter-spacing: 0.5px;
 }
 .customer-wrap {
@@ -43,7 +43,7 @@
 }
 .customer-title {
   font-size: 1.5rem;
-  font-weight: 600;
+  font-weight: 500;
   font-family: 'Rubik', sans-serif;
   letter-spacing: 0.7px;
   color: #16202d;
@@ -70,7 +70,7 @@
 }
 .readMore-content h2{
   font-size: 29px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.18;
   letter-spacing: 0.8px;
   color: #16202d;
