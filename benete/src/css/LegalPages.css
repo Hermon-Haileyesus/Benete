@@ -20,7 +20,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
-    max-width: 600px;
+    max-width: 800px;
     padding-right: 1rem;
 }
 
@@ -47,6 +47,17 @@
   .legal-grid {
     grid-template-columns: 3fr 9fr;
   }
+}
+@media (max-width:502px) {
+  .legal-header-content{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translatey(-50%);
+    z-index: 2;
+    max-width: 800px;
+    padding-right: 1rem;
+}
 }
 
 
