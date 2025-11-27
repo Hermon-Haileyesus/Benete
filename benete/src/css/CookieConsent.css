@@ -1,0 +1,122 @@
+.cc-window {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  max-width: 360px;
+  background: #fff;
+  border-radius: 6px;
+  padding: 2rem;
+  font-family: 'Rubik', sans-serif;
+  font-size: 16px;
+  z-index: 9999;
+  animation: fadeIn 0.5s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  box-shadow:  0 3px 6px 0 rgb(0 0 0 / 16%);
+  line-height: 1.5rem;
+  overflow: hidden;
+  color: #16202d;
+  letter-spacing: 0.4px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.cc-message {
+  display: block;
+  margin-bottom: 1rem;
+  font-family: 'Rubik';
+  font-weight: 500;
+  box-sizing: border-box;
+}
+
+.cc-link {
+  color: #4d1edf;
+  text-decoration: underline;
+  margin-left: 5px;
+  padding: 0.2em;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.cc-compliance {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+}
+
+.cc-btn {
+  display: block;
+  padding: .4em .8em;
+  border: none;
+  cursor: pointer;
+  font-size: .9em;
+  font-weight: 700;
+  text-align: center;
+  border-width: 2px;
+  letter-spacing: 0.4px;
+}
+
+.cc-allow {
+  background-color: #4d1edf;
+  color: #fff;
+}
+.cc-allow:hover{
+    background-color: #704be1;
+}
+.cc-deny {
+  background-color: transparent;
+  color: #4d1edf;
+}
+.cc-deny:hover{
+    padding: 0 .8em;
+    border-bottom: 2px solid #ff0000;
+    color: #ff0000;
+}
+.cookie-sticky-wrapper {
+  position: fixed;
+  bottom: -30px; /* mostly hidden */
+  right: 20px;
+  z-index: 9999;
+  transition: bottom 0.3s ease;
+}
+
+.cookie-sticky-wrapper:hover {
+  bottom: 0; /* slide up on hover */
+}
+
+.cookie-sticky {
+  background-color: #fff;
+  color: #000;
+  padding: 10px 2px 15px;
+  border-radius: 5px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  z-index: 9999;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* ✅ subtle shadow */
+
+
+  
+}
+
+
+@media (max-width: 600px) {
+  .cc-window {
+    left: 0;             
+    right: 0;
+    bottom: 0;           /* stick to bottom */
+    max-width: 100%;     /* remove fixed max width */
+    width: 100%;         /* full width */
+    border-radius: 0;    /* flat edges for mobile */
+    padding: 12px;       /* tighter padding */
+    font-size: 0.85rem; 
+    height: 50%; 
+  }
+.cc-compliance {
+  justify-content: flex-start;
+  
+}
+}

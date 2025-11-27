@@ -9,7 +9,7 @@ const Terms = () => {
     <div className="legal-page">
       <div className="legal-header">
         <div className="legal-header-content">
-            <h1>{t("terms.title")}</h1>
+            <h2>{t("terms.title")}</h2>
         </div>
       </div>
       <main className="legal-main">

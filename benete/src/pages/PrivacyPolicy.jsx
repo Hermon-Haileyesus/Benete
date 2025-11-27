@@ -9,7 +9,7 @@ const PrivacyPolicy = () => {
     <div className="legal-page">
       <div className="legal-header">
         <div className="legal-header-content">
-            <h1>{t("privacy.title")}</h1>
+            <h2>{t("privacy.title")}</h2>
         </div>
       </div>
       <main className="legal-main">

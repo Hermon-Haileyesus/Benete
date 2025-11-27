@@ -12,7 +12,7 @@ export default {
   "homepage.introduction_p3" :"Denna data hjälper till att upptäcka förändringar i hälsa, välbefinnande, funktionsförmåga och kognition  vilket möjliggör snabba åtgärder innan akut vård behövs.",
   "service.privacyTitle": "Vi håller personuppgifter säkra",
   "service.privacyText": "Analyserna som produceras av BeneCare-tjänsten är tillgängliga för senioren, deras anhöriga och vårdpersonal via webbtjänsten eller som utskrifter. Användningen av tjänsten och datainsamlingen baseras alltid på personens samtycke. Insamlade personuppgifter används eller överförs inte för något annat syfte än relaterat till användningen av tjänsten. I enlighet med dataskyddslagen har senioren rätt till sina egna personuppgifter och kan när som helst begära radering av sina personuppgifter eller avslutande av tjänsten.",
-    
+  
   "selector.title": "Välj kundtyp",
   "selector.subtitle": "Vi skräddarsyr våra tjänster efter dina behov",
   "selector.private.title": "Privatkunder",
@@ -21,7 +21,9 @@ export default {
   "selector.company.description": "Förbättra vårdeffektiviteten och höj servicekvaliteten",
   "common.readMore":"Läs mer",
   "readMore.description":"Läs mer om våra tjänster och hur vi erbjuder ett unikt sätt att analysera livet.",
-   // Carousel
+  "footer.privacy":"Integritetspolicy",
+  "footer.terms":"Villkor",
+  // Carousel
     "carousel.elderly.title": "Säkert dagligt liv för äldre",
     "carousel.elderly.desc": "BeneCare stöder självständigt boende och ger en känsla av trygghet i vardagen.",
     "carousel.family.title": "Sinnesro för familjer",
@@ -92,8 +94,9 @@ export default {
     "contact.form.type.assessment": "Funktionsbedömning",
     "contact.form.firstName": "Förnamn",
     "contact.form.lastName": "Efternamn",
+    "contact.form.helper-text":"Ange e‑post eller telefonnummer *",
     "contact.form.email": "E-post",
-    "contact.form.phone": "Telefonnummer (valfritt)",
+    "contact.form.phone": "Telefonnummer ",
     "contact.form.organization": "Organisation (valfritt)",
     "contact.form.role": "Din roll (valfritt)",
     "contact.form.message": "Skriv ditt meddelande...",
@@ -110,7 +113,7 @@ export default {
     "contact.email": "kari.backman@benete.com",
     "contact.heading.intro": "Låt oss prata",
     "contact.heading.title": "Hur kan vi hjälpa till?",
-
+    "footer.followUs":" Följ oss",
   // Ideology Page
     "ideology.hero.subtitle": "Som vårdexpert",
     "ideology.hero.title1": "Förenklar vardagen",

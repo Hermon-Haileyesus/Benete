@@ -21,6 +21,9 @@ export default {
     "selector.company.description": "Tehosta hoitotyötä ja paranna palvelun laatua",
     "common.readMore":"Lue lisää",
     "readMore.description":"Lue lisää palveluistamme ja miten tarjoamme ainutlaatuisen tavan analysoida elämää.",
+    "footer.followUs":"Seuraa meitä",
+    "footer.privacy":"Yksityisyys",
+    "footer.terms":"Tietosuoja",
     // Carousel
     "carousel.elderly.title": "Turvallinen arki ikäihmisille",
     "carousel.elderly.desc": "BeneCare tukee itsenäistä asumista ja antaa turvallisuuden tunteen päivittäisessä elämässä.",
@@ -93,7 +96,8 @@ export default {
     "contact.form.firstName": "Etunimi",
     "contact.form.lastName": "Sukunimi",
     "contact.form.email": "Sähköposti",
-    "contact.form.phone": "Puhelinnumero (valinnainen)",
+    "contact.form.helper-text":"Anna sähköposti tai puhelinnumero *",
+    "contact.form.phone": "Puhelinnumero",
     "contact.form.organization": "Organisaatio (valinnainen)",
     "contact.form.role": "Roolisi (valinnainen)",
     "contact.form.message": "Kirjoita viesti...",
@@ -110,6 +114,7 @@ export default {
     "contact.email": "kari.backman@benete.com",
     "contact.heading.intro": "Jutellaan",
     "contact.heading.title": "Kuinka voimme auttaa?",
+    
     // Ideology Page
     "ideology.hero.subtitle": "Hoitotyön asiantuntijana",
     "ideology.hero.title1": "Helpottaa arkea",

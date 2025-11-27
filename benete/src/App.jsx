@@ -34,6 +34,7 @@ function App() {
         </Routes>
       </main>
       <Footer />
+      
     </LanguageProvider>
   );
 }

@@ -12,7 +12,9 @@ export default {
     "homepage.introduction_p3" :"This data helps detect changes in health, wellbeing, functional ability, and cognition  enabling timely responses before urgent care is needed.",
     "service.privacyTitle": "We Keep Personal Data Safe",
     "service.privacyText": "The analyses produced by BeneCare service are available to the senior, their relatives, and care staff through the web service or as printouts. The use of the service and data collection are always based on the person's consent. The collected personal data is not used or transmitted for any purpose other than related to the use of the service. In accordance with data protection law, the senior has the right to their own personal data and can request deletion of their personal data or termination of the service at any time.",
-  
+    "footer.followUs":"Follow us",
+    "footer.privacy":"Privacy policy",
+    "footer.terms":"Terms",
     "selector.title": "Choose Customer Type",
     "selector.subtitle": "We tailor our services to your needs",
     "selector.private.title": "Private Customers",
@@ -93,8 +95,9 @@ export default {
     "contact.form.type.assessment": "Functionality assessment",
     "contact.form.firstName": "First name",
     "contact.form.lastName": "Last name",
+    "contact.form.helper-text":"Provide an email or phone number *",
     "contact.form.email": "Email",
-    "contact.form.phone": "Phone number (optional)",
+    "contact.form.phone": "Phone number",
     "contact.form.organization": "Organization (optional)",
     "contact.form.role": "Your role (optional)",
     "contact.form.message": "Write your message...",
@@ -110,7 +113,7 @@ export default {
     "contact.phone": "+358 50 052 4514",
     "contact.email": "kari.backman@benete.com",
     "contact.heading.intro": "Let’s talk",
-    "contact.heading.title": "How can we help?",
+    
 
    // Ideology Page
     "ideology.hero.subtitle": "As a care expert",

@@ -35,7 +35,7 @@
 }
 .contact-btn h3{
   font-size: 17px;
-  font-weight: bold;
+  font-weight: 500;
   font-family: 'Rubik', sans-serif;
   color: #16202d;
   letter-spacing: 0.4px;
@@ -58,7 +58,15 @@
   margin-top: 20px;
 }
 
-
+.helper-text{
+font-size: 17px;
+  font-weight: 500;
+  font-family: 'Rubik', sans-serif;
+  color: #4d1edf;
+  letter-spacing: 0.4px;
+  line-height: 1.18;
+  margin: 0;
+}
 .form-group {
   display: flex;
   flex-direction: column;
@@ -101,22 +109,15 @@
   font-family: 'Rubik', sans-serif;
 }
 
-input[type="checkbox"] {
-  width: auto;
-  padding: 10px;
-  margin-right: 10px;
-  border: 2px solid #007BFF;
-  border-radius: 5px;
-  box-sizing: border-box;
-  cursor: pointer;
+
+
+.form-group input.input-error,
+.form-group textarea.input-error {
+  border-color: red;
+  
 }
 
-/* Error messages */
-.error {
-  color: #d00;
-  font-size: 0.85rem;
-  margin-top: 0.3rem;
-}
+
 
 /* Form row for paired fields */
 .form-row {
@@ -130,21 +131,7 @@ input[type="checkbox"] {
   flex-direction: column;
 }
 
-/* Checkbox layout */
-.checkbox-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.8rem;
-}
 
-.checkbox-item {
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
-  font-weight: 500;
-  letter-spacing: 0.4px;
-  font-family: 'Rubik', sans-serif;
-}
 
 
 .submit-button {
@@ -234,10 +221,7 @@ input[type="checkbox"] {
     gap: 7px;
   }
 
-  .checkbox-row {
-    flex-direction: column;
-    gap: 7px;
-  }
+  
   .contact-form{
     gap: 7px;
   }
