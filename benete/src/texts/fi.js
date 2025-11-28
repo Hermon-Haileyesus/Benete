@@ -233,6 +233,9 @@ privacy: {
         content: "Näitä käyttöehtoja sääntelevät ja tulkitaan Suomen lain mukaisesti, ja kaikki näihin käyttöehtoihin liittyvät riidat kuuluvat Suomen tuomioistuinten yksinomaiseen toimivaltaan."
       }
     },
-
-    
+"cookie.paragraph":'"Hyväksyn evästeet" -nappia painamalla hyväksyt, että evästeet tallennetaan laitteellesi. Näitä evästeitä käytetään tietojen keräämiseksi siitä, miten verkkosivustomme vierailijat käyttävät sivustoamme. Hyödynnämme kerättyä tietoa laatiaksemme yhteenvetoja ja kehittääksemme sivustoamme käyttäjäystävällisemmäksi.',
+"cookie.title":"Evästekäytäntö",
+"cookie.readMore":"Lisätietoa",
+"cookie.decline":" Kieltäydy",
+"cookie.accept":"Hyväksy evästeet"  
   };

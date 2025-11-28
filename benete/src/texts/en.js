@@ -235,5 +235,9 @@ privacy: {
     },
     
 
-
+"cookie.paragraph":'By clicking “ Allow cookies”, you agree to the storing of cookies on your device, to enhance site navigation, analyse site usage, and assist in our marketing efforts',
+"cookie.title":"Cookie policy",
+"cookie.readMore":"Learn more",
+"cookie.decline":" Decline",
+"cookie.accept":"Allow cookies"
   };

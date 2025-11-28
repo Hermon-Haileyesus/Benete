@@ -67,7 +67,7 @@ export default function CookieConsent() {
     {!showBanner && !manualOpen && consent !== "accepted" && (
       <div className="cookie-sticky-wrapper">
         <div className="cookie-sticky" onClick={reopenBanner}>
-          Evästekäytäntö
+          {t("cookie.title")}
         </div>
       </div>
     )}
@@ -76,15 +76,13 @@ export default function CookieConsent() {
     {(showBanner || manualOpen) && (
       <div className="cc-window" role="dialog" aria-live="polite" aria-label="cookieconsent" aria-describedby="cookieconsent:desc">
         <span id="cookieconsent:desc" className="cc-message">
-            "Hyväksyn evästeet" -nappia painamalla hyväksyt, että evästeet tallennetaan laitteellesi.
-          Näitä evästeitä käytetään tietojen keräämiseksi siitä, miten verkkosivustomme vierailijat käyttävät sivustoamme.
-          Hyödynnämme kerättyä tietoa laatiaksemme yhteenvetoja ja kehittääksemme sivustoamme käyttäjäystävällisemmäksi.
-          <Link to="/privacy-policy" className="cc-link">{t("footer.privacy")}</Link>
+            {t("cookie.paragraph")}
+          <Link to="/privacy-policy" className="cc-link">{t("cookie.readMore")}</Link>
           
         </span>
         <div className="cc-compliance">
-          <button className="cc-btn cc-deny" onClick={handleDeny}>Kieltäydy</button>
-          <button className="cc-btn cc-allow" onClick={handleAccept}>Hyväksy evästeet</button>
+          <button className="cc-btn cc-deny" onClick={handleDeny}>{t("cookie.decline")}</button>
+          <button className="cc-btn cc-allow" onClick={handleAccept}>{t("cookie.accept")}</button>
         </div>
       </div>
     )}

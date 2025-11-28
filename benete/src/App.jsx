@@ -14,6 +14,7 @@ import './css/App.css';
 import "@fontsource/rubik/400.css"; 
 import "@fontsource/rubik/500.css"; 
 import "@fontsource/rubik/700.css"; 
+import CookieConsent from './components/Cookies.Conset';
 
 
 
@@ -33,8 +34,11 @@ function App() {
           <Route path="/privacy-policy" element={<PrivacyPolicy/>} />
         </Routes>
       </main>
-      <Footer />
       
+      <Footer />
+              
+      <CookieConsent />
+
     </LanguageProvider>
   );
 }

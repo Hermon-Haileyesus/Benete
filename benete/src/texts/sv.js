@@ -231,4 +231,9 @@ privacy: {
         content: "Dessa villkor kommer att regleras av och tolkas i enlighet med finsk lag, och alla tvister som rör dessa villkor kommer att vara föremål för den exklusiva jurisdiktionen hos domstolarna i Finland."
       }
     },
+    "cookie.paragraph":'Genom att klicka på ”Tillåt cookies” samtycker du till att cookies lagras på din enhet. Detta förbättrar navigeringen på webbplatsen, möjliggör analys av användningen och stödjer våra marknadsföringsinsatser.',
+    "cookie.title":"Cookie policy",
+    "cookie.readMore":"Lära sig mer",
+    "cookie.decline":" Tillbakagång",
+    "cookie.accept":"Tillåt cookies"
 };
