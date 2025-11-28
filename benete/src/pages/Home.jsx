@@ -26,7 +26,7 @@ function Home() {
         </div>
         <CustomerTypeSelector/>
         <Benefits/>
-       <FundingBlock />
+        <FundingBlock />
 
         {/* ✅ Add this line to show the cookie banner */}
         <CookieConsent />

@@ -51,3 +51,20 @@
 .ely-logo {
   max-height: 70px;
 }
+@media (max-width: 768px) {
+  .funding-section {
+  padding: 4rem 0;
+}
+  .funding-row {
+    flex-direction: column;
+    gap: 1.5rem; 
+  }
+
+  .funding-block {
+    flex: 1 1 100%;   
+    max-width: 100%;  
+  }
+
+  
+}
+

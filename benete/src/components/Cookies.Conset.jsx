@@ -1,7 +1,10 @@
-import React, { useEffect, useState } from "react";
+import  { useEffect, useState } from "react";
 import "../css/CookieConsent.css";
+import { Link } from "react-router-dom";
+import { useLanguage } from '../contexts/LanguageContext';
 
 export default function CookieConsent() {
+  const {t} = useLanguage()
   const [consent, setConsent] = useState(() => {
     const match = document.cookie.match(/(^| )cookieConsent=([^;]+)/);
     return match ? match[2] : null;
@@ -64,7 +67,7 @@ export default function CookieConsent() {
     {!showBanner && !manualOpen && consent !== "accepted" && (
       <div className="cookie-sticky-wrapper">
         <div className="cookie-sticky" onClick={reopenBanner}>
-          🍪 Evästeasetukset
+          Evästekäytäntö
         </div>
       </div>
     )}
@@ -76,7 +79,7 @@ export default function CookieConsent() {
             "Hyväksyn evästeet" -nappia painamalla hyväksyt, että evästeet tallennetaan laitteellesi.
           Näitä evästeitä käytetään tietojen keräämiseksi siitä, miten verkkosivustomme vierailijat käyttävät sivustoamme.
           Hyödynnämme kerättyä tietoa laatiaksemme yhteenvetoja ja kehittääksemme sivustoamme käyttäjäystävällisemmäksi.
-          <a href="/privacy-policy" target="_blank" rel="noopener noreferrer nofollow" className="cc-link">Lisätietoa</a>
+          <Link to="/privacy-policy" className="cc-link">{t("footer.privacy")}</Link>
           
         </span>
         <div className="cc-compliance">

@@ -2,7 +2,7 @@ import '../css/Ideology.css';
 import headerImg from '../assets/header_img/oldWoman.jpg';
 import Header from "../components/Header";
 import { useLanguage } from "../contexts/LanguageContext";
-import cooking from '../assets/images/oldMan.jpg';
+import cooking from '../assets/images/k1.jpg';
 import door from '../assets/images/door.jpg';
 import couple from '../assets/images/couple.jpg';
 import hand_shake from '../assets/images/hand_shake.jpg';

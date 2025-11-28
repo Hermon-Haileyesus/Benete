@@ -3,7 +3,7 @@
   bottom: 20px;
   right: 20px;
   max-width: 360px;
-  background: #fff;
+  background:#fdfdfd;
   border-radius: 6px;
   padding: 2rem;
   font-family: 'Rubik', sans-serif;
@@ -36,10 +36,10 @@
 .cc-link {
   color: #4d1edf;
   text-decoration: underline;
-  margin-left: 5px;
-  padding: 0.2em;
+  margin-left: 2px;
   cursor: pointer;
   box-sizing: border-box;
+  display: inline-block;
 }
 
 .cc-compliance {
@@ -57,7 +57,7 @@
   font-weight: 700;
   text-align: center;
   border-width: 2px;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.7px;
 }
 
 .cc-allow {
@@ -72,20 +72,19 @@
   color: #4d1edf;
 }
 .cc-deny:hover{
-    padding: 0 .8em;
-    border-bottom: 2px solid #ff0000;
+    
     color: #ff0000;
 }
 .cookie-sticky-wrapper {
   position: fixed;
-  bottom: -30px; /* mostly hidden */
+  bottom: -30px; 
   right: 20px;
   z-index: 9999;
   transition: bottom 0.3s ease;
 }
 
 .cookie-sticky-wrapper:hover {
-  bottom: 0; /* slide up on hover */
+  bottom: 0; 
 }
 
 .cookie-sticky {
@@ -96,8 +95,8 @@
   font-size: 0.85rem;
   cursor: pointer;
   z-index: 9999;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* ✅ subtle shadow */
-
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
+  letter-spacing: 0.4px;
 
   
 }
@@ -107,16 +106,18 @@
   .cc-window {
     left: 0;             
     right: 0;
-    bottom: 0;           /* stick to bottom */
-    max-width: 100%;     /* remove fixed max width */
-    width: 100%;         /* full width */
-    border-radius: 0;    /* flat edges for mobile */
-    padding: 12px;       /* tighter padding */
+    bottom: 0;         
+    max-width: 100%;     
+    width: 100%;         
+    border-radius: 0;    
     font-size: 0.85rem; 
-    height: 50%; 
   }
 .cc-compliance {
   justify-content: flex-start;
+  
+}
+.cookie-sticky-wrapper {
+  bottom: 0; 
   
 }
 }
