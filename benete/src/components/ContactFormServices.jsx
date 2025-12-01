@@ -57,11 +57,24 @@ export default function ContactFormServices() {
     },
   });
 
-  const onSubmit = (data) => {
-    console.log("Form submitted:", data);
-    setShowPopup(true);
-    reset();
-  };
+  const onSubmit = async (data) => {
+  try {
+    const response = await fetch("/api/contacts", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data),
+    });
+
+    if (response.ok) {
+      setShowPopup(true);
+      reset();
+    } else {
+      console.error("Failed to submit form");
+    }
+  } catch (error) {
+    console.error("Error submitting form:", error);
+  }
+};
 
   return (
     <section className="contact-section Service">
