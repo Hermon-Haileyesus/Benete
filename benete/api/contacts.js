@@ -5,38 +5,34 @@ let db;
 
 async function connectDB() {
   if (!client) {
-    console.log("Connecting with URI:", process.env.MONGODB_URI); // ✅ Log URI
     client = new MongoClient(process.env.MONGODB_URI);
     await client.connect();
-    db = client.db("ContactFormDB"); // ✅ Make sure this matches your DB name
+    db = client.db("ContactFormDB"); // make sure this matches your DB name
   }
   return db;
 }
 
 export default async function handler(req, res) {
-  if (req.method === "POST") {
-    try {
-      console.log("Incoming request body:", req.body); // ✅ Log raw body
+  console.log("Handler triggered with method:", req.method);
 
-      const database = await connectDB();
-      const contacts = database.collection("contacts");
+  try {
+    const database = await connectDB();
+    const contacts = database.collection("contacts");
 
+    if (req.method === "POST") {
       const body = typeof req.body === "string" ? JSON.parse(req.body) : req.body;
-      console.log("Parsed body:", body); // ✅ Log parsed body
+      console.log("Parsed body:", body);
 
-      await contacts.insertOne({
-        ...body,
-        createdAt: new Date(),
-      });
-
-      console.log("Document inserted successfully"); // ✅ Confirm success
+      await contacts.insertOne({ ...body, createdAt: new Date() });
       res.status(201).json({ message: "Saved successfully" });
-    } catch (err) {
-      console.error("Error inserting:", err); // ✅ Log error
-      res.status(500).json({ error: err.message });
+    } else if (req.method === "GET") {
+      const allContacts = await contacts.find({}).toArray();
+      res.status(200).json(allContacts);
+    } else {
+      res.status(405).json({ error: "Method not allowed" });
     }
-  } else {
-    res.status(405).json({ error: "Method not allowed" });
+  } catch (err) {
+    console.error("Error in handler:", err);
+    res.status(500).json({ error: err.message });
   }
 }
-
