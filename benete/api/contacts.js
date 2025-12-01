@@ -7,7 +7,7 @@ async function connectDB() {
   if (!client) {
     client = new MongoClient(process.env.MONGODB_URI);
     await client.connect();
-    db = client.db("Benete_contactForm"); 
+    db = client.db("ContactFormDB"); 
   }
   return db;
 }
