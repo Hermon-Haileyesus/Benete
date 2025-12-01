@@ -5,9 +5,10 @@ let db;
 
 async function connectDB() {
   if (!client) {
+    console.log("Connecting with URI:", process.env.MONGODB_URI); // <-- log URI
     client = new MongoClient(process.env.MONGODB_URI);
     await client.connect();
-    db = client.db("ContactFormDB"); // matches your manual DB
+    db = client.db("ContactFormDB");
   }
   return db;
 }
@@ -15,6 +16,8 @@ async function connectDB() {
 export default async function handler(req, res) {
   if (req.method === "POST") {
     try {
+      console.log("Request body:", req.body); // <-- log request body
+
       const database = await connectDB();
       const contacts = database.collection("contacts");
 
@@ -27,7 +30,7 @@ export default async function handler(req, res) {
 
       res.status(201).json({ message: "Saved successfully" });
     } catch (err) {
-      console.error("Error inserting:", err);
+      console.error("Error inserting:", err); // <-- log error
       res.status(500).json({ error: err.message });
     }
   } else {
