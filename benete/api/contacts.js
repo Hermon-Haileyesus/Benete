@@ -1,4 +1,5 @@
 import { MongoClient } from "mongodb";
+console.log("Serverless function loaded");
 
 let client;
 let db;
