@@ -20,7 +20,7 @@ function Contact () {
       />
       <ContactForm/>
       <BeneteContact/>
-      <ContactsPage/>
+      
       </>
     )
 }
