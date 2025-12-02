@@ -10,7 +10,7 @@ async function connectDB() {
     }
     client = new MongoClient(process.env.MONGODB_URI);
     await client.connect();
-    db = client.db("ContactFormDB"); // make sure this matches your DB name
+    db = client.db("ContactFormDB");
   }
   return db;
 }

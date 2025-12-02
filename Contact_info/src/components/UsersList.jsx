@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import "../css/UserList.css";
 
 export default function ContactsPage() {
   const [contacts, setContacts] = useState([]);
@@ -11,7 +12,7 @@ export default function ContactsPage() {
 
   const fetchContacts = async () => {
     try {
-      const response = await fetch("/api/contacts"); // calls your GET handler
+      const response = await fetch("/api/contacts"); 
       const data = await response.json();
       setContacts(data);
     } catch (error) {
@@ -39,7 +40,7 @@ export default function ContactsPage() {
     }
   };
 
-  // Filter contacts based on search term
+  
   const filteredContacts = contacts.filter((c) => {
     const fullName = `${c.firstName} ${c.lastName}`.toLowerCase();
     return (
@@ -61,7 +62,7 @@ export default function ContactsPage() {
         placeholder="Search by name, email, or phone"
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
-        style={{ marginBottom: "1rem", padding: "0.5rem", width: "100%" }}
+        
       />
 
       {filteredContacts.length === 0 ? (
@@ -69,7 +70,7 @@ export default function ContactsPage() {
       ) : (
         <ul>
           {filteredContacts.map((c) => (
-            <li key={c._id} style={{ marginBottom: "1rem" }}>
+            <li key={c._id} >
               <strong>{c.firstName} {c.lastName}</strong><br />
               {c.email || c.phone}<br />
               {c.organization && <span>Org: {c.organization}</span>}<br />
@@ -77,7 +78,7 @@ export default function ContactsPage() {
               {c.message && <span>Message: {c.message}</span>}<br />
               <button
                 onClick={() => deleteContact(c._id)}
-                style={{ marginTop: "0.5rem", color: "white", background: "red", border: "none", padding: "0.3rem 0.6rem", cursor: "pointer" }}
+                
               >
                 Delete
               </button>
