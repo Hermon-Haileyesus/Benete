@@ -32,7 +32,7 @@ export default async function handler(req, res) {
 
     } else if (req.method === "GET") {
       // Get all contacts
-      const allContacts = await contacts.find({}).toArray();
+      const allContacts = await contacts.find({}).sort({ createdAt: -1 }).toArray();
       res.status(200).json(allContacts);
 
     } else if (req.method === "DELETE") {
