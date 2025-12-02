@@ -22,6 +22,10 @@ export const LanguageProvider = ({ children }) => {
     };
     fetchTranslations();
   }, [language]);
+useEffect(() => {
+  console.log("Loaded translations:", translations);
+}, [translations]);
+
 
   const t = (key) => {
     if (!translations) return ""; // or show spinner
