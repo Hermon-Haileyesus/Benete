@@ -54,9 +54,7 @@ export default function ContactsPage() {
 
   return (
     <section>
-      <h2>Saved Contacts</h2>
-
-      {/* Search input */}
+    
       <input
         type="text"
         placeholder="Search by name, email, or phone"
@@ -66,7 +64,7 @@ export default function ContactsPage() {
       />
 
       {filteredContacts.length === 0 ? (
-        <p>No contacts found.</p>
+        <h2>No contacts found.</h2>
       ) : (
         <ul>
           {filteredContacts.map((c) => (
