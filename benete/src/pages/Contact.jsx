@@ -4,6 +4,7 @@ import headerImg from "../assets/header_img/Contact_banner.jpg";
 import { useLanguage } from "../contexts/LanguageContext";
 import BeneteContact from '../components/BeneteContact';
 import ContactForm from '../components/ContactForm';
+import ContactsPage from "../../../Contact_info/src/components/UsersList";
 
 function Contact () {
     const { t } = useLanguage();
@@ -19,6 +20,7 @@ function Contact () {
       />
       <ContactForm/>
       <BeneteContact/>
+      <ContactsPage/>
       
       </>
     )
