@@ -51,7 +51,7 @@
 .contacts-list ul {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 10px;
 }
 
 .contact-card {
@@ -121,7 +121,7 @@
 @media (max-width: 600px) {
   .contacts-page {
     padding: 0;
-    margin: 1rem;
+    margin: 0;
   }
   .search-bar{
     min-width: 100px;
