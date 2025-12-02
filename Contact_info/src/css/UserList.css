@@ -50,7 +50,7 @@
 
 .contacts-list ul {
   list-style: none;
-  padding: 0;
+  padding: 10px 0;
   margin: 10px;
 }
 
@@ -58,8 +58,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  
-  border-radius: 8px;
+  border-bottom: 1px solid #4d1edf;
   padding: 1rem;
   margin-bottom: 1rem;
   transition: transform 0.1s ease, box-shadow 0.2s ease;
