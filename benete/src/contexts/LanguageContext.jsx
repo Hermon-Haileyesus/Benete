@@ -4,7 +4,8 @@ const LanguageContext = createContext(undefined);
 
 export const LanguageProvider = ({ children }) => {
   const [language, setLanguage] = useState("fi");
-  const [translations, setTranslations] = useState({});
+  const [translations, setTranslations] = useState(null);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchTranslations = async () => {
@@ -14,29 +15,30 @@ export const LanguageProvider = ({ children }) => {
         setTranslations(data);
       } catch (error) {
         console.error("Failed to load translations:", error);
-        setTranslations({}); // fallback to empty
+        setTranslations({});
+      } finally {
+        setLoading(false);
       }
     };
     fetchTranslations();
   }, [language]);
 
   const t = (key) => {
-    if (translations[key]) return translations[key];
-
+    if (!translations) return ""; // or show spinner
     const keys = key.split(".");
     let value = translations;
     for (const k of keys) {
       if (value && typeof value === "object" && k in value) {
         value = value[k];
       } else {
-        return key; // fallback
+        return key; // fallback to key
       }
     }
     return value;
   };
 
   return (
-    <LanguageContext.Provider value={{ language, setLanguage, t }}>
+    <LanguageContext.Provider value={{ language, setLanguage, t, loading }}>
       {children}
     </LanguageContext.Provider>
   );
