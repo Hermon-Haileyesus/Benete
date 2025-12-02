@@ -12,7 +12,7 @@ export default function ContactsPage() {
 
   const fetchContacts = async () => {
     try {
-      const response = await fetch("/api/contacts"); 
+      const response = await fetch("/api/contacts");
       const data = await response.json();
       setContacts(data);
     } catch (error) {
@@ -40,7 +40,6 @@ export default function ContactsPage() {
     }
   };
 
-  
   const filteredContacts = contacts.filter((c) => {
     const fullName = `${c.firstName} ${c.lastName}`.toLowerCase();
     return (
@@ -50,40 +49,55 @@ export default function ContactsPage() {
     );
   });
 
-  if (loading) return <p>Loading contacts...</p>;
+  if (loading) return <p className="loading">Loading contacts...</p>;
 
   return (
-    <section>
-    
-      <input
-        type="text"
-        placeholder="Search by name, email, or phone"
-        value={searchTerm}
-        onChange={(e) => setSearchTerm(e.target.value)}
-        
-      />
+    <div className="contacts-page">
+      {/* Sticky header */}
+      <div className="contacts-header sticky-header">
+        <h2 className="contacts-title">Saved Contacts</h2>
+        <input
+          type="text"
+          className="search-bar"
+          placeholder="Search by name, email, or phone"
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+        />
+      </div>
 
-      {filteredContacts.length === 0 ? (
-        <h2>No contacts found.</h2>
-      ) : (
-        <ul>
-          {filteredContacts.map((c) => (
-            <li key={c._id} >
-              <strong>{c.firstName} {c.lastName}</strong><br />
-              {c.email || c.phone}<br />
-              {c.organization && <span>Org: {c.organization}</span>}<br />
-              {c.role && <span>Role: {c.role}</span>}<br />
-              {c.message && <span>Message: {c.message}</span>}<br />
-              <button
-                onClick={() => deleteContact(c._id)}
-                
-              >
-                Delete
-              </button>
-            </li>
-          ))}
-        </ul>
-      )}
-    </section>
+      <div className="contacts-list">
+        {filteredContacts.length === 0 ? (
+          <p className="no-results">No contacts found.</p>
+        ) : (
+          <ul>
+            {filteredContacts.map((c) => (
+              <li key={c._id} className="contact-card">
+                <div className="contact-info">
+                  <h3 className="contact-name">
+                    {c.firstName} {c.lastName}
+                  </h3>
+                  <p className="contact-detail">{c.email || c.phone}</p>
+                  {c.organization && (
+                    <p className="contact-detail">Org: {c.organization}</p>
+                  )}
+                  {c.role && <p className="contact-detail">Role: {c.role}</p>}
+                  {c.message && (
+                    <p className="contact-message">“{c.message}”</p>
+                  )}
+                </div>
+                <div className="contact-actions">
+                  <button
+                    onClick={() => deleteContact(c._id)}
+                    className="delete-btn"
+                  >
+                    Delete
+                  </button>
+                </div>
+              </li>
+            ))}
+          </ul>
+        )}
+      </div>
+    </div>
   );
 }
