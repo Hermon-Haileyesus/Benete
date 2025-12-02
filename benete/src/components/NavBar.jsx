@@ -31,6 +31,11 @@ function NavBar() {
                    <img src={Logo} alt="Benete logo" className="logo-image" />
                 </Link>
           </div>
+          <button onClick={() => fetch("/api/seed-translations", { method: "POST" })}>
+  Seed Translations
+</button>
+
+
           <div className="nav-links">
             <Link to="/" className="nav-link">
               {t("nav.home")}
