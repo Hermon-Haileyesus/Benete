@@ -1,12 +1,16 @@
 import { useEffect, useState } from "react";
 
-// Helper to flatten nested translation objects into dot notation keys
+// Flatten nested objects into dot notation keys
 function flattenTranslations(obj, prefix = "") {
   const result = {};
   for (const key in obj) {
     const value = obj[key];
     const newKey = prefix ? `${prefix}.${key}` : key;
-    if (typeof value === "object" && value !== null) {
+    if (
+      typeof value === "object" &&
+      value !== null &&
+      !Array.isArray(value)
+    ) {
       Object.assign(result, flattenTranslations(value, newKey));
     } else {
       result[newKey] = value;
@@ -18,9 +22,8 @@ function flattenTranslations(obj, prefix = "") {
 function AdminTranslations() {
   const [translations, setTranslations] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [edited, setEdited] = useState({}); // track edits per language
+  const [edited, setEdited] = useState({}); // track edits per document
 
-  // Fetch translations from API
   useEffect(() => {
     const fetchData = async () => {
       const res = await fetch("/api/translations");
@@ -31,7 +34,6 @@ function AdminTranslations() {
     fetchData();
   }, []);
 
-  // Track changes in inputs
   const handleChange = (id, key, value) => {
     setEdited((prev) => ({
       ...prev,
@@ -39,7 +41,6 @@ function AdminTranslations() {
     }));
   };
 
-  // Save changes for one document
   const handleSave = async (id) => {
     const updates = edited[id];
     if (!updates) return;
@@ -50,7 +51,6 @@ function AdminTranslations() {
       body: JSON.stringify({ id, updates }),
     });
 
-    // Update local state
     setTranslations((prev) =>
       prev.map((t) =>
         t._id === id
@@ -65,7 +65,6 @@ function AdminTranslations() {
       )
     );
 
-    // Clear edits for this document
     setEdited((prev) => {
       const newEdited = { ...prev };
       delete newEdited[id];
@@ -73,7 +72,7 @@ function AdminTranslations() {
     });
   };
 
-  if (loading) return <p>Loading...</p>;
+  if (loading) return <p>Loading translations...</p>;
 
   return (
     <div style={{ padding: "2rem" }}>
