@@ -31,9 +31,7 @@ function NavBar() {
                    <img src={Logo} alt="Benete logo" className="logo-image" />
                 </Link>
           </div>
-          
-  Seed Translations
-</button>
+        
 
 
           <div className="nav-links">
