@@ -6,11 +6,7 @@ function flattenTranslations(obj, prefix = "") {
   for (const key in obj) {
     const value = obj[key];
     const newKey = prefix ? `${prefix}.${key}` : key;
-    if (
-      typeof value === "object" &&
-      value !== null &&
-      !Array.isArray(value)
-    ) {
+    if (typeof value === "object" && value !== null && !Array.isArray(value)) {
       Object.assign(result, flattenTranslations(value, newKey));
     } else {
       result[newKey] = value;
@@ -22,7 +18,7 @@ function flattenTranslations(obj, prefix = "") {
 function AdminTranslations() {
   const [translations, setTranslations] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [edited, setEdited] = useState({}); // track edits per document
+  const [edited, setEdited] = useState({});
 
   useEffect(() => {
     const fetchData = async () => {
@@ -45,22 +41,18 @@ function AdminTranslations() {
     const updates = edited[id];
     if (!updates) return;
 
+    // Send flat keys like { "nav.home": "moi" }
     await fetch("/api/translations", {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ id, updates }),
     });
 
+    // Update local state
     setTranslations((prev) =>
       prev.map((t) =>
         t._id === id
-          ? {
-              ...t,
-              translations: {
-                ...t.translations,
-                ...updates,
-              },
-            }
+          ? { ...t, translations: { ...t.translations, ...updates } }
           : t
       )
     );
@@ -77,11 +69,7 @@ function AdminTranslations() {
   return (
     <div style={{ padding: "2rem" }}>
       <h1>Admin Translation Editor</h1>
-      <table
-        border="1"
-        cellPadding="8"
-        style={{ width: "100%", borderCollapse: "collapse" }}
-      >
+      <table border="1" cellPadding="8" style={{ width: "100%", borderCollapse: "collapse" }}>
         <thead>
           <tr>
             <th>Language</th>
@@ -92,31 +80,23 @@ function AdminTranslations() {
         </thead>
         <tbody>
           {translations.map((t) =>
-            Object.entries(flattenTranslations(t.translations || {})).map(
-              ([key, value]) => (
-                <tr key={`${t._id}-${key}`}>
-                  <td>{t.language}</td>
-                  <td>{key}</td>
-                  <td>
-                    <input
-                      type="text"
-                      value={
-                        edited[t._id]?.[key] !== undefined
-                          ? edited[t._id][key]
-                          : value
-                      }
-                      onChange={(e) =>
-                        handleChange(t._id, key, e.target.value)
-                      }
-                      style={{ width: "100%" }}
-                    />
-                  </td>
-                  <td>
-                    <button onClick={() => handleSave(t._id)}>Save</button>
-                  </td>
-                </tr>
-              )
-            )
+            Object.entries(flattenTranslations(t.translations || {})).map(([key, value]) => (
+              <tr key={`${t._id}-${key}`}>
+                <td>{t.language}</td>
+                <td>{key}</td>
+                <td>
+                  <input
+                    type="text"
+                    value={edited[t._id]?.[key] !== undefined ? edited[t._id][key] : value}
+                    onChange={(e) => handleChange(t._id, key, e.target.value)}
+                    style={{ width: "100%" }}
+                  />
+                </td>
+                <td>
+                  <button onClick={() => handleSave(t._id)}>Save</button>
+                </td>
+              </tr>
+            ))
           )}
         </tbody>
       </table>
