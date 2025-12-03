@@ -1,4 +1,3 @@
-// pages/api/translations.js
 import { MongoClient, ObjectId } from "mongodb";
 
 const client = new MongoClient(process.env.MONGODB_URI);
@@ -15,10 +14,18 @@ export default async function handler(req, res) {
 
   if (req.method === "PUT") {
     const { id, updates } = req.body;
+
+    // Convert flat keys into dot notation paths under translations
+    const dotUpdates = {};
+    for (const key in updates) {
+      dotUpdates[`translations.${key}`] = updates[key];
+    }
+
     await collection.updateOne(
       { _id: new ObjectId(id) },
-      { $set: updates }
+      { $set: dotUpdates }
     );
+
     return res.status(200).json({ success: true });
   }
 
