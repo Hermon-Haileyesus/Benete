@@ -56,6 +56,7 @@ export default function ContactsPage() {
       {/* Sticky header */}
       <div className="contacts-header sticky-header">
         <h2 className="contacts-title">Saved Contacts</h2>
+         <button onClick={() => fetch("/api/seed-translations", { method: "POST" })}>Seed Translations</button>
         <input
           type="text"
           className="search-bar"
