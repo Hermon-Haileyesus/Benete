@@ -17,15 +17,17 @@ export default async function handler(req, res) {
     const { id, updates } = req.body;
 
     // Ensure updates are applied with dot notation under translations
-    const dotUpdates = {};
-    for (const key in updates) {
-      dotUpdates[`translations.${key}`] = updates[key];
-    }
+   const dotUpdates = {};
+for (const key in updates) {
+  dotUpdates[`translations.${key}`] = updates[key];
+}
 
-    await collection.updateOne(
-      { _id: new ObjectId(id) },
-      { $set: dotUpdates }
-    );
+await collection.updateOne(
+  { _id: new ObjectId(id) },
+  { $set: dotUpdates }
+);
+
+
 
     return res.status(200).json({ success: true });
   }
