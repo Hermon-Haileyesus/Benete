@@ -15,7 +15,7 @@ export default async function handler(req, res) {
   if (req.method === "PUT") {
     const { id, updates } = req.body;
 
-    // Preserve flat keys like "nav.home" inside translations
+    // Convert flat keys into dot notation paths under translations
     const dotUpdates = {};
     for (const key in updates) {
       dotUpdates[`translations.${key}`] = updates[key];
