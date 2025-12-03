@@ -95,7 +95,7 @@
   .header-content {
     left: 5%;
     max-width: 90%;
-    bottom: 90px;
+    bottom: 0;
   }
 
   .header-title {
