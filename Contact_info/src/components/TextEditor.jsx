@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 function AdminTranslations() {
   const [translations, setTranslations] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [edited, setEdited] = useState({}); // track edits
+  const [edited, setEdited] = useState({}); // track edits per language
 
   useEffect(() => {
     const fetchData = async () => {
@@ -15,10 +15,10 @@ function AdminTranslations() {
     fetchData();
   }, []);
 
-  const handleChange = (id, field, value) => {
+  const handleChange = (id, key, value) => {
     setEdited((prev) => ({
       ...prev,
-      [id]: { ...prev[id], [field]: value },
+      [id]: { ...prev[id], [key]: value },
     }));
   };
 
@@ -34,7 +34,9 @@ function AdminTranslations() {
 
     setTranslations((prev) =>
       prev.map((t) =>
-        t._id === id ? { ...t, ...updates } : t
+        t._id === id
+          ? { ...t, translations: { ...t.translations, ...updates } }
+          : t
       )
     );
 
@@ -48,9 +50,9 @@ function AdminTranslations() {
   if (loading) return <p>Loading...</p>;
 
   return (
-    <div>
+    <div style={{ padding: "2rem" }}>
       <h1>Admin Translation Editor</h1>
-      <table border="1" cellPadding="8">
+      <table border="1" cellPadding="8" style={{ width: "100%", borderCollapse: "collapse" }}>
         <thead>
           <tr>
             <th>Language</th>
@@ -61,33 +63,29 @@ function AdminTranslations() {
         </thead>
         <tbody>
           {translations.map((t) =>
-            Object.entries(t).map(([field, value]) => {
-              if (field === "_id" || field === "language") return null;
-              return (
-                <tr key={`${t._id}-${field}`}>
-                  <td>{t.language}</td>
-                  <td>{field}</td>
-                  <td>
-                    <input
-                      type="text"
-                      value={
-                        edited[t._id]?.[field] !== undefined
-                          ? edited[t._id][field]
-                          : value
-                      }
-                      onChange={(e) =>
-                        handleChange(t._id, field, e.target.value)
-                      }
-                    />
-                  </td>
-                  <td>
-                    <button onClick={() => handleSave(t._id)}>
-                      Save
-                    </button>
-                  </td>
-                </tr>
-              );
-            })
+            Object.entries(t.translations || {}).map(([key, value]) => (
+              <tr key={`${t._id}-${key}`}>
+                <td>{t.language}</td>
+                <td>{key}</td>
+                <td>
+                  <input
+                    type="text"
+                    value={
+                      edited[t._id]?.[key] !== undefined
+                        ? edited[t._id][key]
+                        : value
+                    }
+                    onChange={(e) =>
+                      handleChange(t._id, key, e.target.value)
+                    }
+                    style={{ width: "100%" }}
+                  />
+                </td>
+                <td>
+                  <button onClick={() => handleSave(t._id)}>Save</button>
+                </td>
+              </tr>
+            ))
           )}
         </tbody>
       </table>
