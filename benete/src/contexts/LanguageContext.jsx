@@ -23,11 +23,30 @@ export const LanguageProvider = ({ children }) => {
     fetchTranslations();
   }, [language]);
 
-  // ✅ Flat key lookup
-  const t = (key) => {
-    if (!translations) return "";
-    return translations[key] || key;
+   const t = (key) => {
+    if (!translations) return key;
+
+    // Direct lookup
+    if (translations[key]) {
+      return translations[key];
+    }
+
+    // Nested lookup with dot notation
+    const keys = key.split(".");
+    let value = translations;
+
+    for (const k of keys) {
+      if (value && typeof value === "object" && k in value) {
+        value = value[k];
+      } else {
+        return key; // fallback
+      }
+    }
+
+    return value;
   };
+
+
 
   return (
     <LanguageContext.Provider value={{ language, setLanguage, t, loading }}>
