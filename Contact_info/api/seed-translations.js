@@ -764,3 +764,5 @@ export default async function handler(req, res) {
     res.status(500).json({ error: "Failed to seed translations" });
   }
 }
+// add this button in anywhere in component andwhen you click it it will activat the function so it add the translation object to mongodb
+/*<button onClick={() => fetch("/api/seed-translations", { method: "POST" })}>Seed Translations</button>*/ 
