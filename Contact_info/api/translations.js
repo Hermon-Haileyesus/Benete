@@ -15,10 +15,18 @@ export default async function handler(req, res) {
 
   if (req.method === "PUT") {
     const { id, updates } = req.body;
+
+    // Ensure updates are applied with dot notation under translations
+    const dotUpdates = {};
+    for (const key in updates) {
+      dotUpdates[`translations.${key}`] = updates[key];
+    }
+
     await collection.updateOne(
       { _id: new ObjectId(id) },
-      { $set: updates }
+      { $set: dotUpdates }
     );
+
     return res.status(200).json({ success: true });
   }
 
