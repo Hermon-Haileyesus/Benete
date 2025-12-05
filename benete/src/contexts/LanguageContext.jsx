@@ -1,10 +1,15 @@
 import { createContext, useContext, useState, useEffect } from "react";
+import fi from "../texts/fi";
+import en from "../texts/en";
+import sv from "../texts/sv";
 
 const LanguageContext = createContext(undefined);
 
+const localTranslations = { fi, en, sv };
+
 export const LanguageProvider = ({ children }) => {
   const [language, setLanguage] = useState("fi");
-  const [translations, setTranslations] = useState(null);
+  const [translations, setTranslations] = useState(localTranslations[language]); // start with local
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -12,10 +17,18 @@ export const LanguageProvider = ({ children }) => {
       try {
         const res = await fetch(`/api/translations?lang=${language}`);
         const data = await res.json();
-        setTranslations(data);
+
+        // If MongoDB returns something, use it
+        if (data && Object.keys(data).length > 0) {
+          setTranslations(data);
+        } else {
+          // fallback to local static files
+          setTranslations(localTranslations[language]);
+        }
       } catch (error) {
         console.error("Failed to load translations:", error);
-        setTranslations({});
+        // fallback to local static files
+        setTranslations(localTranslations[language]);
       } finally {
         setLoading(false);
       }
@@ -23,10 +36,9 @@ export const LanguageProvider = ({ children }) => {
     fetchTranslations();
   }, [language]);
 
-   const t = (key) => {
-    if (!translations) return key;
+  const t = (key) => {
+    if (!translations) return "";
 
-    // Direct lookup
     if (translations[key]) {
       return translations[key];
     }
@@ -39,12 +51,20 @@ export const LanguageProvider = ({ children }) => {
       if (value && typeof value === "object" && k in value) {
         value = value[k];
       } else {
-        return key; // fallback
+        return ""; 
       }
     }
 
     return value;
   };
+
+  return (
+    <LanguageContext.Provider value={{ language, setLanguage, t, loading }}>
+      {children}
+    </LanguageContext.Provider>
+  );
+};
+
 
 
 
