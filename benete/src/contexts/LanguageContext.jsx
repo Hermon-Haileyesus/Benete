@@ -68,12 +68,6 @@ export const LanguageProvider = ({ children }) => {
 
 
 
-  return (
-    <LanguageContext.Provider value={{ language, setLanguage, t, loading }}>
-      {children}
-    </LanguageContext.Provider>
-  );
-};
 
 export const useLanguage = () => {
   const context = useContext(LanguageContext);
