@@ -4,7 +4,7 @@ import { Users, Building2, ArrowRight } from "lucide-react";
 import "../css/CustomerTypeSelector.css";
 import '@fontsource/rubik';
 
-function CustomerTypeSelector ()  {
+function CustomerTypeSelector() {
   const navigate = useNavigate();
   const { t } = useLanguage();
 
@@ -12,9 +12,9 @@ function CustomerTypeSelector ()  {
     <section className="selector-section">
       <div className="selector-container">
         <div className="selector-header">
-          <h2 className="selector-title">{t("selector.title")}</h2>
+          <h2 className="selector-title">{t("selectorTitle")}</h2>
           <p className="selector-subtitle">
-            {t("selector.subtitle")}
+            {t("selectorSubtitle")}
           </p>
         </div>
 
@@ -27,11 +27,16 @@ function CustomerTypeSelector ()  {
               <div className="selector-icon">
                 <Users size={40} />
               </div>
-              <h3 className="selector-card-title">{t("selector.private.title")}</h3>
+              <h3 className="selector-card-title">{t("selectorPrivateTitle")}</h3>
               <p className="selector-card-description">
-                {t("selector.private.description")}
+                {t("selectorPrivateDescription")}
               </p>
-              <p className="selector-readmore"> {t("common.readMore")}<span className="arrow"><ArrowRight size={16} strokeWidth={2} /></span></p>
+              <p className="selector-readmore">
+                {t("commonReadMore")}
+                <span className="arrow">
+                  <ArrowRight size={16} strokeWidth={2} />
+                </span>
+              </p>
             </div>
           </div>
 
@@ -43,18 +48,22 @@ function CustomerTypeSelector ()  {
               <div className="selector-icon">
                 <Building2 size={40} />
               </div>
-              <h3 className="selector-card-title">{t("selector.company.title")}</h3>
+              <h3 className="selector-card-title">{t("selectorCompanyTitle")}</h3>
               <p className="selector-card-description">
-                {t("selector.company.description")}
+                {t("selectorCompanyDescription")}
               </p>
-              <p className="selector-readmore"> {t("common.readMore")}<span className="arrow"><ArrowRight size={16} strokeWidth={2} /></span></p>
-
+              <p className="selector-readmore">
+                {t("commonReadMore")}
+                <span className="arrow">
+                  <ArrowRight size={16} strokeWidth={2} />
+                </span>
+              </p>
             </div>
           </div>
         </div>
       </div>
     </section>
   );
-};
-export default CustomerTypeSelector
+}
 
+export default CustomerTypeSelector;

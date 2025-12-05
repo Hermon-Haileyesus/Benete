@@ -22,7 +22,7 @@ const schema = z
   })
   .refine((data) => data.email !== "" || data.phone !== "", {
     message: "Anna sähköposti tai puhelinnumero",
-    path: ["email"], 
+    path: ["email"],
   });
 
 export default function ContactFormServices() {
@@ -58,29 +58,29 @@ export default function ContactFormServices() {
   });
 
   const onSubmit = async (data) => {
-  try {
-    const response = await fetch("/api/contacts", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(data),
-    });
+    try {
+      const response = await fetch("/api/contacts", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
 
-    if (response.ok) {
-      setShowPopup(true);
-      reset();
-    } else {
-      console.error("Failed to submit form");
+      if (response.ok) {
+        setShowPopup(true);
+        reset();
+      } else {
+        console.error("Failed to submit form");
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
     }
-  } catch (error) {
-    console.error("Error submitting form:", error);
-  }
-};
+  };
 
   return (
     <section className="contact-section Service">
-      <h2>{t("contact.form.title")}</h2>
+      <h2>{t("contactFormTitle")}</h2>
       <div className="contact-btn">
-        <h3 className="how-step-title">{t("contact.form.type")}</h3>
+        <h3 className="how-step-title">{t("contactFormType")}</h3>
         <FaChevronDown />
       </div>
 
@@ -90,34 +90,33 @@ export default function ContactFormServices() {
           <div className="form-group">
             <input
               {...register("firstName")}
-              placeholder={`${t("contact.form.firstName")}*`}
+              placeholder={`${t("contactFormFirstName")}*`}
               className={errors.firstName ? "input-error" : ""}
             />
           </div>
           <div className="form-group">
             <input
               {...register("lastName")}
-              placeholder={`${t("contact.form.lastName")}*`}
+              placeholder={`${t("contactFormLastName")}*`}
               className={errors.lastName ? "input-error" : ""}
             />
           </div>
         </div>
 
-        <h5 className="helper-text">{t("contact.form.helper-text")}</h5>
+        <h5 className="helper-text">{t("contactFormHelperText")}</h5>
         <div className="form-row">
-          
           <div className="form-group">
             <input
               type="email"
               {...register("email")}
-              placeholder={t("contact.form.email")}
+              placeholder={t("contactFormEmail")}
               className={errors.email ? "input-error" : ""}
             />
           </div>
           <div className="form-group">
             <input
               {...register("phone")}
-              placeholder={t("contact.form.phone")}
+              placeholder={t("contactFormPhone")}
               className={errors.phone ? "input-error" : ""}
             />
           </div>
@@ -127,13 +126,13 @@ export default function ContactFormServices() {
           <div className="form-group">
             <input
               {...register("organization")}
-              placeholder={t("contact.form.organization")}
+              placeholder={t("contactFormOrganization")}
             />
           </div>
           <div className="form-group">
             <input
               {...register("role")}
-              placeholder={t("contact.form.role")}
+              placeholder={t("contactFormRole")}
             />
           </div>
         </div>
@@ -142,7 +141,7 @@ export default function ContactFormServices() {
           <textarea
             rows="6"
             {...register("message")}
-            placeholder={t("contact.form.message")}
+            placeholder={t("contactFormMessage")}
           />
         </div>
 
@@ -150,17 +149,17 @@ export default function ContactFormServices() {
           type="submit"
           className={`submit-button ${isValid ? "active" : "inactive"}`}
         >
-          {t("contact.form.submit")}
+          {t("contactFormSubmit")}
         </button>
       </form>
 
       {showPopup && (
         <div className="popup-overlay">
           <div className="popup-box">
-            <h4>{t("contact.form.successH1")}</h4>
-            <h5>{t("contact.form.successP")}</h5>
+            <h4>{t("contactFormSuccessH1")}</h4>
+            <h5>{t("contactFormSuccessP")}</h5>
             <button onClick={() => setShowPopup(false)}>
-              {t("contact.form.successB")}
+              {t("contactFormSuccessB")}
             </button>
           </div>
         </div>

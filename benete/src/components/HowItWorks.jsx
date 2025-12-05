@@ -1,22 +1,22 @@
 import { useLanguage } from "../contexts/LanguageContext";
 import "../css/HowItWorks.css"; // Link to your CSS file
 
-function HowItWorks  ()  {
+function HowItWorks() {
   const { t } = useLanguage();
 
   const steps = [
-    { number: "01", titleKey: "how.step1.title", descKey: "how.step1.desc" },
-    { number: "02", titleKey: "how.step2.title", descKey: "how.step2.desc" },
-    { number: "03", titleKey: "how.step3.title", descKey: "how.step3.desc" },
-    { number: "04", titleKey: "how.step4.title", descKey: "how.step4.desc" },
+    { number: "01", titleKey: "howStep1Title", descKey: "howStep1Desc" },
+    { number: "02", titleKey: "howStep2Title", descKey: "howStep2Desc" },
+    { number: "03", titleKey: "howStep3Title", descKey: "howStep3Desc" },
+    { number: "04", titleKey: "howStep4Title", descKey: "howStep4Desc" },
   ];
 
   return (
     <section className="how-section">
       <div className="how-container">
         <div className="how-header">
-          <h2 className="how-title">{t("how.title")}</h2>
-          <p className="how-subtitle">{t("how.subtitle")}</p>
+          <h2 className="how-title">{t("howTitle")}</h2>
+          <p className="how-subtitle">{t("howSubtitle")}</p>
         </div>
 
         <div className="how-grid">
@@ -34,6 +34,6 @@ function HowItWorks  ()  {
       </div>
     </section>
   );
-};
+}
 
-export default HowItWorks
+export default HowItWorks;

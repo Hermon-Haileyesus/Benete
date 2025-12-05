@@ -9,7 +9,7 @@ const PrivacyPolicy = () => {
     <div className="legal-page">
       <div className="legal-header">
         <div className="legal-header-content">
-            <h2>{t("privacy.title")}</h2>
+            <h2>{t("privacyTitle")}</h2>
         </div>
       </div>
       <main className="legal-main">
@@ -19,10 +19,10 @@ const PrivacyPolicy = () => {
             <aside className="legal-sidebar">
               <div className="sidebar-links">
                 <Link to="/privacy-policy" className="sidebar-link active">
-                  {t("privacy.title")}
+                  {t("privacyTitle")}
                 </Link>
                 <Link to="/terms" className="sidebar-link">
-                  {t("terms.title")}
+                  {t("termsTitle")}
                 </Link>
               </div>
             </aside>
@@ -30,34 +30,34 @@ const PrivacyPolicy = () => {
             {/* Content */}
             <div className="legal-content">
               <section>
-                <h2>{t("privacy.customerInfo.title")}</h2>
-                <h5>{t("privacy.customerInfo.content")}</h5>
+                <h2>{t("privacyCustomerInfoTitle")}</h2>
+                <h5>{t("privacyCustomerInfoContent")}</h5>
               </section>
 
               <section>
-                <h2>{t("privacy.analytics.title")}</h2>
-                <h5>{t("privacy.analytics.content")}</h5>
+                <h2>{t("privacyAnalyticsTitle")}</h2>
+                <h5>{t("privacyAnalyticsContent")}</h5>
               </section>
 
               <section>
-                <h2>{t("privacy.dataSecurity.title")}</h2>
-                <h5>{t("privacy.dataSecurity.content")}</h5>
+                <h2>{t("privacyDataSecurityTitle")}</h2>
+                <h5>{t("privacyDataSecurityContent")}</h5>
               </section>
 
               <section>
-                <h2>{t("privacy.access.title")}</h2>
-                <h5>{t("privacy.access.content1")}</h5>
-                <h5>{t("privacy.access.content2")}</h5>
+                <h2>{t("privacyAccessTitle")}</h2>
+                <h5>{t("privacyAccessContent1")}</h5>
+                <h5>{t("privacyAccessContent2")}</h5>
               </section>
 
               <section>
-                <h2>{t("privacy.updates.title")}</h2>
-                <h5>{t("privacy.updates.content")}</h5>
+                <h2>{t("privacyUpdatesTitle")}</h2>
+                <h5>{t("privacyUpdatesContent")}</h5>
               </section>
 
               <section>
-                <h2>{t("privacy.contact.title")}</h2>
-                <h5>{t("privacy.contact.content")}</h5>
+                <h2>{t("privacyContactTitle")}</h2>
+                <h5>{t("privacyContactContent")}</h5>
               </section>
 
               <section className="legal-footer">
@@ -73,10 +73,8 @@ const PrivacyPolicy = () => {
           </div>
         </div>
       </main>
-   
     </div>
   );
 };
 
 export default PrivacyPolicy;
-

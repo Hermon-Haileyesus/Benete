@@ -7,7 +7,6 @@ import assistantImage from "../assets/images/dataAnlz.jpg";
 import "../css/Carousel.css";
 import '@fontsource/rubik';
 
-
 function Carousel() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const { t } = useLanguage();
@@ -15,30 +14,30 @@ function Carousel() {
   const slides = [
     {
       image: elderlyImage,
-      title: t("carousel.elderly.title"),
-      description: t("carousel.elderly.desc"),
+      title: t("carouselElderlyTitle"),
+      description: t("carouselElderlyDesc"),
     },
     {
       image: familyImage,
-      title: t("carousel.family.title"),
-      description: t("carousel.family.desc"),
+      title: t("carouselFamilyTitle"),
+      description: t("carouselFamilyDesc"),
     },
     {
       image: nurseImage,
-      title: t("carousel.nurse.title"),
-      description: t("carousel.nurse.desc"),
+      title: t("carouselNurseTitle"),
+      description: t("carouselNurseDesc"),
     },
     {
       image: assistantImage,
-      title: t("carousel.assistant.title"),
-      description: t("carousel.assistant.desc"),
+      title: t("carouselAssistantTitle"),
+      description: t("carouselAssistantDesc"),
     },
   ];
 
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 100000);
+    }, 10000); // shortened to 10s for smoother rotation
 
     return () => clearInterval(timer);
   }, [slides.length]);
@@ -76,7 +75,6 @@ function Carousel() {
           </div>
         ))}
       </div>
-
     </div>
   );
 }

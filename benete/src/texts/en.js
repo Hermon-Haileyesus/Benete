@@ -1,243 +1,243 @@
 export default {
-    "nav.home": "Home",
-    "nav.ideology": "Ideology",
-    "nav.service": "Service",
-    "nav.team": "Our team",
-    "nav.contact": "Contact",
-    "header.title":"BeneCare",
-    "header.subtitle":"We ensure that elderly people receive the right care at the right time.",
-    "homepage.introduction_title":"Smart Support for Care Work and Everyday Wellbeing",
-    "homepage.introduction_p1" : "BeneCare is designed for healthcare professionals including elderly care staff, nurses, doctors, and physiotherapists  as well as private users who want to monitor the wellbeing of their loved ones safely and unobtrusively.",
-    "homepage.introduction_p2": "The service provides round-the-clock monitoring without wearable devices, making both professional care and everyday support more efficient and meaningful. BeneCare uses sensor technology and intelligent algorithms to model a person’s daily rhythm and behavior. ",
-    "homepage.introduction_p3" :"This data helps detect changes in health, wellbeing, functional ability, and cognition  enabling timely responses before urgent care is needed.",
-    "service.privacyTitle": "We Keep Personal Data Safe",
-    "service.privacyText": "The analyses produced by BeneCare service are available to the senior, their relatives, and care staff through the web service or as printouts. The use of the service and data collection are always based on the person's consent. The collected personal data is not used or transmitted for any purpose other than related to the use of the service. In accordance with data protection law, the senior has the right to their own personal data and can request deletion of their personal data or termination of the service at any time.",
-    "footer.followUs":"Follow us",
-    "footer.privacy":"Privacy policy",
-    "footer.terms":"Terms",
-    "selector.title": "Choose Customer Type",
-    "selector.subtitle": "We tailor our services to your needs",
-    "selector.private.title": "Private Customers",
-    "selector.private.description": "Secure your loved one's wellbeing and monitoring at home",
-    "selector.company.title": "Business Customers",
-    "selector.company.description": "Improve care efficiency and enhance service quality",
-    "common.readMore":"Read more",
-    "readMore.description":"Learn more about our services and how we offer a unique way to analyze life.",
-    
+  
+    "navHome": "Home",
+  "navIdeology": "Ideology",
+  "navService": "Service",
+  "navTeam": "Our team",
+  "navContact": "Contact",
+
+  "headerTitle": "BeneCare",
+  "headerSubtitle": "We ensure that elderly people receive the right care at the right time.",
+
+  "homepageIntroductionTitle": "Smart Support for Care Work and Everyday Wellbeing",
+  "homepageIntroductionP1": "BeneCare is designed for healthcare professionals including elderly care staff, nurses, doctors, and physiotherapists as well as private users who want to monitor the wellbeing of their loved ones safely and unobtrusively.",
+  "homepageIntroductionP2": "The service provides round-the-clock monitoring without wearable devices, making both professional care and everyday support more efficient and meaningful. BeneCare uses sensor technology and intelligent algorithms to model a person’s daily rhythm and behavior.",
+  "homepageIntroductionP3": "This data helps detect changes in health, wellbeing, functional ability, and cognition enabling timely responses before urgent care is needed.",
+
+  "servicePrivacyTitle": "We Keep Personal Data Safe",
+  "servicePrivacyText": "The analyses produced by BeneCare service are available to the senior, their relatives, and care staff through the web service or as printouts. The use of the service and data collection are always based on the person's consent. The collected personal data is not used or transmitted for any purpose other than related to the use of the service. In accordance with data protection law, the senior has the right to their own personal data and can request deletion of their personal data or termination of the service at any time.",
+
+  "footerFollowUs": "Follow us",
+  "footerPrivacy": "Privacy policy",
+  "footerTerms": "Terms",
+
+  "selectorTitle": "Choose Customer Type",
+  "selectorSubtitle": "We tailor our services to your needs",
+  "selectorPrivateTitle": "Private Customers",
+  "selectorPrivateDescription": "Secure your loved one's wellbeing and monitoring at home",
+  "selectorCompanyTitle": "Business Customers",
+  "selectorCompanyDescription": "Improve care efficiency and enhance service quality",
+
+  "commonReadMore": "Read more",
+  "readMoreDescription": "Learn more about our services and how we offer a unique way to analyze life.",
     // Carousel
-    "carousel.elderly.title": "Safe daily life for the elderly",
-    "carousel.elderly.desc": "BeneCare supports independent living and provides a sense of security in everyday life.",
-    "carousel.family.title": "Peace of mind for families",
-    "carousel.family.desc": "Families can monitor their loved ones' well-being and receive up-to-date information about their health.",
-    "carousel.nurse.title": "Professional care work",
-    "carousel.nurse.desc": "Healthcare staff receive accurate information about residents' functional capacity and can respond to changes quickly.",
-    "carousel.assistant.title": "Smart technology assistance",
-    "carousel.assistant.desc": "The BeneCare system provides an easy-to-use platform for managing and analyzing all information.",
-    // service
-    "service.heading.intro": "Functionality assessment",
-    "service.heading.title": "BeneCare",
-    "features.title": "What does BeneCare monitor?",
-    "features.subtitle": "Our service provides continuously updated information about a person's functional capacity and well-being",
-    "features.activity.title": "Activity Monitoring",
-    "features.activity.desc": "Time spent in rooms, indoor and outdoor movement, daily activity levels",
-    "features.sleep.title": "Sleep Quality",
-    "features.sleep.desc": "Amount, quality and timing of sleep and rest. Changes in nighttime behavior",
-    "features.hygiene.title": "Hygiene Monitoring",
-    "features.hygiene.desc": "Shower usage and sink activity. Identification of changes in hygiene care",
-    "features.wc.title": "Bathroom Visits",
-    "features.wc.desc": "Number, timing and duration of bathroom visits. Detection of increased frequency",
-    "features.health.title": "Health Metrics",
-    "features.health.desc": "Weight, BMI, blood pressure and other health metrics integrated into the system",
-    "features.alerts.title": "Alerts",
-    "features.alerts.desc": "Emergency bracelet for immediate assistance. All events are logged in the system",
+      "carouselElderlyTitle": "Safe daily life for the elderly",
+  "carouselElderlyDesc": "BeneCare supports independent living and provides a sense of security in everyday life.",
+
+  "carouselFamilyTitle": "Peace of mind for families",
+  "carouselFamilyDesc": "Families can monitor their loved ones' well-being and receive up-to-date information about their health.",
+
+  "carouselNurseTitle": "Professional care work",
+  "carouselNurseDesc": "Healthcare staff receive accurate information about residents' functional capacity and can respond to changes quickly.",
+
+  "carouselAssistantTitle": "Smart technology assistance",
+  "carouselAssistantDesc": "The BeneCare system provides an easy-to-use platform for managing and analyzing all information.",
+
+  "serviceHeadingIntro": "Functionality assessment",
+  "serviceHeadingTitle": "BeneCare",
+
+  "featuresTitle": "What does BeneCare monitor?",
+  "featuresSubtitle": "Our service provides continuously updated information about a person's functional capacity and well-being",
+
+  "featuresActivityTitle": "Activity Monitoring",
+  "featuresActivityDesc": "Time spent in rooms, indoor and outdoor movement, daily activity levels",
+
+  "featuresSleepTitle": "Sleep Quality",
+  "featuresSleepDesc": "Amount, quality and timing of sleep and rest. Changes in nighttime behavior",
+
+  "featuresHygieneTitle": "Hygiene Monitoring",
+  "featuresHygieneDesc": "Shower usage and sink activity. Identification of changes in hygiene care",
+
+  "featuresWcTitle": "Bathroom Visits",
+  "featuresWcDesc": "Number, timing and duration of bathroom visits. Detection of increased frequency",
+
+  "featuresHealthTitle": "Health Metrics",
+  "featuresHealthDesc": "Weight, BMI, blood pressure and other health metrics integrated into the system",
+
+  "featuresAlertsTitle": "Alerts",
+  "featuresAlertsDesc": "Emergency bracelet for immediate assistance. All events are logged in the system",
       // How It Works
-    "how.title": "How does BeneCare work?",
-    "how.subtitle": "A simple and effective process that requires no action from the individual",
-    "how.step1.title": "Installation",
-    "how.step1.desc": "Unobtrusive sensors are installed in the person's home without disrupting daily life",
-    "how.step2.title": "Data Collection",
-    "how.step2.desc": "Sensors automatically collect information about daily activities",
-    "how.step3.title": "Analysis",
-    "how.step3.desc": "Sophisticated algorithms identify activities and model behavior patterns",
-    "how.step4.title": "Reporting",
-    "how.step4.desc": "Caregivers, doctors and family members receive up-to-date information about functional capacity",
-    // Private Customer Page
-    "private.hero.title": "Secure Your Loved One's Wellbeing",
-    "private.hero.subtitle": "BeneCare provides unobtrusive monitoring and security for elderly living at home",
-    "private.hero.cta": "Contact Us",
-    "private.benefits.title": "Why BeneCare for Private Customers?",
-    "private.benefits.peace.title": "Peace of Mind",
-    "private.benefits.peace.text": "You can trust that your loved one is safe with 24/7 monitoring",
-    "private.benefits.safety.title": "Safety",
-    "private.benefits.safety.text": "Automatic alert in exceptional situations - help arrives on time",
-    "private.benefits.response.title": "Quick Response",
-    "private.benefits.response.text": "Immediate notification of potential issues to family and caregivers",
-    "private.benefits.family.title": "Family Support",
-    "private.benefits.family.text": "The whole family can easily monitor their loved one's wellbeing",
-    
-    // Company Customer Page
-    "company.hero.title": "Improve Care Efficiency",
-    "company.hero.subtitle": "BeneCare helps care professionals work more efficiently and improve service quality",
-    "company.hero.cta": "Request Quote",
-    "company.benefits.title": "Why BeneCare for Companies?",
-    "company.benefits.efficiency.title": "Efficiency",
-    "company.benefits.efficiency.text": "Reduce unnecessary visits and optimize work shifts",
-    "company.benefits.cost.title": "Cost Savings",
-    "company.benefits.cost.text": "Significant savings in personnel costs",
-    "company.benefits.quality.title": "Quality Advantage",
-    "company.benefits.quality.text": "Improve service quality with real-time information",
-    "company.benefits.data.title": "Data-Driven",
-    "company.benefits.data.text": "Make decisions based on reliable data",
+   "howTitle": "How does BeneCare work?",
+  "howSubtitle": "A simple and effective process that requires no action from the individual",
+  "howStep1Title": "Installation",
+  "howStep1Desc": "Unobtrusive sensors are installed in the person's home without disrupting daily life",
+  "howStep2Title": "Data Collection",
+  "howStep2Desc": "Sensors automatically collect information about daily activities",
+  "howStep3Title": "Analysis",
+  "howStep3Desc": "Sophisticated algorithms identify activities and model behavior patterns",
+  "howStep4Title": "Reporting",
+  "howStep4Desc": "Caregivers, doctors and family members receive up-to-date information about functional capacity",
+
+  "privateHeroTitle": "Secure Your Loved One's Wellbeing",
+  "privateHeroSubtitle": "BeneCare provides unobtrusive monitoring and security for elderly living at home",
+  "privateHeroCta": "Contact Us",
+  "privateBenefitsTitle": "Why BeneCare for Private Customers?",
+  "privateBenefitsPeaceTitle": "Peace of Mind",
+  "privateBenefitsPeaceText": "You can trust that your loved one is safe with 24/7 monitoring",
+  "privateBenefitsSafetyTitle": "Safety",
+  "privateBenefitsSafetyText": "Automatic alert in exceptional situations - help arrives on time",
+  "privateBenefitsResponseTitle": "Quick Response",
+  "privateBenefitsResponseText": "Immediate notification of potential issues to family and caregivers",
+  "privateBenefitsFamilyTitle": "Family Support",
+  "privateBenefitsFamilyText": "The whole family can easily monitor their loved one's wellbeing",
+
+  "companyHeroTitle": "Improve Care Efficiency",
+  "companyHeroSubtitle": "BeneCare helps care professionals work more efficiently and improve service quality",
+  "companyHeroCta": "Request Quote",
+  "companyBenefitsTitle": "Why BeneCare for Companies?",
+  "companyBenefitsEfficiencyTitle": "Efficiency",
+  "companyBenefitsEfficiencyText": "Reduce unnecessary visits and optimize work shifts",
+  "companyBenefitsCostTitle": "Cost Savings",
+  "companyBenefitsCostText": "Significant savings in personnel costs",
+  "companyBenefitsQualityTitle": "Quality Advantage",
+  "companyBenefitsQualityText": "Improve service quality with real-time information",
+  "companyBenefitsDataTitle": "Data-Driven",
+  "companyBenefitsDataText": "Make decisions based on reliable data",
     //Conatct
-    "contact.form.title": "Contact us",
-    "contact.form.type": "I'm interested in:",
-    "contact.form.type.general": "General contact",
-    "contact.form.type.assessment": "Functionality assessment",
-    "contact.form.firstName": "First name",
-    "contact.form.lastName": "Last name",
-    "contact.form.helper-text":"Provide an email or phone number *",
-    "contact.form.email": "Email",
-    "contact.form.phone": "Phone number",
-    "contact.form.organization": "Organization (optional)",
-    "contact.form.role": "Your role (optional)",
-    "contact.form.message": "Write your message...",
-    "contact.form.submit": "Send",
-    "contact.form.successH1": "Thank you for contacting us!",
-    "contact.form.successP": "We will get back to you within 24 hours",
-    "contact.form.successB": "Close",
-    "contact.company": "Benete Ltd",
-    "contact.address1": "Tykistökatu 4b",
-    "contact.address2": "20520 Turku, Finland",
-    "contact.floor": "(5th floor)",
-    "contact.ceo": "Kari Bäckman, CEO",
-    "contact.phone": "+358 50 052 4514",
-    "contact.email": "kari.backman@benete.com",
-    "contact.heading.intro": "Let’s talk",
-    
+    "contactFormTitle": "Contact us",
+  "contactFormType": "I'm interested in:",
+  "contactFormTypeGeneral": "General contact",
+  "contactFormTypeAssessment": "Functionality assessment",
+  "contactFormFirstName": "First name",
+  "contactFormLastName": "Last name",
+  "contactFormHelperText": "Provide an email or phone number *",
+  "contactFormEmail": "Email",
+  "contactFormPhone": "Phone number",
+  "contactFormOrganization": "Organization (optional)",
+  "contactFormRole": "Your role (optional)",
+  "contactFormMessage": "Write your message...",
+  "contactFormSubmit": "Send",
+  "contactFormSuccessH1": "Thank you for contacting us!",
+  "contactFormSuccessP": "We will get back to you within 24 hours",
+  "contactFormSuccessB": "Close",
 
-   // Ideology Page
-    "ideology.hero.subtitle": "As a care expert",
-    "ideology.hero.title1": "Makes everyday life easier",
-    "ideology.hero.title1b": "and increases security",
-    "ideology.hero.title2": "Brings peace of mind",
-    "ideology.hero.title2b": "to families and loved ones",
-    "ideology.hero.title3": "Supports active",
-    "ideology.hero.title3b": "and independent living for seniors",
-    "ideology.title":"On your terms",
-    "hero.subtitleLines": [
-  [
-    { "text": "Individual", "color": "black" },
-    { "text": "independence", "color": "blue" }
+  "contactCompany": "Benete Ltd",
+  "contactAddress1": "Tykistökatu 4b",
+  "contactAddress2": "20520 Turku, Finland",
+  "contactFloor": "(5th floor)",
+  "contactCeo": "Kari Bäckman, CEO",
+  "contactPhone": "+358 50 052 4514",
+  "contactEmail": "kari.backman@benete.com",
+  "contactHeadingIntro": "Let’s talk",
+
+  "ideologyHeroSubtitle": "As a care expert",
+  "ideologyHeroTitle1": "Makes everyday life easier",
+  "ideologyHeroTitle1b": "and increases security",
+  "ideologyHeroTitle2": "Brings peace of mind",
+  "ideologyHeroTitle2b": "to families and loved ones",
+  "ideologyHeroTitle3": "Supports active",
+  "ideologyHeroTitle3b": "and independent living for seniors",
+  "ideologyTitle": "On your terms",
+
+  "heroSubtitleLines": [
+    [
+      { "text": "Individual", "color": "black" },
+      { "text": "independence", "color": "blue" }
+    ],
+    [
+      { "text": "Digital", "color": "black" },
+      { "text": "dignity", "color": "blue" }
+    ],
+    [
+      { "text": "Valuable", "color": "black" },
+      { "text": "life", "color": "blue" }
+    ]
   ],
-  [
-    { "text": "Digital", "color": "black" },
-    { "text": "dignity", "color": "blue" }
-  ],
-  [
-    { "text": "Valuable", "color": "black" },
-    { "text": "life", "color": "blue" }
-  ]
-],
-    "ideology.values.care": "Caring",
-    "ideology.values.careDesc": "Every person deserves attention, warmth, and individualized care",
-    "ideology.values.safety": "Security",
-    "ideology.values.safetyDesc": "Reliable technology and 24/7 monitoring ensure peace of mind",
-    "ideology.values.quality": "Quality",
-    "ideology.values.qualityDesc": "We are committed to the highest quality in everything we do",
-    "ideology.section1.title": "Insights from daily routines",
-    "ideology.section1.p1": "Simple daily activities create the rhythm of our everyday life, such as cooking, rest, and personal hygiene. These are part of our normal lives, but they also have a greater significance than we think. Combined and analyzed, they provide valuable insights into our physical and emotional well-being.",
-    "ideology.section1.p2": "With the BeneCare service, it is possible to identify changes in functional capacity and cognition at an early stage. Unlike general health and wellness services, we analyze a person's life holistically, covering much more than just physiological data.",
-    "ideology.section2.title": "Living environment",
-    "ideology.section2.p1": "The living environment is known to have a great impact on our well-being and can also tell a lot about our daily life. The use of smart technologies is constantly increasing and it is only a matter of time before our homes are equipped with various sensor technologies enabling real-time life monitoring.",
-    "ideology.section2.p2": "BeneCare service's sophisticated algorithms recognize a person's daily activities, model behaviors in their own living environment, and assess possible changes in functional capacity. By observing and analyzing daily activities, harmful changes in functional capacity can be detected at a much earlier stage than is possible with conventional methods.",
-    "ideology.section3.title": "Active aging",
-    "ideology.section3.p1": "Quality of life improves when a person can function independently in their own familiar environment. It creates a sense of security and independence from others. The foundation of active aging is one's own activity and motivation for life.",
-    "ideology.section3.p2": "Early identification of changes in functional capacity and cognitive disorders helps in providing early and precise care. This has a great impact on people's lives, adding active and independent days to life. Enabling gentle care and cherishing the sense of independence are our key goals.",
-    "ideology.section3.p3": "As a result of our activities, social and healthcare benefits significantly from reduced elderly care costs and new, more effective services.",
-    "ideology.section4.title": "MyData",
-    "ideology.section4.p1": "Data collected from individuals is extremely sensitive. Our service enables our customers to have full access and control over their own data. Our service complies with the latest data protection and information security requirements, taking these into account already in the design of services, together with our own ethical data and digital dignity principles.",
-    "ideology.section5.title": "Our values",
-    "ideology.section5.p1": "Personal changes in functional capacity are usually not monitored or recorded until it is too late and a diagnosis has been given. Many people are dependent on others to get through the day, which weakens their sense of independence. It is important to recognize what individual independence means for each person.",
-    "ideology.section5.p2": "With our service, it is possible to identify functional and memory-related disorders as early as possible and start the necessary treatment measures as early as possible.",
-    // Benefits
-    "benefits.title": "Benefits for all parties",
-    "benefits.subtitle": "BeneCare improves the quality of care and supports the well-being of elderly people",
-    "benefits.caregivers": "For Caregivers",
-    "benefits.caregivers.1": "More efficient and meaningful care work",
-    "benefits.caregivers.2": "Earlier intervention in problems",
-    "benefits.caregivers.3": "More precise response to residents' needs",
-    "benefits.caregivers.4": "24/7 secure monitoring",
-    "benefits.elderly": "For the Elderly",
-    "benefits.elderly.1": "Normal daily life without intrusive devices",
-    "benefits.elderly.2": "No wearable technology",
-    "benefits.elderly.3": "Better quality of life",
-    "benefits.elderly.4": "Sense of security",
-    "benefits.family": "For Families & Professionals",
-    "benefits.family.1": "Up-to-date information on functional capacity",
-    "benefits.family.2": "Early detection of emerging problems",
-    "benefits.family.3": "Data-driven care decisions",
-    "benefits.family.4": "Transparent reporting",
-    
-    // Funding
-    "funding.horizon.title": "Horizon 2020 Research",
-    "funding.horizon.text": "Benete Oy has received funding from the European Union's Horizon 2020 research and innovation programme under grant agreement No 877503.",
-    "funding.ely.title": "ELY Funding",
-    "funding.ely.text": "Benete Oy has received funding from the Centre for Economic Development, Transport and the Environment for the BNT-MDR project. The project involves the further development of Benete Oy's elderly functional capacity analysis service.",
-    
+   "ideologyValuesCare": "Caring",
+  "ideologyValuesCareDesc": "Every person deserves attention, warmth, and individualized care",
+  "ideologyValuesSafety": "Security",
+  "ideologyValuesSafetyDesc": "Reliable technology and 24/7 monitoring ensure peace of mind",
+  "ideologyValuesQuality": "Quality",
+  "ideologyValuesQualityDesc": "We are committed to the highest quality in everything we do",
 
-privacy: {
-      title: "Privacy policy",
-      customerInfo: {
-        title: "Customer information",
-        content: "To stay in touch with our current or prospective customers, we will collect information you provide when contacting us."
-      },
-      analytics: {
-        title: "Analytics services",
-        content: "To improve your interaction with our website, we can get information about your online behavioural and usage data. We will not associate any data gathered from this website with any personally identifying information from any other source. Online behavioural data will be automatically deleted if older than 6 months."
-      },
-      dataSecurity: {
-        title: "Data security",
-        content: "Complying with generally accepted online security standards, we have ensured that the personal data we collect is stored in secure operating environments. Your personal data can only be accessed by individuals who need to process it for the performance of their work duties."
-      },
-      access: {
-        title: "Access and transfer outside EEA",
-        content1: "Your personal information will not be disclosed or sold to third parties. Information collected through analytics services can be stored outside the European Economic Area if the analytics services or software provider stores the data outside the EEA. Otherwise, we do not regularly transfer your data outside the European Economic Area.",
-        content2: "We will always implement the most robust legal, procedural, physical and technical measures available to us in order to improve your anonymity and avoid unwanted disclosure of your data to other individuals, corporations and administrations, unless we are required to disclose it by law, judicial body or government agency."
-      },
-      updates: {
-        title: "Policy updates",
-        content: "We may periodically update this Privacy Policy and encourage you to check the latest version regularly at www.benete.com. We will put our best effort to inform you about any updates to this Privacy policy."
-      },
-      contact: {
-        title: "Contact us",
-        content: "In case you have any questions or would like to request access, removal or correction of the information you have provided, please contact us at privacy@benete.com."
-      }
-    },
-    terms: {
-      title: "Terms & Conditions",
-      introduction: {
-        title: "Introduction",
-        content: "These terms and conditions govern your use of this website; by using this website, you accept these terms and conditions in full. If you disagree with these terms and conditions or any part of these terms and conditions, you must not use this website."
-      },
-      intellectual: {
-        title: "Intellectual property rights",
-        content: "Unless otherwise stated, Benete Oy owns the intellectual property rights in the website and in any material published on it (including but not limited to text, photographs and other images, trademarks and logos)."
-      },
-      warranties: {
-        title: "No warranties",
-        content1: "This website is provided \"as is\" without any representations or warranties, express or implied. Benete Oy makes no representations or warranties in relation to this website or the information and materials provided on this website.",
-        content2: "The information contained on this website is provided for information purposes only and Benete Oy will use reasonable care and skill to ensure that it is accurate at the date of publication. Nothing on this website constitutes, or is meant to constitute, advice of any kind. Benete Oy, therefore, accepts no liability or responsibility arising from any reliance placed on information provided on the website by any visitor, or by any third party who may be informed of any of its contents."
-      },
-      law: {
-        title: "Law and jurisdiction",
-        content: "These terms and conditions will be governed by and construed in accordance with Finnish law, and any disputes relating to these terms and conditions will be subject to the exclusive jurisdiction of the courts of Finland."
-      }
-    },
-    
+  "ideologySection1Title": "Insights from daily routines",
+  "ideologySection1P1": "Simple daily activities create the rhythm of our everyday life, such as cooking, rest, and personal hygiene. These are part of our normal lives, but they also have a greater significance than we think. Combined and analyzed, they provide valuable insights into our physical and emotional well-being.",
+  "ideologySection1P2": "With the BeneCare service, it is possible to identify changes in functional capacity and cognition at an early stage. Unlike general health and wellness services, we analyze a person's life holistically, covering much more than just physiological data.",
 
-"cookie.paragraph":'By clicking “ Allow cookies”, you agree to the storing of cookies on your device, to enhance site navigation, analyse site usage, and assist in our marketing efforts',
-"cookie.title":"Cookie policy",
-"cookie.readMore":"Learn more",
-"cookie.decline":" Decline",
-"cookie.accept":"Allow cookies"
+  "ideologySection2Title": "Living environment",
+  "ideologySection2P1": "The living environment is known to have a great impact on our well-being and can also tell a lot about our daily life. The use of smart technologies is constantly increasing and it is only a matter of time before our homes are equipped with various sensor technologies enabling real-time life monitoring.",
+  "ideologySection2P2": "BeneCare service's sophisticated algorithms recognize a person's daily activities, model behaviors in their own living environment, and assess possible changes in functional capacity. By observing and analyzing daily activities, harmful changes in functional capacity can be detected at a much earlier stage than is possible with conventional methods.",
+
+  "ideologySection3Title": "Active aging",
+  "ideologySection3P1": "Quality of life improves when a person can function independently in their own familiar environment. It creates a sense of security and independence from others. The foundation of active aging is one's own activity and motivation for life.",
+  "ideologySection3P2": "Early identification of changes in functional capacity and cognitive disorders helps in providing early and precise care. This has a great impact on people's lives, adding active and independent days to life. Enabling gentle care and cherishing the sense of independence are our key goals.",
+  "ideologySection3P3": "As a result of our activities, social and healthcare benefits significantly from reduced elderly care costs and new, more effective services.",
+
+  "ideologySection4Title": "MyData",
+  "ideologySection4P1": "Data collected from individuals is extremely sensitive. Our service enables our customers to have full access and control over their own data. Our service complies with the latest data protection and information security requirements, taking these into account already in the design of services, together with our own ethical data and digital dignity principles.",
+
+  "ideologySection5Title": "Our values",
+  "ideologySection5P1": "Personal changes in functional capacity are usually not monitored or recorded until it is too late and a diagnosis has been given. Many people are dependent on others to get through the day, which weakens their sense of independence. It is important to recognize what individual independence means for each person.",
+  "ideologySection5P2": "With our service, it is possible to identify functional and memory-related disorders as early as possible and start the necessary treatment measures as early as possible.",
+
+  "benefitsTitle": "Benefits for all parties",
+  "benefitsSubtitle": "BeneCare improves the quality of care and supports the well-being of elderly people",
+
+  "benefitsCaregivers": "For Caregivers",
+  "benefitsCaregivers1": "More efficient and meaningful care work",
+  "benefitsCaregivers2": "Earlier intervention in problems",
+  "benefitsCaregivers3": "More precise response to residents' needs",
+  "benefitsCaregivers4": "24/7 secure monitoring",
+
+  "benefitsElderly": "For the Elderly",
+  "benefitsElderly1": "Normal daily life without intrusive devices",
+  "benefitsElderly2": "No wearable technology",
+  "benefitsElderly3": "Better quality of life",
+  "benefitsElderly4": "Sense of security",
+
+  "benefitsFamily": "For Families & Professionals",
+  "benefitsFamily1": "Up-to-date information on functional capacity",
+  "benefitsFamily2": "Early detection of emerging problems",
+  "benefitsFamily3": "Data-driven care decisions",
+  "benefitsFamily4": "Transparent reporting",
+
+  "fundingHorizonTitle": "Horizon 2020 Research",
+  "fundingHorizonText": "Benete Oy has received funding from the European Union's Horizon 2020 research and innovation programme under grant agreement No 877503.",
+  "fundingElyTitle": "ELY Funding",
+  "fundingElyText": "Benete Oy has received funding from the Centre for Economic Development, Transport and the Environment for the BNT-MDR project. The project involves the further development of Benete Oy's elderly functional capacity analysis service.",
+  
+  "privacyTitle": "Privacy policy",
+  "privacyCustomerInfoTitle": "Customer information",
+  "privacyCustomerInfoContent": "To stay in touch with our current or prospective customers, we will collect information you provide when contacting us.",
+  "privacyAnalyticsTitle": "Analytics services",
+  "privacyAnalyticsContent": "To improve your interaction with our website, we can get information about your online behavioural and usage data. We will not associate any data gathered from this website with any personally identifying information from any other source. Online behavioural data will be automatically deleted if older than 6 months.",
+  "privacyDataSecurityTitle": "Data security",
+  "privacyDataSecurityContent": "Complying with generally accepted online security standards, we have ensured that the personal data we collect is stored in secure operating environments. Your personal data can only be accessed by individuals who need to process it for the performance of their work duties.",
+  "privacyAccessTitle": "Access and transfer outside EEA",
+  "privacyAccessContent1": "Your personal information will not be disclosed or sold to third parties. Information collected through analytics services can be stored outside the European Economic Area if the analytics services or software provider stores the data outside the EEA. Otherwise, we do not regularly transfer your data outside the European Economic Area.",
+  "privacyAccessContent2": "We will always implement the most robust legal, procedural, physical and technical measures available to us in order to improve your anonymity and avoid unwanted disclosure of your data to other individuals, corporations and administrations, unless we are required to disclose it by law, judicial body or government agency.",
+  "privacyUpdatesTitle": "Policy updates",
+  "privacyUpdatesContent": "We may periodically update this Privacy Policy and encourage you to check the latest version regularly at www.benete.com. We will put our best effort to inform you about any updates to this Privacy policy.",
+  "privacyContactTitle": "Contact us",
+  "privacyContactContent": "In case you have any questions or would like to request access, removal or correction of the information you have provided, please contact us at privacy@benete.com.",
+
+  "termsTitle": "Terms & Conditions",
+  "termsIntroductionTitle": "Introduction",
+  "termsIntroductionContent": "These terms and conditions govern your use of this website; by using this website, you accept these terms and conditions in full. If you disagree with these terms and conditions or any part of these terms and conditions, you must not use this website.",
+  "termsIntellectualTitle": "Intellectual property rights",
+  "termsIntellectualContent": "Unless otherwise stated, Benete Oy owns the intellectual property rights in the website and in any material published on it (including but not limited to text, photographs and other images, trademarks and logos).",
+  "termsWarrantiesTitle": "No warranties",
+  "termsWarrantiesContent1": "This website is provided \"as is\" without any representations or warranties, express or implied. Benete Oy makes no representations or warranties in relation to this website or the information and materials provided on this website.",
+  "termsWarrantiesContent2": "The information contained on this website is provided for information purposes only and Benete Oy will use reasonable care and skill to ensure that it is accurate at the date of publication. Nothing on this website constitutes, or is meant to constitute, advice of any kind. Benete Oy, therefore, accepts no liability or responsibility arising from any reliance placed on information provided on the website by any visitor, or by any third party who may be informed of any of its contents.",
+  "termsLawTitle": "Law and jurisdiction",
+  "termsLawContent": "These terms and conditions will be governed by and construed in accordance with Finnish law, and any disputes relating to these terms and conditions will be subject to the exclusive jurisdiction of the courts of Finland.",
+
+  "cookieParagraph": "By clicking “Allow cookies”, you agree to the storing of cookies on your device, to enhance site navigation, analyse site usage, and assist in our marketing efforts",
+  "cookieTitle": "Cookie policy",
+  "cookieReadMore": "Learn more",
+  "cookieDecline": "Decline",
+  "cookieAccept": "Allow cookies"
+
+
+  
   };

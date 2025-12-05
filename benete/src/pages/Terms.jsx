@@ -9,7 +9,7 @@ const Terms = () => {
     <div className="legal-page">
       <div className="legal-header">
         <div className="legal-header-content">
-            <h2>{t("terms.title")}</h2>
+            <h2>{t("termsTitle")}</h2>
         </div>
       </div>
       <main className="legal-main">
@@ -19,35 +19,34 @@ const Terms = () => {
             <aside className="legal-sidebar">
               <div className="sidebar-links">
                 <Link to="/privacy-policy" className="sidebar-link">
-                  {t("privacy.title")}
+                  {t("privacyTitle")}
                 </Link>
                 <Link to="/terms" className="sidebar-link active">
-                  {t("terms.title")}
+                  {t("termsTitle")}
                 </Link>
               </div>
             </aside>
 
-            
             <div className="legal-content">
               <section>
-                <h2>{t("terms.introduction.title")}</h2>
-                <h5>{t("terms.introduction.content")}</h5>
+                <h2>{t("termsIntroductionTitle")}</h2>
+                <h5>{t("termsIntroductionContent")}</h5>
               </section>
 
               <section>
-                <h2>{t("terms.intellectual.title")}</h2>
-                <h5>{t("terms.intellectual.content")}</h5>
+                <h2>{t("termsIntellectualTitle")}</h2>
+                <h5>{t("termsIntellectualContent")}</h5>
               </section>
 
               <section>
-                <h2>{t("terms.warranties.title")}</h2>
-                <h5>{t("terms.warranties.content1")}</h5>
-                <h5>{t("terms.warranties.content2")}</h5>
+                <h2>{t("termsWarrantiesTitle")}</h2>
+                <h5>{t("termsWarrantiesContent1")}</h5>
+                <h5>{t("termsWarrantiesContent2")}</h5>
               </section>
 
               <section>
-                <h2>{t("terms.law.title")}</h2>
-                <h5>{t("terms.law.content")}</h5>
+                <h2>{t("termsLawTitle")}</h2>
+                <h5>{t("termsLawContent")}</h5>
               </section>
 
               <section className="legal-footer">
@@ -63,7 +62,6 @@ const Terms = () => {
           </div>
         </div>
       </main>
-      
     </div>
   );
 };

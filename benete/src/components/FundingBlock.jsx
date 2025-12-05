@@ -12,8 +12,8 @@ function FundingBlock() {
         {/* Horizon 2020 Block */}
         <div className="funding-block">
           <div className="funding-content">
-            <h2>{t("funding.horizon.title")}</h2>
-            <p>{t("funding.horizon.text")}</p>
+            <h2>{t("fundingHorizonTitle")}</h2>
+            <p>{t("fundingHorizonText")}</p>
             <div className="funding-logos">
               <img src={Eu} alt="European Regional Development Fund" className="eu-logo"/>
               <img src={Ely} alt="Leverage EU" className="ely-logo" />
@@ -24,8 +24,8 @@ function FundingBlock() {
         {/* ELY Block */}
         <div className="funding-block">
           <div className="funding-content">
-            <h2>{t("funding.ely.title")}</h2>
-            <p>{t("funding.ely.text")}</p>
+            <h2>{t("fundingElyTitle")}</h2>
+            <p>{t("fundingElyText")}</p>
             <div className="funding-logos">
               <img src={Eu} alt="European Regional Development Fund" className="eu-logo" />
               <img src={Ely} alt="Leverage EU" className="ely-logo" />

@@ -11,9 +11,8 @@ function NavBar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
-  const isSpecialStylePage = ["/ideology", "/privateustomers"].includes(location.pathname);
+  const isSpecialStylePage = ["/ideology", "/privatecustomers"].includes(location.pathname);
 
-  
   const mobileMenuRef = useRef(null);
 
   useEffect(() => {
@@ -56,16 +55,16 @@ function NavBar() {
         </div>
         <div className="nav-links">
           <Link to="/" className="nav-link">
-            {t("nav.home")}
+            {t("navHome")}
           </Link>
           <Link to="/ideology" className="nav-link">
-            {t("nav.ideology")}
+            {t("navIdeology")}
           </Link>
           <Link to="/services" className="nav-link">
-            {t("nav.service")}
+            {t("navService")}
           </Link>
           <Link to="/contact" className="nav-link">
-            {t("nav.contact")}
+            {t("navContact")}
           </Link>
           <LanguageBar
             className="language-bar-desktop"
@@ -95,16 +94,16 @@ function NavBar() {
             </button>
           </div>
           <Link to="/" className="nav-link" onClick={() => setIsMobileMenuOpen(false)}>
-            {t("nav.home")}
+            {t("navHome")}
           </Link>
           <Link to="/ideology" className="nav-link" onClick={() => setIsMobileMenuOpen(false)}>
-            {t("nav.ideology")}
+            {t("navIdeology")}
           </Link>
           <Link to="/services" className="nav-link" onClick={() => setIsMobileMenuOpen(false)}>
-            {t("nav.service")}
+            {t("navService")}
           </Link>
           <Link to="/contact" className="nav-link" onClick={() => setIsMobileMenuOpen(false)}>
-            {t("nav.contact")}
+            {t("navContact")}
           </Link>
           <LanguageBar className="language-bar-mobile" />
         </div>

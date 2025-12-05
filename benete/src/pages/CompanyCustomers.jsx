@@ -3,9 +3,8 @@ import { TrendingUp, DollarSign, Award, BarChart } from "lucide-react";
 import { useLanguage } from "../contexts/LanguageContext";
 import Card from '../components/ui/Card';
 import Header from '../components/Header';
-import headerImg from '../assets/images/carousel-nurse.jpg'
+import headerImg from '../assets/images/carousel-nurse.jpg';
 import ReadMoreButton from '../components/ReadMore';
-
 
 function CompanyCustomers () {
     const { t } = useLanguage();
@@ -14,63 +13,62 @@ function CompanyCustomers () {
     <section className="customer-customers">
       <Header
         image={headerImg}
-        title={t("company.hero.title")}
-        subtitle={t("header.title")}
+        title={t("companyHeroTitle")}
+        subtitle={t("headerTitle")}
         isWhite={true}
         isCentered={false} 
         isYellow={false}
       />
       <div className='customer-container'>
-        <h2>{t("company.benefits.title")}</h2>
-        <h5>{t("company.hero.subtitle")}</h5>
+        <h2>{t("companyBenefitsTitle")}</h2>
+        <h5>{t("companyHeroSubtitle")}</h5>
         <div className="customer-wrap">
-        <Card>
-          <div className="customer-content">
-            <div className="customer-icon">
-              <TrendingUp size={32} />
+          <Card>
+            <div className="customer-content">
+              <div className="customer-icon">
+                <TrendingUp size={32} />
+              </div>
+              <h3 className="customer-title">{t("companyBenefitsEfficiencyTitle")}</h3>
+              <p className="customer-description">{t("companyBenefitsEfficiencyText")}</p>
             </div>
-            <h3 className="customer-title">{t("company.benefits.efficiency.title")}</h3>
-            <p className="customer-description">{t("company.benefits.efficiency.text")}</p>
-          </div>
-        </Card>
-        <Card>
-          <div className="customer-content">
-            <div className="customer-icon">
-              <DollarSign size={32} />
+          </Card>
+          <Card>
+            <div className="customer-content">
+              <div className="customer-icon">
+                <DollarSign size={32} />
+              </div>
+              <h3 className="customer-title">{t("companyBenefitsCostTitle")}</h3>
+              <p className="customer-description">{t("companyBenefitsCostText")}</p>
             </div>
-            <h3 className="customer-title">{t("company.benefits.cost.title")}</h3>
-            <p className="customer-description">{t("company.benefits.cost.text")}</p>
-          </div>
-        </Card>
-        <Card>
-          <div className="customer-content">
-            <div className="customer-icon">
-              <Award size={32} />
+          </Card>
+          <Card>
+            <div className="customer-content">
+              <div className="customer-icon">
+                <Award size={32} />
+              </div>
+              <h3 className="customer-title">{t("companyBenefitsQualityTitle")}</h3>
+              <p className="customer-description">{t("companyBenefitsQualityText")}</p>
             </div>
-            <h3 className="customer-title">{t("company.benefits.quality.title")}</h3>
-            <p className="customer-description">{t("company.benefits.quality.text")}</p>
-          </div>
-        </Card>
-        <Card>
-          <div className="customer-content">
-            <div className="customer-icon">
-              <BarChart size={32} />
+          </Card>
+          <Card>
+            <div className="customer-content">
+              <div className="customer-icon">
+                <BarChart size={32} />
+              </div>
+              <h3 className="customer-title">{t("companyBenefitsDataTitle")}</h3>
+              <p className="customer-description">{t("companyBenefitsDataText")}</p>
             </div>
-            <h3 className="customer-title">{t("company.benefits.data.title")}</h3>
-            <p className="customer-description">{t("company.benefits.data.text")}</p>
-          </div>
-        </Card>
-      </div>
+          </Card>
+        </div>
       </div>
       <div className='readMore'>
         <div className='readMore-content'>
-          <h2>{t("readMore.description")}</h2>
+          <h2>{t("readMoreDescription")}</h2>
           <ReadMoreButton to="/services" />
         </div>  
       </div>
-      
-      
     </section>
   );
 }
-export default CompanyCustomers
+
+export default CompanyCustomers;

@@ -1,26 +1,25 @@
-
 import { Activity, Moon, Droplets, Clock, TrendingUp, Shield } from "lucide-react";
 import { useLanguage } from "../contexts/LanguageContext";
 import "../css/Features.css"; // Import the CSS file
 
-function Features  () {
+function Features() {
   const { t } = useLanguage();
 
   const features = [
-    { icon: Activity, titleKey: "features.activity.title", descKey: "features.activity.desc" },
-    { icon: Moon, titleKey: "features.sleep.title", descKey: "features.sleep.desc" },
-    { icon: Droplets, titleKey: "features.hygiene.title", descKey: "features.hygiene.desc" },
-    { icon: Clock, titleKey: "features.wc.title", descKey: "features.wc.desc" },
-    { icon: TrendingUp, titleKey: "features.health.title", descKey: "features.health.desc" },
-    { icon: Shield, titleKey: "features.alerts.title", descKey: "features.alerts.desc" },
+    { icon: Activity, titleKey: "featuresActivityTitle", descKey: "featuresActivityDesc" },
+    { icon: Moon, titleKey: "featuresSleepTitle", descKey: "featuresSleepDesc" },
+    { icon: Droplets, titleKey: "featuresHygieneTitle", descKey: "featuresHygieneDesc" },
+    { icon: Clock, titleKey: "featuresWcTitle", descKey: "featuresWcDesc" },
+    { icon: TrendingUp, titleKey: "featuresHealthTitle", descKey: "featuresHealthDesc" },
+    { icon: Shield, titleKey: "featuresAlertsTitle", descKey: "featuresAlertsDesc" },
   ];
 
   return (
     <section id="ominaisuudet" className="features-section">
       <div className="features-container">
         <div className="features-header">
-          <h2 className="features-title">{t("features.title")}</h2>
-          <p className="features-subtitle">{t("features.subtitle")}</p>
+          <h2 className="features-title">{t("featuresTitle")}</h2>
+          <p className="features-subtitle">{t("featuresSubtitle")}</p>
         </div>
 
         <div className="features-grid">
@@ -40,5 +39,6 @@ function Features  () {
       </div>
     </section>
   );
-};
-export default Features
+}
+
+export default Features;

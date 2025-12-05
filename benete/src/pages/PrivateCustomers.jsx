@@ -14,23 +14,23 @@ function CustomerSection() {
     <section className="customer-customers">
       <Header
         image={headerImg}
-        title={t("private.hero.title")}
-        subtitle={t("header.title")}
+        title={t("privateHeroTitle")}
+        subtitle={t("headerTitle")}
         isWhite={true}
         isCentered={false}
         isYellow={false}
       />
       <div className='customer-container'>
-        <h2>{t("private.benefits.title")}</h2>
-        <h5>{t("private.hero.subtitle")}</h5>
+        <h2>{t("privateBenefitsTitle")}</h2>
+        <h5>{t("privateHeroSubtitle")}</h5>
         <div className="customer-wrap">
           <Card>
             <div className="customer-content">
               <div className="customer-icon">
                 <Heart size={32} />
               </div>
-              <h3 className="customer-title">{t("private.benefits.peace.title")}</h3>
-              <p className="customer-description">{t("private.benefits.peace.text")}</p>
+              <h3 className="customer-title">{t("privateBenefitsPeaceTitle")}</h3>
+              <p className="customer-description">{t("privateBenefitsPeaceText")}</p>
             </div>
           </Card>
           <Card>
@@ -38,8 +38,8 @@ function CustomerSection() {
               <div className="customer-icon">
                 <Shield size={32} />
               </div>
-              <h3 className="customer-title">{t("private.benefits.safety.title")}</h3>
-              <p className="customer-description">{t("private.benefits.safety.text")}</p>
+              <h3 className="customer-title">{t("privateBenefitsSafetyTitle")}</h3>
+              <p className="customer-description">{t("privateBenefitsSafetyText")}</p>
             </div>
           </Card>
           <Card>
@@ -47,8 +47,8 @@ function CustomerSection() {
               <div className="customer-icon">
                 <Clock size={32} />
               </div>
-              <h3 className="customer-title">{t("private.benefits.response.title")}</h3>
-              <p className="customer-description">{t("private.benefits.response.text")}</p>
+              <h3 className="customer-title">{t("privateBenefitsResponseTitle")}</h3>
+              <p className="customer-description">{t("privateBenefitsResponseText")}</p>
             </div>
           </Card>
           <Card>
@@ -56,19 +56,18 @@ function CustomerSection() {
               <div className="customer-icon">
                 <Users size={32} />
               </div>
-              <h3 className="customer-title">{t("private.benefits.family.title")}</h3>
-              <p className="customer-description">{t("private.benefits.family.text")}</p>
+              <h3 className="customer-title">{t("privateBenefitsFamilyTitle")}</h3>
+              <p className="customer-description">{t("privateBenefitsFamilyText")}</p>
             </div>
           </Card>
         </div>
       </div>
       <div className='readMore'>
         <div className='readMore-content'>
-          <h2>{t("readMore.description")}</h2>
+          <h2>{t("readMoreDescription")}</h2>
           <ReadMoreButton to="/services" />
         </div>  
       </div>
-      
     </section>
   );
 }

@@ -1,10 +1,10 @@
-import  { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import "../css/CookieConsent.css";
 import { Link } from "react-router-dom";
 import { useLanguage } from '../contexts/LanguageContext';
 
 export default function CookieConsent() {
-  const {t} = useLanguage()
+  const { t } = useLanguage();
   const [consent, setConsent] = useState(() => {
     const match = document.cookie.match(/(^| )cookieConsent=([^;]+)/);
     return match ? match[2] : null;
@@ -57,37 +57,37 @@ export default function CookieConsent() {
   };
 
   if (consent === "accepted") return null;
- 
-
-
 
   return (
-  <>
-    {/* Sticky button: only shows when banner is hidden and consent not accepted */}
-    {!showBanner && !manualOpen && consent !== "accepted" && (
-      <div className="cookie-sticky-wrapper">
-        <div className="cookie-sticky" onClick={reopenBanner}>
-          {t("cookie.title")}
+    <>
+      {/* Sticky button: only shows when banner is hidden and consent not accepted */}
+      {!showBanner && !manualOpen && consent !== "accepted" && (
+        <div className="cookie-sticky-wrapper">
+          <div className="cookie-sticky" onClick={reopenBanner}>
+            {t("cookieTitle")}
+          </div>
         </div>
-      </div>
-    )}
+      )}
 
-    {/* Cookie banner: shows if no consent or user reopens manually */}
-    {(showBanner || manualOpen) && (
-      <div className="cc-window" role="dialog" aria-live="polite" aria-label="cookieconsent" aria-describedby="cookieconsent:desc">
-        <span id="cookieconsent:desc" className="cc-message">
-            {t("cookie.paragraph")}
-          <Link to="/privacy-policy" className="cc-link">{t("cookie.readMore")}</Link>
-          
-        </span>
-        <div className="cc-compliance">
-          <button className="cc-btn cc-deny" onClick={handleDeny}>{t("cookie.decline")}</button>
-          <button className="cc-btn cc-allow" onClick={handleAccept}>{t("cookie.accept")}</button>
+      {/* Cookie banner: shows if no consent or user reopens manually */}
+      {(showBanner || manualOpen) && (
+        <div
+          className="cc-window"
+          role="dialog"
+          aria-live="polite"
+          aria-label="cookieconsent"
+          aria-describedby="cookieconsent:desc"
+        >
+          <span id="cookieconsent:desc" className="cc-message">
+            {t("cookieParagraph")}
+            <Link to="/privacy-policy" className="cc-link">{t("cookieReadMore")}</Link>
+          </span>
+          <div className="cc-compliance">
+            <button className="cc-btn cc-deny" onClick={handleDeny}>{t("cookieDecline")}</button>
+            <button className="cc-btn cc-allow" onClick={handleAccept}>{t("cookieAccept")}</button>
+          </div>
         </div>
-      </div>
-    )}
-  </>
-);
-
-
+      )}
+    </>
+  );
 }

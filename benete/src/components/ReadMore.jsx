@@ -12,7 +12,7 @@ function ReadMoreButton({ to }) {
       className="readMore-button"
       onClick={() => navigate(to)}
     >
-      {t("common.readMore")}
+      {t("commonReadMore")}
       <span className="right-arrow">
         <ChevronRight size={21} strokeWidth={2} />
       </span>
@@ -21,4 +21,3 @@ function ReadMoreButton({ to }) {
 }
 
 export default ReadMoreButton;
-
