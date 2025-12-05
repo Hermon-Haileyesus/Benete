@@ -31,6 +31,10 @@ export default async function handler(req, res) {
     if (!doc) {
       return res.status(404).json({ error: `No translations found for language: ${lang}` });
     }
+    res.setHeader("Cache-Control", "public, max-age=60, must-revalidate");
+    res.setHeader("ETag", `"${lang}-${doc._id}"`);
+    res.setHeader("Last-Modified", new Date().toUTCString());
+
 
     res.status(200).json(doc.translations);
   } catch (err) {
