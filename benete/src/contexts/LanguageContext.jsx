@@ -9,7 +9,7 @@ const localTranslations = { fi, en, sv };
 
 export const LanguageProvider = ({ children }) => {
   const [language, setLanguage] = useState("fi");
-  const [translations, setTranslations] = useState(localTranslations[language]); // start with local
+  const [translations, setTranslations] = useState(localTranslations[language]); 
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -18,16 +18,14 @@ export const LanguageProvider = ({ children }) => {
         const res = await fetch(`/api/translations?lang=${language}`);
         const data = await res.json();
 
-        // If MongoDB returns something, use it
         if (data && Object.keys(data).length > 0) {
           setTranslations(data);
         } else {
-          // fallback to local static files
+          //  fallback to local static file for the same language
           setTranslations(localTranslations[language]);
         }
       } catch (error) {
         console.error("Failed to load translations:", error);
-        // fallback to local static files
         setTranslations(localTranslations[language]);
       } finally {
         setLoading(false);
@@ -39,20 +37,33 @@ export const LanguageProvider = ({ children }) => {
   const t = (key) => {
     if (!translations) return "";
 
-    // ✅ camelCase lookup first
+    // 1️ Try Mongo/local loaded translations
     if (translations[key]) {
       return translations[key];
     }
 
-    // ✅ optional nested lookup (legacy dotted keys)
+    // 2️ Fallback to local static file for the same language
+    if (localTranslations[language][key]) {
+      return localTranslations[language][key];
+    }
+
+    // 3 Nested lookup (legacy dotted keys)
     const keys = key.split(".");
     let value = translations;
-
     for (const k of keys) {
       if (value && typeof value === "object" && k in value) {
         value = value[k];
       } else {
-        return key; // fallback: return the key itself
+        // fallback to local nested lookup
+        let fallback = localTranslations[language];
+        for (const fk of keys) {
+          if (fallback && typeof fallback === "object" && fk in fallback) {
+            fallback = fallback[fk];
+          } else {
+            return key; // final fallback: return key itself
+          }
+        }
+        return fallback;
       }
     }
 
