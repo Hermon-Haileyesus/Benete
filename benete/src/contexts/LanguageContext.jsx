@@ -1,33 +1,3 @@
-<<<<<<< HEAD
-import { createContext, useContext, useState } from "react";
-import fi from "../texts/fi";
-import en from "../texts/en";
-import sv from "../texts/sv";
-
-
-
-const LanguageContext = createContext(undefined);
-
-const translations = {fi, en, sv};
-
-
-export const LanguageProvider = ({ children }) => {
-  const [language, setLanguage] = useState("fi");
-
-  const t = (key) => {
-  if (translations[language][key]) {
-    return translations[language][key];
-  }
-
-  const keys = key.split(".");
-  let value = translations[language];
-
-  for (const k of keys) {
-    if (value && typeof value === "object" && k in value) {
-      value = value[k];
-    } else {
-      return key; // fallback: return the key itself
-=======
 import { createContext, useContext, useState, useEffect } from "react";
 import fi from "../texts/fi";
 import en from "../texts/en";
@@ -69,17 +39,12 @@ export const LanguageProvider = ({ children }) => {
   const t = (key) => {
     if (!translations) return "";
 
+    // ✅ camelCase lookup first
     if (translations[key]) {
       return translations[key];
->>>>>>> ca9d964b2b8752abe8b9291a8ad5189a551761b4
     }
-  }
 
-<<<<<<< HEAD
-  return value;
-};
-=======
-    // Nested lookup with dot notation
+    // ✅ optional nested lookup (legacy dotted keys)
     const keys = key.split(".");
     let value = translations;
 
@@ -87,24 +52,19 @@ export const LanguageProvider = ({ children }) => {
       if (value && typeof value === "object" && k in value) {
         value = value[k];
       } else {
-        return ""; 
+        return key; // fallback: return the key itself
       }
     }
 
     return value;
   };
->>>>>>> ca9d964b2b8752abe8b9291a8ad5189a551761b4
 
   return (
-    <LanguageContext.Provider value={{ language, setLanguage, t }}>
+    <LanguageContext.Provider value={{ language, setLanguage, t, loading }}>
       {children}
     </LanguageContext.Provider>
   );
 };
-
-
-
-
 
 export const useLanguage = () => {
   const context = useContext(LanguageContext);
