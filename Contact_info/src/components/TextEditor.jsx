@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import "../css/UserList.css";
 
 // Flatten nested objects into dot notation keys
 function flattenTranslations(obj, prefix = "") {
@@ -64,7 +65,7 @@ function ContentManager() {
     });
   };
 
-  if (loading) return <p>Loading translations...</p>;
+  if (loading) return <div className="loading"><p>Loading contacts...</p></div>;
 
   return (
     <div style={{ padding: "2rem" }}>

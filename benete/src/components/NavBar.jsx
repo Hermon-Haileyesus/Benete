@@ -5,20 +5,20 @@ import "../css/NavBar.css";
 import Logo from "../assets/Benete_whitetransparent.png";
 import LanguageBar from "./LanguageBar";
 import { FaTimes, FaBars } from "react-icons/fa";
+import NavItem from "../components/NavItems";
 
 function NavBar() {
-  const { t, language, setLanguage } = useLanguage();
+  const { t } = useLanguage();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
-  const isSpecialStylePage = ["/ideology", "/privatecustomers"].includes(location.pathname);
-
   const mobileMenuRef = useRef(null);
 
+  const isSpecialStylePage = ["/ideology", "/privatecustomers"].includes(location.pathname);
+
+  // Detect scroll
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 100);
-    };
+    const handleScroll = () => setIsScrolled(window.scrollY > 100);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -36,10 +36,11 @@ function NavBar() {
     };
 
     document.addEventListener("mousedown", handleClickOutside);
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
+    return () => document.removeEventListener("mousedown", handleClickOutside);
   }, [isMobileMenuOpen]);
+
+  // Helper to close menu on link click
+  const handleCloseMenu = () => setIsMobileMenuOpen(false);
 
   return (
     <nav
@@ -48,30 +49,28 @@ function NavBar() {
       }`}
     >
       <div className="nav-content">
+        {/* Logo */}
         <div className="nav-logo">
           <Link to="/">
             <img src={Logo} alt="Benete logo" className="logo-image" />
           </Link>
         </div>
+
+        {/* Desktop links */}
         <div className="nav-links">
-          <Link to="/" className="nav-link">
-            {t("navHome")}
-          </Link>
-          <Link to="/ideology" className="nav-link">
-            {t("navIdeology")}
-          </Link>
-          <Link to="/services" className="nav-link">
-            {t("navService")}
-          </Link>
-          <Link to="/contact" className="nav-link">
-            {t("navContact")}
-          </Link>
+          <NavItem to="/" label={t("navHome")} exact />
+          <NavItem to="/ideology" label={t("navIdeology")} />
+          <NavItem to="/services" label={t("navService")} />
+          <NavItem to="/contact" label={t("navContact")} />
+
           <LanguageBar
             className="language-bar-desktop"
             isScrolled={isScrolled}
             isSpecialStylePage={isSpecialStylePage}
           />
         </div>
+
+        {/* Mobile menu icon */}
         <button
           className="menu-icon"
           onClick={() => setIsMobileMenuOpen(true)}
@@ -87,24 +86,18 @@ function NavBar() {
           <div className="close">
             <button
               className="close-button"
-              onClick={() => setIsMobileMenuOpen(false)}
+              onClick={handleCloseMenu}
               aria-label="Close menu"
             >
               <FaTimes />
             </button>
           </div>
-          <Link to="/" className="nav-link" onClick={() => setIsMobileMenuOpen(false)}>
-            {t("navHome")}
-          </Link>
-          <Link to="/ideology" className="nav-link" onClick={() => setIsMobileMenuOpen(false)}>
-            {t("navIdeology")}
-          </Link>
-          <Link to="/services" className="nav-link" onClick={() => setIsMobileMenuOpen(false)}>
-            {t("navService")}
-          </Link>
-          <Link to="/contact" className="nav-link" onClick={() => setIsMobileMenuOpen(false)}>
-            {t("navContact")}
-          </Link>
+
+          <NavItem to="/" label={t("navHome")} exact onClick={handleCloseMenu} />
+          <NavItem to="/ideology" label={t("navIdeology")} onClick={handleCloseMenu} />
+          <NavItem to="/services" label={t("navService")} onClick={handleCloseMenu} />
+          <NavItem to="/contact" label={t("navContact")} onClick={handleCloseMenu} />
+
           <LanguageBar className="language-bar-mobile" />
         </div>
       )}

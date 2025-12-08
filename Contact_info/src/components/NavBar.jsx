@@ -1,17 +1,17 @@
 import { useEffect, useState, useRef } from "react";
-import { Link } from "react-router-dom";
 import "../css/NavBar.css";
 import Logo from "../assets/Benete_whitetransparent.png";
 import { FaTimes, FaBars } from "react-icons/fa";
+import NavItem from "./NavItems";
+import { Link } from "react-router-dom";
 
 function NavBar() {
-
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
- 
 
   const mobileMenuRef = useRef(null);
 
+  // Detect scroll
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 100);
@@ -39,24 +39,22 @@ function NavBar() {
   }, [isMobileMenuOpen]);
 
   return (
-    <nav
-      className={`nav ${isScrolled ? "scrolled" : ""}`}
-    >
+    <nav className={`nav ${isScrolled ? "scrolled" : ""}`}>
       <div className="nav-content">
+        {/* Logo */}
         <div className="nav-logo">
           <Link to="/">
             <img src={Logo} alt="Benete logo" className="logo-image" />
           </Link>
         </div>
-        <div className="nav-links">
-          <Link to="/" className="nav-link">
-            Contacts
-          </Link>
-          <Link to="/content-manager" className="nav-link">
-            Content Manager
-          </Link>
 
+        {/* Desktop links */}
+        <div className="nav-links">
+          <NavItem to="/" label="Contacts" exact />
+          <NavItem to="/content-manager" label="Content Manager" />
         </div>
+
+        {/* Mobile menu icon */}
         <button
           className="menu-icon"
           onClick={() => setIsMobileMenuOpen(true)}
@@ -78,12 +76,17 @@ function NavBar() {
               <FaTimes />
             </button>
           </div>
-          <Link to="/" className="nav-link" onClick={() => setIsMobileMenuOpen(false)}>
-            Contacts
-          </Link>
-          <Link to="/content-manager" className="nav-link" onClick={() => setIsMobileMenuOpen(false)}>
-            Content Manager
-          </Link>
+          <NavItem
+            to="/"
+            label="Contacts"
+            exact
+            onClick={() => setIsMobileMenuOpen(false)}
+          />
+          <NavItem
+            to="/content-manager"
+            label="Content Manager"
+            onClick={() => setIsMobileMenuOpen(false)}
+          />
         </div>
       )}
     </nav>

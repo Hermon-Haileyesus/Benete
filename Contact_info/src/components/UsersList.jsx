@@ -49,12 +49,12 @@ export default function ContactsPage() {
     );
   });
 
-  if (loading) return <p className="loading">Loading contacts...</p>;
+  if (loading) return <div className="loading"><p>Loading contacts...</p></div>;
 
   return (
     <div className="contacts-page">
       {/* Sticky header */}
-      <div className="contacts-header sticky-header">
+      <div className="contacts-header">
        <input
           type="text"
           className="search-bar"
@@ -66,7 +66,10 @@ export default function ContactsPage() {
 
       <div className="contacts-list">
         {filteredContacts.length === 0 ? (
-          <p className="no-results">No contacts found.</p>
+          <div className="no-results">
+            <p>No contacts found.</p>
+          </div>
+          
         ) : (
           <ul>
             {filteredContacts.map((c) => (
