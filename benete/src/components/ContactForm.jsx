@@ -29,6 +29,8 @@ export default function ContactForm() {
   const { t } = useLanguage();
   const [showPopup, setShowPopup] = useState(false);
   const [showForm, setShowForm] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
 
   useEffect(() => {
     if (showPopup) {
@@ -58,8 +60,10 @@ export default function ContactForm() {
     },
   });
 
-  const onSubmit = async (data) => {
+ const onSubmit = async (data) => {
     try {
+      setLoading(true);
+      setErrorMessage("");
       const response = await fetch("/api/contacts", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -70,10 +74,13 @@ export default function ContactForm() {
         setShowPopup(true);
         reset();
       } else {
-        console.error("Failed to submit form");
+        setErrorMessage(t("contactFormError"));
       }
     } catch (error) {
+      setErrorMessage(t("contactFormError"));
       console.error("Error submitting form:", error);
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -143,12 +150,21 @@ export default function ContactForm() {
             />
           </div>
 
-          <button
-            type="submit"
-            className={`submit-button ${isValid ? "active" : "inactive"}`}
-          >
-            {t("contactFormSubmit")}
-          </button>
+          {errorMessage && <p className="error-text">{errorMessage}</p>}
+
+         <button
+          type="submit"
+          disabled={loading || !isValid}
+          className={`submit-button ${isValid ? "active" : "inactive"}`}
+         >
+          {loading ? (
+            <>
+              <span className="spinner"></span> {t("contactFormSending")}
+            </>
+          ) : (
+            t("contactFormSubmit")
+          )}
+         </button>
         </form>
       )}
 

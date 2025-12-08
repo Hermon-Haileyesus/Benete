@@ -11,7 +11,7 @@ const schema = z
   .object({
     firstName: z.string().min(1, "Etunimi vaaditaan"),
     lastName: z.string().min(1, "Sukunimi vaaditaan"),
-    email: z.string().email("Virheellinen sähköposti").or(z.literal("")), // allow empty
+    email: z.string().email("Virheellinen sähköposti").or(z.literal("")),
     phone: z.string().or(z.literal("")),
     organization: z.string().optional(),
     role: z.string().optional(),
