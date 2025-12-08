@@ -11,10 +11,7 @@ const schema = z
   .object({
     firstName: z.string().min(1, "Etunimi vaaditaan"),
     lastName: z.string().min(1, "Sukunimi vaaditaan"),
-    email: z
-      .string()
-      .email("Virheellinen sähköposti")
-      .or(z.literal("")), // allow empty
+    email: z.string().email("Virheellinen sähköposti").or(z.literal("")), // allow empty
     phone: z.string().or(z.literal("")),
     organization: z.string().optional(),
     role: z.string().optional(),
@@ -28,6 +25,8 @@ const schema = z
 export default function ContactFormServices() {
   const { t } = useLanguage();
   const [showPopup, setShowPopup] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
 
   useEffect(() => {
     if (showPopup) {
@@ -59,6 +58,8 @@ export default function ContactFormServices() {
 
   const onSubmit = async (data) => {
     try {
+      setLoading(true);
+      setErrorMessage("");
       const response = await fetch("/api/contacts", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -69,10 +70,13 @@ export default function ContactFormServices() {
         setShowPopup(true);
         reset();
       } else {
-        console.error("Failed to submit form");
+        setErrorMessage(t("contactFormError"));
       }
     } catch (error) {
+      setErrorMessage(t("contactFormError"));
       console.error("Error submitting form:", error);
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -145,11 +149,20 @@ export default function ContactFormServices() {
           />
         </div>
 
+        {errorMessage && <p className="error-text">{errorMessage}</p>}
+
         <button
           type="submit"
+          disabled={loading || !isValid}
           className={`submit-button ${isValid ? "active" : "inactive"}`}
         >
-          {t("contactFormSubmit")}
+          {loading ? (
+            <>
+              <span className="spinner"></span> {t("contactFormSending")}
+            </>
+          ) : (
+            t("contactFormSubmit")
+          )}
         </button>
       </form>
 

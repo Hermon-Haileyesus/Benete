@@ -105,6 +105,8 @@ export default{
   "contactFormRole": "Roolisi (valinnainen)",
   "contactFormMessage": "Kirjoita viesti...",
   "contactFormSubmit": "Lähetä",
+  "contactFormSending": "Lähetetään…",
+  "contactFormError": "Viestin lähetys epäonnistui. Yritä uudelleen.",
   "contactFormSuccessH1": "Kiitos yhteydenotosta!",
   "contactFormSuccessP": "Otamme sinuun yhteyttä vuorokauden sisällä",
   "contactFormSuccessB": "Sulje",

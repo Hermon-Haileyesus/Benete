@@ -117,6 +117,8 @@ export default {
   "contactFormRole": "Your role (optional)",
   "contactFormMessage": "Write your message...",
   "contactFormSubmit": "Send",
+  "contactFormSending": "Sending…",
+  "contactFormError": "Failed to send message. Please try again.",
   "contactFormSuccessH1": "Thank you for contacting us!",
   "contactFormSuccessP": "We will get back to you within 24 hours",
   "contactFormSuccessB": "Close",

@@ -106,6 +106,8 @@ export default {
   "contactFormRole": "Din roll (valfritt)",
   "contactFormMessage": "Skriv ditt meddelande...",
   "contactFormSubmit": "Skicka",
+  "contactFormSending": "Skickar…",
+  "contactFormError": "Misslyckades att skicka meddelandet. Försök igen.",
   "contactFormSuccessH1": "Tack för att du kontaktade oss!",
   "contactFormSuccessP": "Vi återkommer till dig inom 24 timmar",
   "contactFormSuccessB": "Stäng",
