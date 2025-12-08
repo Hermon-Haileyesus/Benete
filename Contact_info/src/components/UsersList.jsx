@@ -55,9 +55,7 @@ export default function ContactsPage() {
     <div className="contacts-page">
       {/* Sticky header */}
       <div className="contacts-header sticky-header">
-        <h2 className="contacts-title">Saved Contacts</h2>
-       
-        <input
+       <input
           type="text"
           className="search-bar"
           placeholder="Search by name, email, or phone"

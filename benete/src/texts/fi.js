@@ -13,7 +13,7 @@ export default{
     "servicePrivacyTitle": "Pidämme henkilötiedot turvassa",
     "servicePrivacyText": "BeneCare -palvelun tuottamat analyysit ovat seniorin, hänen omaistensa ja hoitohenkilökunnan nähtävissä verkkopalvelun kautta tai tulosteena. Palvelun käyttö ja datan kerääminen perustuvat aina henkilön suostumukseen. Kerättyä henkilötietoa ei käytetä tai välitetä muuhun kuin palvelun käyttöön liittyvään tarkoitukseen. Tietosuojalain mukaisesti seniorilla on oikeus omiin henkilötietoihinsa ja hän voi pyytää henkilötietojensa poistamista tai palvelun lopettamista milloin tahansa.",
     
-   "selectorTitle": "Valitse asiakastyyppi",
+  "selectorTitle": "Valitse asiakastyyppi",
   "selectorSubtitle": "Räätälöimme palvelumme tarpeidesi mukaan",
   "selectorPrivateTitle": "Yksityisasiakkaat",
   "selectorPrivateDescription": "Turvaa läheisesi hyvinvointi ja seuranta kotona",

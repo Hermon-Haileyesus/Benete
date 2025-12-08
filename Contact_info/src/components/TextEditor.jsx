@@ -15,7 +15,7 @@ function flattenTranslations(obj, prefix = "") {
   return result;
 }
 
-function AdminTranslations() {
+function ContentManager() {
   const [translations, setTranslations] = useState([]);
   const [loading, setLoading] = useState(true);
   const [edited, setEdited] = useState({});
@@ -104,4 +104,4 @@ function AdminTranslations() {
   );
 }
 
-export default AdminTranslations;
+export default ContentManager;

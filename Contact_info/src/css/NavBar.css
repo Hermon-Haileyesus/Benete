@@ -1,0 +1,174 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  transition: all 0.3s ease;
+  background-color: #4d1edf;
+  box-shadow: none;
+  font-family: 'Rubik', sans-serif;
+}
+
+.nav.scrolled {
+  background-color: #4d1edf;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+ 
+}
+.nav.scrolled .nav-link{
+  font-size: 17px;
+  
+}
+
+.nav-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  padding: 0 60px;
+  color: white;
+  position: relative;
+}
+
+.header.scrolled .nav-content {
+  color: black;
+}
+.nav-logo{
+   line-height: 70px; 
+}
+.logo-image{
+    height: 30px;
+    vertical-align: middle;
+}
+.nav-links{
+    display: flex;
+    flex-direction: row;
+   
+}
+.nav-link{
+  text-decoration: none;
+  color: inherit;
+  margin: 0 20px;
+  font-weight: 500;
+  font-size: 17px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+  
+}
+.nav-link:hover, .nav-link:focus{
+  border-bottom: 3px solid #fff;
+}
+
+
+
+nav.scrolled.ideology-style {
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.nav.ideology-style .nav-link {
+  color: #4d1edf;
+}
+
+.nav.ideology-style .logo-image {
+  content: url('../assets/Benete_logoblue.png'); /* Replace with your blue logo path */
+  height: 30px;
+  vertical-align: middle;
+}
+.nav.ideology-style .nav-content {
+  color: #4d1edf;
+}
+
+.nav.nav.ideology-style.nav-logo{
+   line-height: 70px; 
+}
+.nav.ideology-style .nav-link:hover,
+.nav.ideology-style .nav-link:focus {
+  border-bottom: 3px solid #4d1edf;
+}
+
+
+
+
+.menu-icon {
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+  display: none;
+}
+
+.mobile-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 250px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 20px;
+  background-color: white;
+  color: #4d1edf;
+  box-shadow: -4px 0 12px rgba(0, 0, 0, 0.1);
+  border-left: 1px solid #eee;
+  font-family: 'Rubik', sans-serif;
+  font-size: 17px;
+  z-index: 999;
+}
+
+.mobile-menu a{
+  text-decoration: none;
+  color: #4d1edf;
+  font-weight: 500;
+  background: none;
+  font-size: 17px;
+  letter-spacing: 1.7px;
+  border: none;
+  padding: 8px 0;
+  text-align: left;
+  width: 50%;
+  border-bottom: 3px solid transparent;
+  
+}
+.mobile-menu a:hover, .mobile-menu a:focus{
+  border-bottom: 3px solid #4d1edf;
+}
+
+
+.close{
+    display: flex;
+    justify-content: right;
+}
+.close-button {
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: #333;
+  cursor: pointer;
+  
+}
+
+
+
+@media (max-width: 1168px){
+  .nav-content{
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .nav-links {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+ 
+}
