@@ -1,12 +1,13 @@
 import "../css/AuthenticationPage.css";
 import { useState } from "react";
 import { Eye, EyeOff, LogIn, User, Lock } from "lucide-react";
-
+import { useNavigate } from "react-router-dom";
 function Authentication() {
   const [showPassword, setShowPassword] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate();
 
 
 
@@ -24,7 +25,7 @@ function Authentication() {
 
       if (response.ok) {
         localStorage.setItem("token", data.token);
-        window.location.href = "/contact-list";
+        navigate("/contact-list");
       } else {
         alert(data.error || "Login failed");
       }
