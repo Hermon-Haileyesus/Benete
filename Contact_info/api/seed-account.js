@@ -17,7 +17,6 @@ export default async function handler(req, res) {
   try {
     const database = await connectDB();
     const admins = database.collection("admins");
-
     const username = process.env.ADMIN_USERNAME;
     const plainPassword = process.env.ADMIN_PASSWORD;
 
