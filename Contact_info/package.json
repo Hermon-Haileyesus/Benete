@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "@fontsource/rubik": "^5.2.8",
+    "bcryptjs": "^3.0.3",
+    "lucide-react": "^0.556.0",
     "mongodb": "^7.0.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
