@@ -1,4 +1,5 @@
 import { MongoClient, ObjectId } from "mongodb";
+import jwt from "jsonwebtoken";
 
 let client;
 let db;
@@ -15,15 +16,37 @@ async function connectDB() {
   return db;
 }
 
+// Middleware to verify JWT
+async function verifyToken(req, res) {
+  const authHeader = req.headers.authorization;
+  if (!authHeader || !authHeader.startsWith("Bearer ")) {
+    res.status(401).json({ error: "Unauthorized: No token provided" });
+    return null;
+  }
+
+  const token = authHeader.split(" ")[1];
+  try {
+    const decoded = jwt.verify(token, process.env.JWT_SECRET);
+    return decoded; // Contains payload like { id, username }
+  } catch (err) {
+    res.status(401).json({ error: "Unauthorized: Invalid or expired token" });
+    return null;
+  }
+}
+
 export default async function handler(req, res) {
   console.log("Handler triggered with method:", req.method);
+
+  // Check JWT for every request
+  const user = await verifyToken(req, res);
+  if (!user) return; 
 
   try {
     const database = await connectDB();
     const contacts = database.collection("contacts");
 
     if (req.method === "POST") {
-      // Insert new contact
+   
       const body = typeof req.body === "string" ? JSON.parse(req.body) : req.body;
       console.log("Parsed body:", body);
 
@@ -31,12 +54,12 @@ export default async function handler(req, res) {
       res.status(201).json({ message: "Saved successfully" });
 
     } else if (req.method === "GET") {
-      // Get all contacts
+   
       const allContacts = await contacts.find({}).sort({ createdAt: -1 }).toArray();
       res.status(200).json(allContacts);
 
     } else if (req.method === "DELETE") {
-      // Delete contact by ID
+     
       const { id } = req.query;
       if (!id) {
         return res.status(400).json({ error: "Missing id" });
