@@ -5,7 +5,7 @@ import { Routes, Route } from "react-router-dom";
 import ContactList from "./pages/Home";
 import ContentEditor from "./pages/ContentEditor";
 import Authentication from "./pages/AuthenticationPage";
-import ProtectedRoute from "./components/ProtectedRoute";
+import ProtectedRoute from "./components/ProtectedRouter";
 
 function App() {
   return (
