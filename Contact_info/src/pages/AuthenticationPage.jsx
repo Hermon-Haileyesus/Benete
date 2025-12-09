@@ -5,15 +5,38 @@ import { Eye, EyeOff, LogIn, User, Lock } from "lucide-react";
 function Authentication() {
   const [showPassword, setShowPassword] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
 
-  const handleSubmit = (e) => {
+
+
+  const handleSubmit =async (e) => {
     e.preventDefault();
     setIsLoading(true);
+     try {
+      const response = await fetch("/api/admin", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ username, password }),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        localStorage.setItem("token", data.token);
+        window.location.href = "/contact-list";
+      } else {
+        alert(data.error || "Login failed");
+      }
+    } catch (err) {
+      alert("Server error: " + err.message);
+    }
+
+
 
     // Simulate login delay
     setTimeout(() => {
       setIsLoading(false);
-      alert("Login attempted — connect backend here!");
     }, 1500);
   };
 
@@ -40,6 +63,9 @@ function Authentication() {
                 type="text"
                 placeholder="Enter your username"
                 disabled={isLoading}
+                value={username}
+                onChange={(e) => setUsername(e.target.value)}
+
               />
             </div>
           </div>
@@ -54,6 +80,9 @@ function Authentication() {
                 type={showPassword ? "text" : "password"}
                 placeholder="Enter your password"
                 disabled={isLoading}
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+
               />
               <button
                 type="button"
