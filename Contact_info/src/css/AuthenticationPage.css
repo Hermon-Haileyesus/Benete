@@ -1,0 +1,137 @@
+.auth-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #2b1096;
+  font-family: 'Rubik', sans-serif;
+}
+
+.auth-card {
+  background: #fff;
+  color: #111;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+  animation: fadeIn 0.4s ease;
+}
+
+.auth-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.auth-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: 0.7px;
+}
+
+.auth-subtitle {
+  color: #555;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+}
+
+.formContent {
+  margin-bottom: 1.2rem;
+}
+.formContent label{
+    letter-spacing: 0.4px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+.inputContent {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.inputContent input {
+  width: 100%;
+  padding: 0.75rem 0.75rem 0.75rem 2.5rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+
+.input-icon {
+  position: absolute;
+  left: 0.75rem;
+  color: #888;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 0.75rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #888;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 0.9rem;
+  border: none;
+  border-radius: 8px;
+  background: #4d1edf;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  transition: background 0.3s ease;
+}
+
+.submit-btn:hover:not(:disabled) {
+  background: #2b1096;
+}
+
+.submit-btn:disabled {
+  background-color: #2b1096; 
+  color: #fff;
+  opacity: 1; 
+  cursor: not-allowed;
+
+}
+
+.btn-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 24px; /* ensures consistent vertical space */
+}
+
+.btn-icon,
+.spinner {
+  width: 20px;
+  height: 20px;
+}
+
+.spinner {
+  border: 3px solid rgba(255,255,255,0.3);
+  border-top: 3px solid #fff;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width:475px) {
+    .auth-card {
+  padding: 10px;
+  
+}
+}

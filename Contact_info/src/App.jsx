@@ -1,10 +1,11 @@
 import "@fontsource/rubik/400.css"; 
 import "@fontsource/rubik/500.css"; 
 import "@fontsource/rubik/700.css"; 
-import ContactsPage from './components/UsersList'
-import ContentManager from "./components/TextEditor";
 import { Routes, Route } from 'react-router-dom';
-import NavBar from './components/NavBar';
+import ContactList from "./pages/Home";
+import ContentEditor from "./pages/ContentEditor";
+import Authentication from "./pages/AuthenticationPage";
+
 
 
 
@@ -12,12 +13,12 @@ function App() {
  
 
   return (
-    <>
-      <NavBar />
+    <> 
       <main >
         <Routes>
-          <Route path="/" element={<ContactsPage />} />
-          <Route path="/content-manager" element={<ContentManager />} />
+          <Route path="/" element={<Authentication/>} />
+          <Route path="/contact-list" element={<ContactList/>} />
+          <Route path="/content-manager" element={<ContentEditor/>} />
         </Routes>
       </main>
     </>

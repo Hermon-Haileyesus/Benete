@@ -50,7 +50,7 @@ function NavBar() {
 
         {/* Desktop links */}
         <div className="nav-links">
-          <NavItem to="/" label="Contacts" exact />
+          <NavItem to="/contact-list" label="Contacts"  />
           <NavItem to="/content-manager" label="Content Manager" />
         </div>
 
@@ -77,9 +77,8 @@ function NavBar() {
             </button>
           </div>
           <NavItem
-            to="/"
+            to="/contact-list"
             label="Contacts"
-            exact
             onClick={() => setIsMobileMenuOpen(false)}
           />
           <NavItem
