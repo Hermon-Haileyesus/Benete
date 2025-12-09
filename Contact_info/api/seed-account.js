@@ -17,8 +17,8 @@ export default async function handler(req, res) {
   try {
     const database = await connectDB();
     const admins = database.collection("admins");
-    const username = process.env.ADMIN_USERNAME;
-    const plainPassword = process.env.ADMIN_PASSWORD;
+    const username = "Moi";
+    const plainPassword = "Hey";
 
     const hashedPassword = await bcrypt.hash(plainPassword, 10);
 
