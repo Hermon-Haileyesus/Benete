@@ -17,11 +17,21 @@ export default async function handler(req, res) {
   try {
     const database = await connectDB();
     const admins = database.collection("admins");
-    const username = "Moi";
-    const plainPassword = "Hey";
+
+    const username = process.env.ADMIN_USERNAME;
+    const plainPassword = process.env.ADMIN_PASSWORD;
+
+    if (!username || !plainPassword) {
+      return res.status(400).json({ error: "Missing ADMIN_USERNAME or ADMIN_PASSWORD" });
+    }
+
+   
+    const existingAdmin = await admins.findOne({ username });
+    if (existingAdmin) {
+      return res.status(200).json({ message: "Admin already exists, no new insert" });
+    }
 
     const hashedPassword = await bcrypt.hash(plainPassword, 10);
-
     await admins.insertOne({
       username,
       password: hashedPassword,
@@ -33,3 +43,4 @@ export default async function handler(req, res) {
     res.status(500).json({ error: err.message });
   }
 }
+
