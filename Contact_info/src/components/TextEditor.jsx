@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "../css/UserList.css";
 
-// Flatten nested objects into dot notation keys
+
 function flattenTranslations(obj, prefix = "") {
   const result = {};
   for (const key in obj) {
@@ -20,14 +21,42 @@ function ContentManager() {
   const [translations, setTranslations] = useState([]);
   const [loading, setLoading] = useState(true);
   const [edited, setEdited] = useState({});
+  const navigate = useNavigate();
+
+  const redirectToLogin = () => {
+    localStorage.removeItem("token");
+    navigate("/l", { replace: true });
+  };
 
   useEffect(() => {
     const fetchData = async () => {
-      const res = await fetch("/api/translations");
-      const data = await res.json();
-      setTranslations(data);
-      setLoading(false);
+      const token = localStorage.getItem("token");
+      if (!token) {
+        redirectToLogin();
+        return;
+      }
+
+      try {
+        const res = await fetch("/api/translations", {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        });
+
+        if (res.status === 401) {
+          redirectToLogin();
+          return;
+        }
+
+        const data = await res.json();
+        setTranslations(data);
+      } catch (err) {
+        console.error("Error fetching translations:", err);
+      } finally {
+        setLoading(false);
+      }
     };
+
     fetchData();
   }, []);
 
@@ -42,35 +71,61 @@ function ContentManager() {
     const updates = edited[id];
     if (!updates) return;
 
-    // Send flat keys like { "nav.home": "moi" }
-    await fetch("/api/translations", {
-      method: "PUT",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ id, updates }),
-    });
+    const token = localStorage.getItem("token");
+    if (!token) {
+      redirectToLogin();
+      return;
+    }
 
-    // Update local state
-    setTranslations((prev) =>
-      prev.map((t) =>
-        t._id === id
-          ? { ...t, translations: { ...t.translations, ...updates } }
-          : t
-      )
-    );
+    try {
+      const res = await fetch("/api/translations", {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${token}`,
+        },
+        body: JSON.stringify({ id, updates }),
+      });
 
-    setEdited((prev) => {
-      const newEdited = { ...prev };
-      delete newEdited[id];
-      return newEdited;
-    });
+      if (res.status === 401) {
+        redirectToLogin();
+        return;
+      }
+
+      // Update local state
+      setTranslations((prev) =>
+        prev.map((t) =>
+          t._id === id
+            ? { ...t, translations: { ...t.translations, ...updates } }
+            : t
+        )
+      );
+
+      setEdited((prev) => {
+        const newEdited = { ...prev };
+        delete newEdited[id];
+        return newEdited;
+      });
+    } catch (err) {
+      console.error("Error saving translation:", err);
+    }
   };
 
-  if (loading) return <div className="loading"><p>Loading contacts...</p></div>;
+  if (loading)
+    return (
+      <div className="loading">
+        <p>Loading translations...</p>
+      </div>
+    );
 
   return (
     <div style={{ padding: "2rem" }}>
       <h1>Admin Translation Editor</h1>
-      <table border="1" cellPadding="8" style={{ width: "100%", borderCollapse: "collapse" }}>
+      <table
+        border="1"
+        cellPadding="8"
+        style={{ width: "100%", borderCollapse: "collapse" }}
+      >
         <thead>
           <tr>
             <th>Language</th>
@@ -81,23 +136,31 @@ function ContentManager() {
         </thead>
         <tbody>
           {translations.map((t) =>
-            Object.entries(flattenTranslations(t.translations || {})).map(([key, value]) => (
-              <tr key={`${t._id}-${key}`}>
-                <td>{t.language}</td>
-                <td>{key}</td>
-                <td>
-                  <input
-                    type="text"
-                    value={edited[t._id]?.[key] !== undefined ? edited[t._id][key] : value}
-                    onChange={(e) => handleChange(t._id, key, e.target.value)}
-                    style={{ width: "100%" }}
-                  />
-                </td>
-                <td>
-                  <button onClick={() => handleSave(t._id)}>Save</button>
-                </td>
-              </tr>
-            ))
+            Object.entries(flattenTranslations(t.translations || {})).map(
+              ([key, value]) => (
+                <tr key={`${t._id}-${key}`}>
+                  <td>{t.language}</td>
+                  <td>{key}</td>
+                  <td>
+                    <input
+                      type="text"
+                      value={
+                        edited[t._id]?.[key] !== undefined
+                          ? edited[t._id][key]
+                          : value
+                      }
+                      onChange={(e) =>
+                        handleChange(t._id, key, e.target.value)
+                      }
+                      style={{ width: "100%" }}
+                    />
+                  </td>
+                  <td>
+                    <button onClick={() => handleSave(t._id)}>Save</button>
+                  </td>
+                </tr>
+              )
+            )
           )}
         </tbody>
       </table>
