@@ -3,7 +3,7 @@ import "../css/NavBar.css";
 import Logo from "../assets/Benete_whitetransparent.png";
 import { FaTimes, FaBars } from "react-icons/fa";
 import NavItem from "./NavItems";
-import { Link } from "react-router-dom";
+import LogoutButton from "./LogOut";
 
 function NavBar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -51,6 +51,7 @@ function NavBar() {
         <div className="nav-links">
           <NavItem to="/contact-list" label="Contacts"  />
           <NavItem to="/content-manager" label="Content Manager" />
+          <LogoutButton/>
         </div>
 
         {/* Mobile menu icon */}
@@ -85,6 +86,7 @@ function NavBar() {
             label="Content Manager"
             onClick={() => setIsMobileMenuOpen(false)}
           />
+          <LogoutButton/>
         </div>
       )}
     </nav>

@@ -11,7 +11,7 @@ function App() {
   return (
     <main>
       <Routes>
-        <Route path="/" element={<Authentication />} />
+        <Route path="/" element={<ContactList />} />
         <Route
           path="/contact-list"
           element={

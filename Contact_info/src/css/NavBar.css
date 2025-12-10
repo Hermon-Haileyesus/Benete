@@ -152,8 +152,41 @@ nav.scrolled.ideology-style {
   cursor: pointer;
   
 }
+.log-out{
+  background-color: rgb(255, 255, 255);
+  padding:0 0.9rem;
+  border: none;
+  
+  color: #2b1096;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  font-family: 'Rubik', sans-serif;
+}
+
+.log-out:hover{
+  background: #ff0000;
+  color: #fff;
+  transform: scale(1.1);
+}
 
 
+  
+
+.log-outcontent{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 0.5rem;
+   min-height: 24px;
+   
+}
+.log-outIcon{
+  width: 20px;
+  height: 20px;
+}
 
 @media (max-width: 1168px){
   .nav-content{

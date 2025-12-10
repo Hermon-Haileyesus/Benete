@@ -25,7 +25,7 @@ function ContentManager() {
 
   const redirectToLogin = () => {
     localStorage.removeItem("token");
-    navigate("/l", { replace: true });
+    navigate("/", { replace: true });
   };
 
   useEffect(() => {
