@@ -32,13 +32,9 @@ function Authentication() {
     } catch (err) {
       alert("Server error: " + err.message);
     }
-
-
-
-    // Simulate login delay
     setTimeout(() => {
       setIsLoading(false);
-    }, 1000);
+    }, 100);
   };
 
   return (
