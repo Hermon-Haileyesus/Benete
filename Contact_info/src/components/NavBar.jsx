@@ -11,7 +11,7 @@ function NavBar() {
 
   const mobileMenuRef = useRef(null);
 
-  // Detect scroll
+  
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 100);
@@ -43,9 +43,8 @@ function NavBar() {
       <div className="nav-content">
         {/* Logo */}
         <div className="nav-logo">
-          <Link to="/">
-            <img src={Logo} alt="Benete logo" className="logo-image" />
-          </Link>
+          <img src={Logo} alt="Benete logo" className="logo-image" />
+          
         </div>
 
         {/* Desktop links */}
