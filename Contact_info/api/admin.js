@@ -20,7 +20,8 @@ export default async function handler(req, res) {
     const admins = database.collection("admins");
 
     if (req.method === "POST") {
-      const { username, password } = req.body;
+      const body = typeof req.body === "string" ? JSON.parse(req.body) : req.body;
+      const { username, password } = body;
 
       const admin = await admins.findOne({ username });
       if (!admin) return res.status(401).json({ error: "Invalid username" });

@@ -38,7 +38,7 @@ function Authentication() {
     // Simulate login delay
     setTimeout(() => {
       setIsLoading(false);
-    }, 1500);
+    }, 1000);
   };
 
   return (
