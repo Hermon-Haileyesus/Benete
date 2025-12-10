@@ -1,18 +1,41 @@
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "../css/UserList.css";
 
 export default function ContactsPage() {
   const [contacts, setContacts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [searchTerm, setSearchTerm] = useState("");
+  const navigate = useNavigate();
 
   useEffect(() => {
     fetchContacts();
   }, []);
 
+  const redirectToLogin = () => {
+    localStorage.removeItem("token");
+    navigate("/", { replace: true });
+  };
+
   const fetchContacts = async () => {
+    const token = localStorage.getItem("token");
+    if (!token) {
+      redirectToLogin();
+      return;
+    }
+
     try {
-      const response = await fetch("/api/contacts");
+      const response = await fetch("/api/contacts", {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      });
+
+      if (response.status === 401) {
+        redirectToLogin();
+        return;
+      }
+
       const data = await response.json();
       setContacts(data);
     } catch (error) {
@@ -23,13 +46,25 @@ export default function ContactsPage() {
   };
 
   const deleteContact = async (id) => {
+    const token = localStorage.getItem("token");
+
     if (!window.confirm("Are you sure you want to delete this contact?")) {
       return;
     }
+
     try {
       const response = await fetch(`/api/contacts?id=${id}`, {
         method: "DELETE",
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
       });
+
+      if (response.status === 401) {
+        redirectToLogin();
+        return;
+      }
+
       if (response.ok) {
         setContacts((prev) => prev.filter((c) => c._id !== id));
       } else {
@@ -49,13 +84,19 @@ export default function ContactsPage() {
     );
   });
 
-  if (loading) return <div className="loading"><p>Loading contacts...</p></div>;
+  if (loading) {
+    return (
+      <div className="loading">
+        <p>Loading contacts...</p>
+      </div>
+    );
+  }
 
   return (
     <div className="contacts-page">
-      {/* Sticky header */}
+      {/* Sticky search header */}
       <div className="contacts-header">
-       <input
+        <input
           type="text"
           className="search-bar"
           placeholder="Search by name, email, or phone"
@@ -69,7 +110,6 @@ export default function ContactsPage() {
           <div className="no-results">
             <p>No contacts found.</p>
           </div>
-          
         ) : (
           <ul>
             {filteredContacts.map((c) => (
@@ -87,6 +127,7 @@ export default function ContactsPage() {
                     <p className="contact-message">“{c.message}”</p>
                   )}
                 </div>
+
                 <div className="contact-actions">
                   <button
                     onClick={() => deleteContact(c._id)}
