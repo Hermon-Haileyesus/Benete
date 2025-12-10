@@ -5,6 +5,7 @@
   min-height: 100vh;
   background: #2b1096;
   font-family: 'Rubik', sans-serif;
+  width: 100%;
 }
 
 .auth-card {
