@@ -131,7 +131,13 @@ export default {
   "contactPhone": "+358 50 052 4514",
   "contactEmail": "kari.backman@benete.com",
   "contactHeadingIntro": "Let’s talk",
-
+  
+  "ideologySubtitleLine1a": "Individual",
+  "ideologySubtitleLine1b": "independence",
+  "ideologySubtitleLine2a": "Digital",
+  "ideologySubtitleLine2b": "dignity",
+  "ideologySubtitleLine3a": "Valuable",
+  "ideologySubtitleLine3b": "life",
   "ideologyHeroSubtitle": "As a care expert",
   "ideologyHeroTitle1": "Makes everyday life easier",
   "ideologyHeroTitle1b": "and increases security",
@@ -141,20 +147,7 @@ export default {
   "ideologyHeroTitle3b": "and independent living for seniors",
   "ideologyTitle": "On your terms",
 
-  "heroSubtitleLines": [
-    [
-      { "text": "Individual", "color": "black" },
-      { "text": "independence", "color": "blue" }
-    ],
-    [
-      { "text": "Digital", "color": "black" },
-      { "text": "dignity", "color": "blue" }
-    ],
-    [
-      { "text": "Valuable", "color": "black" },
-      { "text": "life", "color": "blue" }
-    ]
-  ],
+
    "ideologyValuesCare": "Caring",
   "ideologyValuesCareDesc": "Every person deserves attention, warmth, and individualized care",
   "ideologyValuesSafety": "Security",

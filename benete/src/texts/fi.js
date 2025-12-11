@@ -120,6 +120,13 @@ export default{
   "contactEmail": "kari.backman@benete.com",
   "contactHeadingIntro": "Jutellaan",
   "contactHeadingTitle": "Kuinka voimme auttaa?",
+  
+  "ideologySubtitleLine1a": "Yksilöllinen",
+  "ideologySubtitleLine1b": "itsenäisyys",
+  "ideologySubtitleLine2a": "Digitaalinen",
+  "ideologySubtitleLine2b": "arvokkuus",
+  "ideologySubtitleLine3a": "Arvokas",
+  "ideologySubtitleLine3b": "elämä",
     
   "ideologyHeroSubtitle": "Hoitotyön asiantuntijana",
   "ideologyHeroTitle1": "Helpottaa arkea",
@@ -130,20 +137,7 @@ export default{
   "ideologyHeroTitle3b": "ja vapaata elämää",
   "ideologyTitle": "Sinun ehdoillasi",
 
-  "heroSubtitleLines": [
-    [
-      { "text": "Yksilöllinen", "color": "black" },
-      { "text": "itsenäisyys", "color": "blue" }
-    ],
-    [
-      { "text": "Digitaalinen", "color": "black" },
-      { "text": "arvokkuus", "color": "blue" }
-    ],
-    [
-      { "text": "Arvokas", "color": "black" },
-      { "text": "elämä", "color": "blue" }
-    ]
-  ],
+  
   "ideologyValuesCare": "Välittäminen",
   "ideologyValuesCareDesc": "Jokainen ihminen ansaitsee huomiota, lämpöä ja yksilöllistä hoivaa",
   "ideologyValuesSafety": "Turvallisuus",

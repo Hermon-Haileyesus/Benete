@@ -123,6 +123,13 @@ const translations = [
   "contactEmail": "kari.backman@benete.com",
   "contactHeadingIntro": "Jutellaan",
   "contactHeadingTitle": "Kuinka voimme auttaa?",
+
+  "ideologySubtitleLine1a": "Yksilöllinen",
+  "ideologySubtitleLine1b": "itsenäisyys",
+  "ideologySubtitleLine2a": "Digitaalinen",
+  "ideologySubtitleLine2b": "arvokkuus",
+  "ideologySubtitleLine3a": "Arvokas",
+  "ideologySubtitleLine3b": "elämä",
     
   "ideologyHeroSubtitle": "Hoitotyön asiantuntijana",
   "ideologyHeroTitle1": "Helpottaa arkea",
@@ -133,20 +140,7 @@ const translations = [
   "ideologyHeroTitle3b": "ja vapaata elämää",
   "ideologyTitle": "Sinun ehdoillasi",
 
-  "heroSubtitleLines": [
-    [
-      { "text": "Yksilöllinen", "color": "black" },
-      { "text": "itsenäisyys", "color": "blue" }
-    ],
-    [
-      { "text": "Digitaalinen", "color": "black" },
-      { "text": "arvokkuus", "color": "blue" }
-    ],
-    [
-      { "text": "Arvokas", "color": "black" },
-      { "text": "elämä", "color": "blue" }
-    ]
-  ],
+
   "ideologyValuesCare": "Välittäminen",
   "ideologyValuesCareDesc": "Jokainen ihminen ansaitsee huomiota, lämpöä ja yksilöllistä hoivaa",
   "ideologyValuesSafety": "Turvallisuus",
@@ -367,6 +361,13 @@ const translations = [
   "contactPhone": "+358 50 052 4514",
   "contactEmail": "kari.backman@benete.com",
   "contactHeadingIntro": "Let’s talk",
+  
+  "ideologySubtitleLine1a": "Individual",
+  "ideologySubtitleLine1b": "independence",
+  "ideologySubtitleLine2a": "Digital",
+  "ideologySubtitleLine2b": "dignity",
+  "ideologySubtitleLine3a": "Valuable",
+  "ideologySubtitleLine3b": "life",
 
   "ideologyHeroSubtitle": "As a care expert",
   "ideologyHeroTitle1": "Makes everyday life easier",
@@ -377,21 +378,7 @@ const translations = [
   "ideologyHeroTitle3b": "and independent living for seniors",
   "ideologyTitle": "On your terms",
 
-  "heroSubtitleLines": [
-    [
-      { "text": "Individual", "color": "black" },
-      { "text": "independence", "color": "blue" }
-    ],
-    [
-      { "text": "Digital", "color": "black" },
-      { "text": "dignity", "color": "blue" }
-    ],
-    [
-      { "text": "Valuable", "color": "black" },
-      { "text": "life", "color": "blue" }
-    ]
-  ],
-   "ideologyValuesCare": "Caring",
+  "ideologyValuesCare": "Caring",
   "ideologyValuesCareDesc": "Every person deserves attention, warmth, and individualized care",
   "ideologyValuesSafety": "Security",
   "ideologyValuesSafetyDesc": "Reliable technology and 24/7 monitoring ensure peace of mind",
@@ -604,7 +591,13 @@ const translations = [
   "contactHeadingTitle": "Hur kan vi hjälpa till?",
 
   "footerFollowUs": "Följ oss",
-
+  
+  "ideologySubtitleLine1a": "Individuell",
+  "ideologySubtitleLine1b": "självständighet",
+  "ideologySubtitleLine2a": "Digital",
+  "ideologySubtitleLine2b": "värdighet",
+  "ideologySubtitleLine3a": "Värdefullt",
+  "ideologySubtitleLine3b": "liv",
   "ideologyHeroSubtitle": "Som vårdexpert",
   "ideologyHeroTitle1": "Förenklar vardagen",
   "ideologyHeroTitle1b": "och ökar tryggheten",
@@ -614,20 +607,6 @@ const translations = [
   "ideologyHeroTitle3b": "och självständigt boende för äldre",
   "ideologyTitle": "På dina villkor",
 
-  "heroSubtitleLines": [
-    [
-      { "text": "Individuell", "color": "black" },
-      { "text": "självständighet", "color": "blue" }
-    ],
-    [
-      { "text": "Digital", "color": "black" },
-      { "text": "värdighet", "color": "blue" }
-    ],
-    [
-      { "text": "Värdefullt", "color": "black" },
-      { "text": "liv", "color": "blue" }
-    ]
-  ],
   "ideologyValuesCare": "Omsorg",
   "ideologyValuesCareDesc": "Varje person förtjänar uppmärksamhet, värme och individualiserad vård",
   "ideologyValuesSafety": "Säkerhet",

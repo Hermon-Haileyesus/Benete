@@ -16,7 +16,22 @@ function Ideology () {
           image={headerImg}
           title={t("ideologyTitle")}
           titleColor='blue'
-          subtitleLines={t("heroSubtitleLines")}
+          subtitleLines={[
+    [
+      { text: t("ideologySubtitleLine1a"), color: "black" },
+      { text: t("ideologySubtitleLine1b"), color: "blue" }
+    ],
+    [
+      { text: t("ideologySubtitleLine2a"), color: "black" },
+      { text: t("ideologySubtitleLine2b"), color: "blue" }
+    ],
+    [
+      { text: t("ideologySubtitleLine3a"), color: "black" },
+      { text: t("ideologySubtitleLine3b"), color: "blue" }
+    ]
+  ]}
+
+
           isWhite={false}
           isCentered={false} 
           isBlack={true}

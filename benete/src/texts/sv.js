@@ -123,6 +123,13 @@ export default {
   "contactHeadingTitle": "Hur kan vi hjälpa till?",
 
   "footerFollowUs": "Följ oss",
+  
+  "ideologySubtitleLine1a": "Individuell",
+  "ideologySubtitleLine1b": "självständighet",
+  "ideologySubtitleLine2a": "Digital",
+  "ideologySubtitleLine2b": "värdighet",
+  "ideologySubtitleLine3a": "Värdefullt",
+  "ideologySubtitleLine3b": "liv",
 
   "ideologyHeroSubtitle": "Som vårdexpert",
   "ideologyHeroTitle1": "Förenklar vardagen",
@@ -133,20 +140,7 @@ export default {
   "ideologyHeroTitle3b": "och självständigt boende för äldre",
   "ideologyTitle": "På dina villkor",
 
-  "heroSubtitleLines": [
-    [
-      { "text": "Individuell", "color": "black" },
-      { "text": "självständighet", "color": "blue" }
-    ],
-    [
-      { "text": "Digital", "color": "black" },
-      { "text": "värdighet", "color": "blue" }
-    ],
-    [
-      { "text": "Värdefullt", "color": "black" },
-      { "text": "liv", "color": "blue" }
-    ]
-  ],
+  
   "ideologyValuesCare": "Omsorg",
   "ideologyValuesCareDesc": "Varje person förtjänar uppmärksamhet, värme och individualiserad vård",
   "ideologyValuesSafety": "Säkerhet",
