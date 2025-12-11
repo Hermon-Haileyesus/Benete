@@ -58,7 +58,6 @@ function NavBar() {
 
         {/* Desktop links */}
         <div className="nav-links">
-          <button onClick={() => fetch("/api/seed-translations", { method: "POST" })}>Seed Translations</button>
           <NavItem to="/" label={t("navHome")} exact />
           <NavItem to="/ideology" label={t("navIdeology")} />
           <NavItem to="/services" label={t("navService")} />
