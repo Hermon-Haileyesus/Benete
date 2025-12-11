@@ -8,14 +8,27 @@ function flattenTranslations(obj, prefix = "") {
   for (const key in obj) {
     const value = obj[key];
     const newKey = prefix ? `${prefix}.${key}` : key;
-    if (typeof value === "object" && value !== null && !Array.isArray(value)) {
-      Object.assign(result, flattenTranslations(value, newKey));
-    } else {
+
+    if (typeof value === "string") {
       result[newKey] = value;
+    } else if (Array.isArray(value)) {
+      value.forEach((item, i) => {
+        if (typeof item === "object") {
+          Object.entries(item).forEach(([subKey, subVal]) => {
+            result[`${newKey}[${i}].${subKey}`] = subVal;
+          });
+        } else {
+          result[`${newKey}[${i}]`] = item;
+        }
+      });
+    } else if (typeof value === "object" && value !== null) {
+      Object.assign(result, flattenTranslations(value, newKey));
     }
   }
   return result;
 }
+
+
 
 function ContentManager() {
   const [translations, setTranslations] = useState([]);
