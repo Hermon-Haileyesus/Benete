@@ -5,6 +5,7 @@ import Card from '../components/ui/Card';
 import Header from '../components/Header';
 import headerImg from '../assets/images/carousel-nurse.jpg';
 import ReadMoreButton from '../components/ReadMore';
+import ContactFormServices from '../components/ContactFormServices';
 
 function CompanyCustomers () {
     const { t } = useLanguage();
@@ -61,6 +62,7 @@ function CompanyCustomers () {
           </Card>
         </div>
       </div>
+      <ContactFormServices/>
       <div className='readMore'>
         <div className='readMore-content'>
           <h2>{t("readMoreDescription")}</h2>

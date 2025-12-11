@@ -100,7 +100,7 @@
 
 @media (min-width: 920px) {
   .customer-wrap {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
   .readMore-content{
     max-width: 60%;

@@ -17,7 +17,7 @@ function CustomerSection() {
         title={t("privateHeroTitle")}
         subtitle={t("headerTitle")}
         isWhite={true}
-        isCentered={false}
+        isCentered={false} 
         isYellow={false}
       />
       <div className='customer-container'>
@@ -62,6 +62,7 @@ function CustomerSection() {
           </Card>
         </div>
       </div>
+      <ContactFormServices/>
       <div className='readMore'>
         <div className='readMore-content'>
           <h2>{t("readMoreDescription")}</h2>

@@ -14,16 +14,16 @@ function NavBar() {
   const location = useLocation();
   const mobileMenuRef = useRef(null);
 
-  const isSpecialStylePage = ["/ideology", "/privatecustomers"].includes(location.pathname);
+  const isSpecialStylePage = ["/ideology"].includes(location.pathname);
 
-  // Detect scroll
+ 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 100);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Close menu when clicking outside
+ 
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (
@@ -62,6 +62,7 @@ function NavBar() {
           <NavItem to="/ideology" label={t("navIdeology")} />
           <NavItem to="/services" label={t("navService")} />
           <NavItem to="/contact" label={t("navContact")} />
+          <NavItem to="/support" label={"Support"} />
 
           <LanguageBar
             className="language-bar-desktop"
@@ -97,7 +98,7 @@ function NavBar() {
           <NavItem to="/ideology" label={t("navIdeology")} onClick={handleCloseMenu} />
           <NavItem to="/services" label={t("navService")} onClick={handleCloseMenu} />
           <NavItem to="/contact" label={t("navContact")} onClick={handleCloseMenu} />
-
+          <NavItem to="/support" label={"Support"} />
           <LanguageBar className="language-bar-mobile" />
         </div>
       )}
