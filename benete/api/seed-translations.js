@@ -361,7 +361,7 @@ const translations = [
   "contactPhone": "+358 50 052 4514",
   "contactEmail": "kari.backman@benete.com",
   "contactHeadingIntro": "Let’s talk",
-  
+
   "ideologySubtitleLine1a": "Individual",
   "ideologySubtitleLine1b": "independence",
   "ideologySubtitleLine2a": "Digital",
@@ -727,3 +727,4 @@ export default async function handler(req, res) {
     res.status(500).json({ error: "Failed to seed translations" });
   }
 }
+//to seed <button onClick={() => fetch("/api/seed-translations", { method: "POST" })}>Seed Translations</button>
