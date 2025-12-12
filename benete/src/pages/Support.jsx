@@ -9,7 +9,7 @@ import headerImg from '../assets/header_img/support.jpg';
 
 
 const supportVideos = [
-  { id: 1, titleKey: "Getting Started", descriptionKey: "Learn how to set up your BeneCare device...", duration: "0:33", src: "https://drive.google.com/uc?export=download&id=14vO91730RcVecly4EwNPtlKjDUxNRgIZ" },
+  { id: 1, titleKey: "Getting Started", descriptionKey: "Learn how to set up your BeneCare device...", duration: "0:33", src: "/videos/Benete_Turvaranneke.mp4" },
   { id: 2, titleKey: "Dashboard Overview", descriptionKey: "Walkthrough of the BeneCare dashboard...", duration: "0:22", src: "/videos/Benete_PIR_1.mp4" },
   { id: 3, titleKey: "Setting Up Alerts", descriptionKey: "Configure custom alerts and notifications...", duration: "1:03", src: "/videos/Benete_Reititin.mp4" },
   { id: 4, titleKey: "Adding Family Members", descriptionKey: "Invite family members and caregivers...", duration: "0:33", src: "/videos/Benete_sensori_Am-6.mp4" },
