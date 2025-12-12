@@ -1,0 +1,13 @@
+{
+  "build": {
+    "env": {
+      "GIT_LFS_ENABLED": "true"
+    }
+  },
+  "scripts": {
+    "build": "git lfs install && git lfs pull && vite build"
+  },
+  "framework": "vite",
+  "outputDirectory": "dist"
+}
+
