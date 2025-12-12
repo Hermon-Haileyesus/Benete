@@ -1,15 +1,15 @@
 
 import { useLanguage } from "../contexts/LanguageContext";
 import { Play } from "lucide-react"; 
-import Turvaranneke from "../assets/videos/Benete Turvaranneke.mp4";
-import Benete_PIR_1 from "../assets/videos/Benete_PIR_1.mp4";
-import Benete_Reititin from "../assets/videos/Benete_Reititin.mp4";
-import Benete_sensori_Am6 from "../assets/videos/Benete_sensori_Am-6.mp4";
-import Benete_sensori_AR1 from "../assets/videos/Benete_sensori_AR-1.mp4";
-import Benete_sensori_Pir2 from "../assets/videos/Benete_sensori_Pir2.mp4";
-import Benete_sensori_TP10 from "../assets/videos/Benete_sensori_TP-10.mp4";
-import Benete_unimittari from "../assets/videos/Benete_unimittari.mp4";
-import Benete_Vaaka from "../assets/videos/Benete_Vaaka.mp4";
+import Turvaranneke from "../assets/Videos/Benete Turvaranneke.mp4";
+import Benete_PIR_1 from "../assets/Videos/Benete_PIR_1.mp4";
+import Benete_Reititin from "../assets/Videos/Benete_Reititin.mp4";
+import Benete_sensori_Am6 from "../assets/Videos/Benete_sensori_Am-6.mp4";
+import Benete_sensori_AR1 from "../assets/Videos/Benete_sensori_AR-1.mp4";
+import Benete_sensori_Pir2 from "../assets/Videos/Benete_sensori_Pir2.mp4";
+import Benete_sensori_TP10 from "../assets/Videos/Benete_sensori_TP-10.mp4";
+import Benete_unimittari from "../assets/Videos/Benete_unimittari.mp4";
+import Benete_Vaaka from "../assets/Videos/Benete_Vaaka.mp4";
 import "../css/Support.css";
 import { useRef, useState, useEffect } from "react";
 import Header from "../components/Header";
