@@ -15,7 +15,7 @@ import "@fontsource/rubik/400.css";
 import "@fontsource/rubik/500.css"; 
 import "@fontsource/rubik/700.css"; 
 import CookieConsent from './components/Cookies.Conset';
-
+import Support from './pages/Support';
 
 
 function App() {
@@ -28,6 +28,7 @@ function App() {
           <Route path="/ideology" element={<Ideology />} />
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/support" element={<Support />} />
           <Route path="/privatecustomers" element={<PrivateCustomers />} />
           <Route path="/companycustomers" element={<CompanyCustomers/>} />
           <Route path="/terms" element={<Terms/>} />

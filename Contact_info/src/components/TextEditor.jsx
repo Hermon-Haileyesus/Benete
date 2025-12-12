@@ -2,34 +2,6 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../css/UserList.css";
 
-
-function flattenTranslations(obj, prefix = "") {
-  const result = {};
-  for (const key in obj) {
-    const value = obj[key];
-    const newKey = prefix ? `${prefix}.${key}` : key;
-
-    if (typeof value === "string") {
-      result[newKey] = value;
-    } else if (Array.isArray(value)) {
-      value.forEach((item, i) => {
-        if (typeof item === "object") {
-          Object.entries(item).forEach(([subKey, subVal]) => {
-            result[`${newKey}[${i}].${subKey}`] = subVal;
-          });
-        } else {
-          result[`${newKey}[${i}]`] = item;
-        }
-      });
-    } else if (typeof value === "object" && value !== null) {
-      Object.assign(result, flattenTranslations(value, newKey));
-    }
-  }
-  return result;
-}
-
-
-
 function ContentManager() {
   const [translations, setTranslations] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -51,9 +23,7 @@ function ContentManager() {
 
       try {
         const res = await fetch("/api/translations", {
-          headers: {
-            Authorization: `Bearer ${token}`,
-          },
+          headers: { Authorization: `Bearer ${token}` },
         });
 
         if (res.status === 401) {
@@ -124,12 +94,13 @@ function ContentManager() {
     }
   };
 
-  if (loading)
+  if (loading) {
     return (
       <div className="loading">
         <p>Loading translations...</p>
       </div>
     );
+  }
 
   return (
     <div style={{ padding: "2rem" }}>
@@ -149,31 +120,27 @@ function ContentManager() {
         </thead>
         <tbody>
           {translations.map((t) =>
-            Object.entries(flattenTranslations(t.translations || {})).map(
-              ([key, value]) => (
-                <tr key={`${t._id}-${key}`}>
-                  <td>{t.language}</td>
-                  <td>{key}</td>
-                  <td>
-                    <input
-                      type="text"
-                      value={
-                        edited[t._id]?.[key] !== undefined
-                          ? edited[t._id][key]
-                          : value
-                      }
-                      onChange={(e) =>
-                        handleChange(t._id, key, e.target.value)
-                      }
-                      style={{ width: "100%" }}
-                    />
-                  </td>
-                  <td>
-                    <button onClick={() => handleSave(t._id)}>Save</button>
-                  </td>
-                </tr>
-              )
-            )
+            Object.entries(t.translations || {}).map(([key, value]) => (
+              <tr key={`${t._id}-${key}`}>
+                <td>{t.language}</td>
+                <td>{key}</td>
+                <td>
+                  <input
+                    type="text"
+                    value={
+                      edited[t._id]?.[key] !== undefined
+                        ? edited[t._id][key]
+                        : value
+                    }
+                    onChange={(e) => handleChange(t._id, key, e.target.value)}
+                    style={{ width: "100%" }}
+                  />
+                </td>
+                <td>
+                  <button onClick={() => handleSave(t._id)}>Save</button>
+                </td>
+              </tr>
+            ))
           )}
         </tbody>
       </table>
@@ -182,3 +149,4 @@ function ContentManager() {
 }
 
 export default ContentManager;
+
