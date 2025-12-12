@@ -1,33 +1,24 @@
 
 import { useLanguage } from "../contexts/LanguageContext";
 import { Play } from "lucide-react"; 
-import Turvaranneke from "../assets/Videos/Benete Turvaranneke.mp4";
-import Benete_PIR_1 from "../assets/Videos/Benete_PIR_1.mp4";
-import Benete_Reititin from "../assets/Videos/Benete_Reititin.mp4";
-import Benete_sensori_Am6 from "../assets/Videos/Benete_sensori_Am-6.mp4";
-import Benete_sensori_AR1 from "../assets/Videos/Benete_sensori_AR-1.mp4";
-import Benete_sensori_Pir2 from "../assets/Videos/Benete_sensori_Pir2.mp4";
-import Benete_sensori_TP10 from "../assets/Videos/Benete_sensori_TP-10.mp4";
-import Benete_unimittari from "../assets/Videos/Benete_unimittari.mp4";
-import Benete_Vaaka from "../assets/Videos/Benete_Vaaka.mp4";
 import "../css/Support.css";
 import { useRef, useState, useEffect } from "react";
 import Header from "../components/Header";
 import headerImg from '../assets/header_img/support.jpg';
-import ContactFormServices from '../components/ContactFormServices';
+
 
 
 
 const supportVideos = [
-  { id: 1, titleKey: "Getting Started", descriptionKey: "Learn how to set up your BeneCare device...", duration: "0:33", src: Turvaranneke },
-  { id: 2, titleKey: "Dashboard Overview", descriptionKey: "Walkthrough of the BeneCare dashboard...", duration: "0:22", src: Benete_PIR_1 },
-  { id: 3, titleKey: "Setting Up Alerts", descriptionKey: "Configure custom alerts and notifications...", duration: "1:03", src: Benete_Reititin },
-  { id: 4, titleKey: "Adding Family Members", descriptionKey: "Invite family members and caregivers...", duration: "0:33", src: Benete_sensori_Am6 },
-  { id: 5, titleKey: "Understanding Activity Data", descriptionKey: "Interpret activity patterns and health metrics...", duration: "0:33", src: Benete_sensori_AR1 },
-  { id: 6, titleKey: "Mobile App Setup", descriptionKey: "Download and configure the BeneCare mobile app...", duration: "0:33", src: Benete_sensori_Pir2 },
-  { id: 7, titleKey: "Emergency Features", descriptionKey: "Overview of emergency alert features...", duration: "0:18", src: Benete_sensori_TP10 },
-  { id: 8, titleKey: "Troubleshooting", descriptionKey: "Common issues and solutions...", duration: "0:33", src: Benete_unimittari },
-  { id: 9, titleKey: "Privacy & Security", descriptionKey: "How BeneCare protects your data...", duration: "0:26", src: Benete_Vaaka },
+  { id: 1, titleKey: "Getting Started", descriptionKey: "Learn how to set up your BeneCare device...", duration: "0:33", src: "/videos/Benete_Turvaranneke.mp4" },
+  { id: 2, titleKey: "Dashboard Overview", descriptionKey: "Walkthrough of the BeneCare dashboard...", duration: "0:22", src: "/videos/Benete_PIR_1.mp4" },
+  { id: 3, titleKey: "Setting Up Alerts", descriptionKey: "Configure custom alerts and notifications...", duration: "1:03", src: "/videos/Benete_Reititin.mp4" },
+  { id: 4, titleKey: "Adding Family Members", descriptionKey: "Invite family members and caregivers...", duration: "0:33", src: "/videos/Benete_sensori_Am-6.mp4" },
+  { id: 5, titleKey: "Understanding Activity Data", descriptionKey: "Interpret activity patterns and health metrics...", duration: "0:33", src: "/videos/Benete_sensori_AR-1.mp4" },
+  { id: 6, titleKey: "Mobile App Setup", descriptionKey: "Download and configure the BeneCare mobile app...", duration: "0:33", src: "/videos/Benete_sensori_Pir2.mp4" },
+  { id: 7, titleKey: "Emergency Features", descriptionKey: "Overview of emergency alert features...", duration: "0:18", src: "/videos/Benete_sensori_TP-10.mp4" },
+  { id: 8, titleKey: "Troubleshooting", descriptionKey: "Common issues and solutions...", duration: "0:33", src: "/videos/Benete_unimittari.mp4" },
+  { id: 9, titleKey: "Privacy & Security", descriptionKey: "How BeneCare protects your data...", duration: "0:26", src: "/videos/Benete_Vaaka.mp4" },
 ];
 
 function SupportVideoCard({ video, activeVideoId, setActiveVideoId }) {
