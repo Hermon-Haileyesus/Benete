@@ -1,4 +1,3 @@
-
 import { useLanguage } from "../contexts/LanguageContext";
 import { Play } from "lucide-react"; 
 import "../css/Support.css";
