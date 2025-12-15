@@ -153,7 +153,7 @@ nav.scrolled.ideology-style {
   
 }
 .log-out{
-  background-color: rgb(255, 255, 255);
+  background-color: #ff0000;
   padding:0 0.9rem;
   border: none;
   
@@ -167,7 +167,7 @@ nav.scrolled.ideology-style {
 }
 
 .log-out:hover{
-  background: #ff0000;
+  background: #f54747;
   color: #fff;
   transform: scale(1.1);
 }

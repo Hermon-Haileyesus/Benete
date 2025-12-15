@@ -106,7 +106,7 @@
 .loading, 
 .no-results {
   display: flex;
-  color:#2b1096 ;
+  color:#fff;
   font-size: 35px;
   letter-spacing: 0.7px;
   height: 50vh;
