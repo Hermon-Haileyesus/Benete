@@ -52,7 +52,7 @@ function NavBar() {
           <NavItem to="/contact-list" label="Contacts"  />
           <NavItem to="/content-manager" label="Content Manager" />
           <LogoutButton/>
-          <button onClick={() => fetch("/api/seed-translations", { method: "POST" })}>Seed Translations</button>
+         
         </div>
 
         {/* Mobile menu icon */}
