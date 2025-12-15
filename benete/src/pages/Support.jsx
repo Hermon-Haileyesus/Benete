@@ -163,7 +163,7 @@ function Support() {
       <div className="support-contact">
         <h2>{t("supportHelp")}</h2>
         <p>{t("supportHelpDescription")}</p>
-        <a href="mailto:support@benecare.fi" className="support-button">
+        <a href="mailto:clients@benete.com" className="support-button">
           {t("supportContact")}
         </a>
       </div>
