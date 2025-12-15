@@ -9,6 +9,7 @@ import '@fontsource/rubik';
 
 function Carousel() {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [touchStartX, setTouchStartX] = useState(null);
   const { t } = useLanguage();
 
   const slides = [
@@ -34,13 +35,34 @@ function Carousel() {
     },
   ];
 
+  
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 10000); // shortened to 10s for smoother rotation
+    }, 10000);
 
     return () => clearInterval(timer);
   }, [slides.length]);
+
+  // Swipe handlers
+  const handleTouchStart = (e) => {
+    setTouchStartX(e.touches[0].clientX);
+  };
+
+  const handleTouchEnd = (e) => {
+    if (touchStartX === null) return;
+    const touchEndX = e.changedTouches[0].clientX;
+    const diff = touchStartX - touchEndX;
+
+    if (diff > 50) {
+      // swipe left → next
+      setCurrentSlide((prev) => (prev + 1) % slides.length);
+    } else if (diff < -50) {
+      // swipe right → prev
+      setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
+    }
+    setTouchStartX(null);
+  };
 
   return (
     <div className="carousel-wrapper">
@@ -49,6 +71,8 @@ function Carousel() {
           <div
             key={index}
             className={`carousel-slide ${index === currentSlide ? "active" : ""}`}
+            onTouchStart={handleTouchStart}
+            onTouchEnd={handleTouchEnd}
           >
             <img
               src={slide.image}
