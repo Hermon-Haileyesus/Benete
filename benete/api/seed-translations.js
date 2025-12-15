@@ -4,10 +4,10 @@ const translations = [
   {
     language: "fi",
     translations: {
-    "navHome": "Koti",
+   "navHome": "Koti",
     "navIdeology": "Ideologia",
     "navService": "Palvelu",
-    "navTeam": "Tiimi",
+    "navSupport": "Tuki",
     "navContact": "Yhteystiedot",
     "headerTitle":"BeneCare",
     "headerSubtitle":"Varmistamme, että ikäihmiset saavat oikeanlaista hoitoa oikea-aikaisesti.",
@@ -18,7 +18,7 @@ const translations = [
     "servicePrivacyTitle": "Pidämme henkilötiedot turvassa",
     "servicePrivacyText": "BeneCare -palvelun tuottamat analyysit ovat seniorin, hänen omaistensa ja hoitohenkilökunnan nähtävissä verkkopalvelun kautta tai tulosteena. Palvelun käyttö ja datan kerääminen perustuvat aina henkilön suostumukseen. Kerättyä henkilötietoa ei käytetä tai välitetä muuhun kuin palvelun käyttöön liittyvään tarkoitukseen. Tietosuojalain mukaisesti seniorilla on oikeus omiin henkilötietoihinsa ja hän voi pyytää henkilötietojensa poistamista tai palvelun lopettamista milloin tahansa.",
     
-   "selectorTitle": "Valitse asiakastyyppi",
+  "selectorTitle": "Valitse asiakastyyppi",
   "selectorSubtitle": "Räätälöimme palvelumme tarpeidesi mukaan",
   "selectorPrivateTitle": "Yksityisasiakkaat",
   "selectorPrivateDescription": "Turvaa läheisesi hyvinvointi ja seuranta kotona",
@@ -60,7 +60,7 @@ const translations = [
   "featuresAlertsDesc": "Hälytysranneke akuutin avun saamiseksi. Kaikki tapahtumat kirjautuvat järjestelmään",
 
 
-  "howTitle": "Kuinka BeneCare toimii?",
+     "howTitle": "Kuinka BeneCare toimii?",
   "howSubtitle": "Yksinkertainen ja tehokas prosessi, joka ei vaadi toimenpiteitä henkilöltä",
   "howStep1Title": "Asennus",
   "howStep1Desc": "Huomaamattomat sensorit asennetaan henkilön asuntoon ilman häiriötä arkeen",
@@ -110,6 +110,8 @@ const translations = [
   "contactFormRole": "Roolisi (valinnainen)",
   "contactFormMessage": "Kirjoita viesti...",
   "contactFormSubmit": "Lähetä",
+  "contactFormSending": "Lähetetään…",
+  "contactFormError": "Viestin lähetys epäonnistui. Yritä uudelleen.",
   "contactFormSuccessH1": "Kiitos yhteydenotosta!",
   "contactFormSuccessP": "Otamme sinuun yhteyttä vuorokauden sisällä",
   "contactFormSuccessB": "Sulje",
@@ -123,7 +125,7 @@ const translations = [
   "contactEmail": "kari.backman@benete.com",
   "contactHeadingIntro": "Jutellaan",
   "contactHeadingTitle": "Kuinka voimme auttaa?",
-
+  
   "ideologySubtitleLine1a": "Yksilöllinen",
   "ideologySubtitleLine1b": "itsenäisyys",
   "ideologySubtitleLine2a": "Digitaalinen",
@@ -140,7 +142,7 @@ const translations = [
   "ideologyHeroTitle3b": "ja vapaata elämää",
   "ideologyTitle": "Sinun ehdoillasi",
 
-
+  
   "ideologyValuesCare": "Välittäminen",
   "ideologyValuesCareDesc": "Jokainen ihminen ansaitsee huomiota, lämpöä ja yksilöllistä hoivaa",
   "ideologyValuesSafety": "Turvallisuus",
@@ -167,6 +169,33 @@ const translations = [
   "ideologySection5Title": "Arvomme",
   "ideologySection5P1": "Henkilökohtaisten toimintakyvyn muutoksia ei yleensä seurata tai kirjata ennen kuin on liian myöhäistä ja diagnoosi on annettu. Monet ihmiset ovat riippuvaisia toisista selvitäkseen päivästä mikä heikentää heidän itsenäisyyden tunnettansa. On tärkeää havaita mitä yksilöllinen itsenäisyys merkitsee jokaiselle.",
   "ideologySection5P2": "Palvelumme avulla on mahdollista tunnistaa toimintaan ja muistiin liittyviä häiriöitä mahdollisimman varhaisessa vaiheessa ja aloittaa tarvittavat hoitotoimenpiteet mahdollisimman aikaisin.",
+
+   //support
+  "supportHeader": "BeneCare",
+  "supportIntro": "Tarvitsetko apua? Tukitiimimme varmistaa, että Benete-palvelusi toimii sujuvasti ja luotettavasti joka päivä.",
+  "supportTitle": "Tukivideot",
+  "supportSubtitle": "Katso ohjevideoita ja opi käyttämään BeneCare-palvelua sekä ratkaisemaan yleisimpiä ongelmia.",
+  "PIR1Title": "PIR 1 -sensori",
+  "PIR1Intro": "Asennetaan ovenkarmin yläpuolelle seuraamaan huoneessa tapahtuvaa liikettä. Mahdollistaa luotettavan läsnäolon ja aktiivisuuden tunnistamisen.",
+  "PIR2Title": "PIR 2 -sensori",
+  "PIR2Intro": "Asennetaan kattoon havaitsemaan liikettä laajalta alueelta ja tarjoamaan kattava huoneen seuranta.",
+  "RouterTitle": "Reititin",
+  "RouterIntro": "Varmistaa kaikkien sensoreiden sujuvan yhteyden ja luotettavan toiminnan. Suositellaan sijoitettavaksi pistorasian läheisyyteen.",
+  "AM6Title": "AM-6-sensori",
+  "AM6Intro": "Kiinnitetään kodinkoneen pintaan laitteen käytön ja käyttötottumusten seuraamiseksi.",
+  "AR1Title": "AR-1-sensori",
+  "AR1Intro": "Asennetaan oveen ja oven karmiin siten, että osien välinen etäisyys on enintään 1 cm. Tunnistaa oven avaamisen ja sulkemisen sekä sisään- ja uloskäynnit.",
+  "TP10Title": "TP-10-sensori",
+  "TP10Intro": "Asennetaan suihkun vesiputkeen seuraamaan veden käyttöä ja peseytymiseen liittyvää toimintaa.",
+  "SafetyBraceletTitle": "Turvaranneke",
+  "SafetyBraceletIntro": "Pidetään mukavasti ranteessa. Punaista painiketta painamalla lähetetään hälytys ennalta määritellylle yhteyshenkilölle hätätilanteessa.",
+  "SleepMonitorTitle": "Unimittari",
+  "SleepMonitorIntro": "Sijoitetaan patjan alle rinnan alueelle. Mittaa unen kestoa ja lepoa. Suositellaan sijoitettavaksi pistorasian läheisyyteen.",
+  "SmartScaleTitle": "Älyvaaka",
+  "SmartScaleIntro": "Käytetään tasaisella ja tukevalla alustalla. Mittaa painon ja tukee jatkuvaa terveydentilan seurantaa.",
+  "supportHelp": "Tarvitsetko lisää apua?",
+  "supportHelpDescription": "Jos et löydä vastausta kysymykseesi videoista, ota meihin yhteyttä.",
+  "supportContact": "Ota yhteyttä tukeen",
 
   "benefitsTitle": "Hyödyt kaikille osapuolille",
   "benefitsSubtitle": "BeneCare parantaa hoitotyön laatua ja tukee ikäihmisten hyvinvointia",
@@ -226,16 +255,16 @@ const translations = [
   "cookieDecline": "Kieltäydy",
   "cookieAccept": "Hyväksy evästeet"
 
-
     }
   },
   {
     language: "en",
     translations: {
+  
   "navHome": "Home",
   "navIdeology": "Ideology",
   "navService": "Service",
-  "navTeam": "Our team",
+  "navSupport": "Support",
   "navContact": "Contact",
 
   "headerTitle": "BeneCare",
@@ -263,7 +292,7 @@ const translations = [
   "commonReadMore": "Read more",
   "readMoreDescription": "Learn more about our services and how we offer a unique way to analyze life.",
     // Carousel
-      "carouselElderlyTitle": "Safe daily life for the elderly",
+  "carouselElderlyTitle": "Safe daily life for the elderly",
   "carouselElderlyDesc": "BeneCare supports independent living and provides a sense of security in everyday life.",
 
   "carouselFamilyTitle": "Peace of mind for families",
@@ -336,7 +365,7 @@ const translations = [
   "companyBenefitsDataTitle": "Data-Driven",
   "companyBenefitsDataText": "Make decisions based on reliable data",
     //Conatct
-  "contactFormTitle": "Contact us",
+    "contactFormTitle": "Contact us",
   "contactFormType": "I'm interested in:",
   "contactFormTypeGeneral": "General contact",
   "contactFormTypeAssessment": "Functionality assessment",
@@ -349,6 +378,8 @@ const translations = [
   "contactFormRole": "Your role (optional)",
   "contactFormMessage": "Write your message...",
   "contactFormSubmit": "Send",
+  "contactFormSending": "Sending…",
+  "contactFormError": "Failed to send message. Please try again.",
   "contactFormSuccessH1": "Thank you for contacting us!",
   "contactFormSuccessP": "We will get back to you within 24 hours",
   "contactFormSuccessB": "Close",
@@ -361,14 +392,13 @@ const translations = [
   "contactPhone": "+358 50 052 4514",
   "contactEmail": "kari.backman@benete.com",
   "contactHeadingIntro": "Let’s talk",
-
+  
   "ideologySubtitleLine1a": "Individual",
   "ideologySubtitleLine1b": "independence",
   "ideologySubtitleLine2a": "Digital",
   "ideologySubtitleLine2b": "dignity",
   "ideologySubtitleLine3a": "Valuable",
   "ideologySubtitleLine3b": "life",
-
   "ideologyHeroSubtitle": "As a care expert",
   "ideologyHeroTitle1": "Makes everyday life easier",
   "ideologyHeroTitle1b": "and increases security",
@@ -378,7 +408,8 @@ const translations = [
   "ideologyHeroTitle3b": "and independent living for seniors",
   "ideologyTitle": "On your terms",
 
-  "ideologyValuesCare": "Caring",
+
+   "ideologyValuesCare": "Caring",
   "ideologyValuesCareDesc": "Every person deserves attention, warmth, and individualized care",
   "ideologyValuesSafety": "Security",
   "ideologyValuesSafetyDesc": "Reliable technology and 24/7 monitoring ensure peace of mind",
@@ -405,12 +436,36 @@ const translations = [
   "ideologySection5P1": "Personal changes in functional capacity are usually not monitored or recorded until it is too late and a diagnosis has been given. Many people are dependent on others to get through the day, which weakens their sense of independence. It is important to recognize what individual independence means for each person.",
   "ideologySection5P2": "With our service, it is possible to identify functional and memory-related disorders as early as possible and start the necessary treatment measures as early as possible.",
 
-  //support
+   //support
   "supportHeader":"BeneCare",
-  "supportIntro":"",
-  "supportTitle":"",
-  "supportSubtitle":"",
+  "supportIntro":"Need help? Our support team is here to ensure your Benete service works smoothly and reliably every day.",
+  "supportTitle":"Support Videos",
+  "supportSubtitle":"Watch tutorial videos to learn how to use the BeneCare service and resolve common issues.",
+  "PIR1Title":"PIR 1 Sensor",
+  "PIR1Intro":"Installed above the door frame to monitor movement within the room. Supports reliable detection of presence and activity.",
+  "PIR2Title":"PIR 2 Sensor",
+  "PIR2Intro":"Ceiling-mounted sensor designed to detect movement across a wider area, providing comprehensive room coverage.",
+  "RouterTitle":"Router",
+  "RouterIntro":"Ensures seamless connectivity and reliable operation of all sensors. Should be placed near a power outlet for continuous use.",
+  "AM6Title":"AM-6 Sensor",
+  "AM6Intro":"Mounted on the surface of a household appliance to detect and monitor usage patterns.",
+  "AR1Title":"AR-1  Sensor",
+  "AR1Intro":"Installed on the door frame and door, with a maximum distance of 1 cm between components. Detects when a door is opened or closed, indicating entry or exit.",
+  "TP10Title":"TP-10 Sensor",
+  "TP10Intro":"Installed on the shower water pipe to monitor water usage and shower activity.",
+  "SafetyBraceletTitle":"Safety Bracelet",
+  "SafetyBraceletIntro":"Worn comfortably on the wrist. Pressing the red button sends an alert to a designated contact in case of emergency.",
+  "SleepMonitorTitle":"Sleep Monitor",
+  "SleepMonitorIntro":"Placed under the mattress at chest level. Monitors sleep duration and rest patterns. Should be positioned near a power outlet.",
+  "SmartScaleTitle":"Smart Scale",
+  "SmartScaleIntro":"Used on a stable, flat surface. Measures body weight to support ongoing health monitoring.",
+  "supportHelp":"Need more help?",
+  "supportHelpDescription":"If you cannot find the answer to your question in the videos, contact us.",
+  "supportContact":"Contact Support",
 
+
+
+  
   "benefitsTitle": "Benefits for all parties",
   "benefitsSubtitle": "BeneCare improves the quality of care and supports the well-being of elderly people",
 
@@ -469,16 +524,15 @@ const translations = [
   "cookieDecline": "Decline",
   "cookieAccept": "Allow cookies"
 
-
-    }
+  }
   },
   {
     language: "sv",
     translations: {
-  "navHome": "Hem",
+   "navHome": "Hem",
   "navIdeology": "Ideologi",
   "navService": "Tjänster",
-  "navTeam": "Teamet",
+  "navSupport": "Support",
   "navContact": "Kontakt",
 
   "headerTitle": "BeneCare",
@@ -582,6 +636,8 @@ const translations = [
   "contactFormRole": "Din roll (valfritt)",
   "contactFormMessage": "Skriv ditt meddelande...",
   "contactFormSubmit": "Skicka",
+  "contactFormSending": "Skickar…",
+  "contactFormError": "Misslyckades att skicka meddelandet. Försök igen.",
   "contactFormSuccessH1": "Tack för att du kontaktade oss!",
   "contactFormSuccessP": "Vi återkommer till dig inom 24 timmar",
   "contactFormSuccessB": "Stäng",
@@ -604,6 +660,7 @@ const translations = [
   "ideologySubtitleLine2b": "värdighet",
   "ideologySubtitleLine3a": "Värdefullt",
   "ideologySubtitleLine3b": "liv",
+
   "ideologyHeroSubtitle": "Som vårdexpert",
   "ideologyHeroTitle1": "Förenklar vardagen",
   "ideologyHeroTitle1b": "och ökar tryggheten",
@@ -613,6 +670,7 @@ const translations = [
   "ideologyHeroTitle3b": "och självständigt boende för äldre",
   "ideologyTitle": "På dina villkor",
 
+  
   "ideologyValuesCare": "Omsorg",
   "ideologyValuesCareDesc": "Varje person förtjänar uppmärksamhet, värme och individualiserad vård",
   "ideologyValuesSafety": "Säkerhet",
@@ -639,6 +697,32 @@ const translations = [
   "ideologySection5Title": "Våra värderingar",
   "ideologySection5P1": "Personliga förändringar i funktionsförmåga övervakas eller registreras vanligtvis inte förrän det är för sent och en diagnos har ställts. Många människor är beroende av andra för att klara dagen, vilket försvagar deras känsla av oberoende. Det är viktigt att inse vad individuellt oberoende betyder för varje person.",
   "ideologySection5P2": "Med vår tjänst är det möjligt att identifiera funktionella och minnesrelaterade störningar så tidigt som möjligt och påbörja nödvändiga behandlingsåtgärder så tidigt som möjligt.",
+ //support
+  "supportHeader": "BeneCare",
+  "supportIntro": "Behöver du hjälp? Vårt supportteam ser till att din Benete-tjänst fungerar smidigt och pålitligt varje dag.",
+  "supportTitle": "Supportvideor",
+  "supportSubtitle": "Titta på instruktionsvideor för att lära dig hur du använder BeneCare-tjänsten och löser vanliga problem.",
+  "PIR1Title": "PIR 1-sensor",
+  "PIR1Intro": "Installeras ovanför dörrkarmen för att övervaka rörelse i rummet. Säkerställer tillförlitlig detektering av närvaro och aktivitet.",
+  "PIR2Title": "PIR 2-sensor",
+  "PIR2Intro": "Takmonterad sensor som registrerar rörelse över ett större område och ger heltäckande rumsövervakning.",
+  "RouterTitle": "Router",
+  "RouterIntro": "Säkerställer stabil uppkoppling och tillförlitlig drift av alla sensorer. Bör placeras nära ett eluttag.",
+  "AM6Title": "AM-6-sensor",
+  "AM6Intro": "Monteras på ytan av en hushållsapparat för att registrera och följa användningsmönster.",
+  "AR1Title": "AR-1-sensor",
+  "AR1Intro": "Installeras på dörr och dörrkarm med ett maximalt avstånd på 1 cm mellan delarna. Registrerar när dörren öppnas eller stängs och indikerar in- och utpassering.",
+  "TP10Title": "TP-10-sensor",
+  "TP10Intro": "Installeras på duschens vattenrör för att övervaka vattenanvändning och duschaktivitet.",
+  "SafetyBraceletTitle": "Trygghetsarmband",
+  "SafetyBraceletIntro": "Bärs bekvämt runt handleden. När den röda knappen trycks skickas ett larm till en förvald kontakt vid nödsituation.",
+  "SleepMonitorTitle": "Sömnmonitor",
+  "SleepMonitorIntro": "Placeras under madrassen i brösthöjd. Mäter sömnens längd och vilomönster. Bör placeras nära ett eluttag.",
+  "SmartScaleTitle": "Smart våg",
+  "SmartScaleIntro": "Används på ett stabilt och plant underlag. Mäter kroppsvikt och stödjer kontinuerlig hälsouppföljning.",
+  "supportHelp": "Behöver du mer hjälp?",
+  "supportHelpDescription": "Om du inte hittar svaret på din fråga i videorna, kontakta oss.",
+  "supportContact": "Kontakta support",
 
   "benefitsTitle": "Fördelar för alla parter",
   "benefitsSubtitle": "BeneCare förbättrar vårdens kvalitet och stöder äldres välbefinnande",
@@ -667,7 +751,7 @@ const translations = [
   "fundingElyText": "Benete Oy har erhållit finansiering från Närings-, trafik- och miljöcentralen för projektet BNT-MDR. Projektet handlar om vidareutveckling av Benete Oy:s analystjänst för äldres funktionsförmåga.",
 
 
-"privacyTitle": "Integritetspolicy",
+  "privacyTitle": "Integritetspolicy",
   "privacyCustomerInfoTitle": "Kundinformation",
   "privacyCustomerInfoContent": "För att hålla kontakten med våra nuvarande eller potentiella kunder samlar vi in information som du tillhandahåller när du kontaktar oss.",
   "privacyAnalyticsTitle": "Analystjänster",

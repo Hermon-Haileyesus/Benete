@@ -31,7 +31,7 @@ export default {
   "commonReadMore": "Read more",
   "readMoreDescription": "Learn more about our services and how we offer a unique way to analyze life.",
     // Carousel
-      "carouselElderlyTitle": "Safe daily life for the elderly",
+  "carouselElderlyTitle": "Safe daily life for the elderly",
   "carouselElderlyDesc": "BeneCare supports independent living and provides a sense of security in everyday life.",
 
   "carouselFamilyTitle": "Peace of mind for families",
