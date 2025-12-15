@@ -1,5 +1,5 @@
 import { MongoClient } from "mongodb";
-import bcrypt from "bcryptjs"; 
+import bcrypt from "bcryptjs";
 
 let client;
 let db;
@@ -25,13 +25,20 @@ export default async function handler(req, res) {
       return res.status(400).json({ error: "Missing ADMIN_USERNAME or ADMIN_PASSWORD" });
     }
 
-   
     const existingAdmin = await admins.findOne({ username });
-    if (existingAdmin) {
-      return res.status(200).json({ message: "Admin already exists, no new insert" });
-    }
 
     const hashedPassword = await bcrypt.hash(plainPassword, 10);
+
+    if (existingAdmin) {
+      // Always update the password if env changed
+      await admins.updateOne(
+        { username },
+        { $set: { password: hashedPassword, updatedAt: new Date() } }
+      );
+      return res.status(200).json({ message: "Admin password updated" });
+    }
+
+    // If no admin exists, insert new one
     await admins.insertOne({
       username,
       password: hashedPassword,
@@ -43,4 +50,3 @@ export default async function handler(req, res) {
     res.status(500).json({ error: err.message });
   }
 }
-

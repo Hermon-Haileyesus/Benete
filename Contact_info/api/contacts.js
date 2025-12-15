@@ -27,7 +27,7 @@ async function verifyToken(req, res) {
   const token = authHeader.split(" ")[1];
   try {
     const decoded = jwt.verify(token, process.env.JWT_SECRET);
-    return decoded; // Contains payload like { id, username }
+    return decoded;
   } catch (err) {
     res.status(401).json({ error: "Unauthorized: Invalid or expired token" });
     return null;
