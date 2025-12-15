@@ -75,10 +75,15 @@
 .loading, 
 .no-results {
   display: flex;
-  color:#fff;
   font-size: 35px;
   letter-spacing: 0.7px;
   height: 50vh;
   align-items: center;
   justify-content: center;
+}
+.no-results {
+  color: #2b1096 ;
+}
+.loading {
+  color:#fff;
 }
