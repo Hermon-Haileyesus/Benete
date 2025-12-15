@@ -41,7 +41,7 @@ function NavBar() {
   return (
     <nav className={`nav ${isScrolled ? "scrolled" : ""}`}>
       <div className="nav-content">
-        {/* Logo */}
+    
         <div className="nav-logo">
           <img src={Logo} alt="Benete logo" className="logo-image" />
           
@@ -52,6 +52,7 @@ function NavBar() {
           <NavItem to="/contact-list" label="Contacts"  />
           <NavItem to="/content-manager" label="Content Manager" />
           <LogoutButton/>
+          <button onClick={() => fetch("/api/seed-translations", { method: "POST" })}>Seed Translations</button>
         </div>
 
         {/* Mobile menu icon */}
