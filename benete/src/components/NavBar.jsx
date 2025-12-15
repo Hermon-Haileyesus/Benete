@@ -61,8 +61,9 @@ function NavBar() {
           <NavItem to="/" label={t("navHome")} exact />
           <NavItem to="/ideology" label={t("navIdeology")} />
           <NavItem to="/services" label={t("navService")} />
+          <NavItem to="/support" label={t("navSupport")} />
           <NavItem to="/contact" label={t("navContact")} />
-          <NavItem to="/support" label={"Support"} />
+          
 
           <LanguageBar
             className="language-bar-desktop"
@@ -97,8 +98,9 @@ function NavBar() {
           <NavItem to="/" label={t("navHome")} exact onClick={handleCloseMenu} />
           <NavItem to="/ideology" label={t("navIdeology")} onClick={handleCloseMenu} />
           <NavItem to="/services" label={t("navService")} onClick={handleCloseMenu} />
+          <NavItem to="/support" label={t("navSupport")} onClick={handleCloseMenu}  />
           <NavItem to="/contact" label={t("navContact")} onClick={handleCloseMenu} />
-          <NavItem to="/support" label={"Support"} />
+          
           <LanguageBar className="language-bar-mobile" />
         </div>
       )}

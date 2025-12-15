@@ -336,7 +336,7 @@ const translations = [
   "companyBenefitsDataTitle": "Data-Driven",
   "companyBenefitsDataText": "Make decisions based on reliable data",
     //Conatct
-    "contactFormTitle": "Contact us",
+  "contactFormTitle": "Contact us",
   "contactFormType": "I'm interested in:",
   "contactFormTypeGeneral": "General contact",
   "contactFormTypeAssessment": "Functionality assessment",
@@ -404,6 +404,12 @@ const translations = [
   "ideologySection5Title": "Our values",
   "ideologySection5P1": "Personal changes in functional capacity are usually not monitored or recorded until it is too late and a diagnosis has been given. Many people are dependent on others to get through the day, which weakens their sense of independence. It is important to recognize what individual independence means for each person.",
   "ideologySection5P2": "With our service, it is possible to identify functional and memory-related disorders as early as possible and start the necessary treatment measures as early as possible.",
+
+  //support
+  "supportHeader":"BeneCare",
+  "supportIntro":"",
+  "supportTitle":"",
+  "supportSubtitle":"",
 
   "benefitsTitle": "Benefits for all parties",
   "benefitsSubtitle": "BeneCare improves the quality of care and supports the well-being of elderly people",

@@ -1,3 +1,4 @@
+
 import { useLanguage } from "../contexts/LanguageContext";
 import { Play } from "lucide-react"; 
 import "../css/Support.css";
@@ -8,17 +9,8 @@ import headerImg from '../assets/header_img/support.jpg';
 
 
 
-const supportVideos = [
-  { id: 1, titleKey: "Getting Started", descriptionKey: "Learn how to set up your BeneCare device...", duration: "0:33", src: "/videos/Benete_Turvaranneke.mp4" },
-  { id: 2, titleKey: "Dashboard Overview", descriptionKey: "Walkthrough of the BeneCare dashboard...", duration: "0:22", src: "/videos/Benete_PIR_1.mp4" },
-  { id: 3, titleKey: "Setting Up Alerts", descriptionKey: "Configure custom alerts and notifications...", duration: "1:03", src: "/videos/Benete_Reititin.mp4" },
-  { id: 4, titleKey: "Adding Family Members", descriptionKey: "Invite family members and caregivers...", duration: "0:33", src: "/videos/Benete_sensori_Am-6.mp4" },
-  { id: 5, titleKey: "Understanding Activity Data", descriptionKey: "Interpret activity patterns and health metrics...", duration: "0:33", src: "/videos/Benete_sensori_AR-1.mp4" },
-  { id: 6, titleKey: "Mobile App Setup", descriptionKey: "Download and configure the BeneCare mobile app...", duration: "0:33", src: "/videos/Benete_sensori_Pir2.mp4" },
-  { id: 7, titleKey: "Emergency Features", descriptionKey: "Overview of emergency alert features...", duration: "0:18", src: "/videos/Benete_sensori_TP-10.mp4" },
-  { id: 8, titleKey: "Troubleshooting", descriptionKey: "Common issues and solutions...", duration: "0:33", src: "/videos/Benete_unimittari.mp4" },
-  { id: 9, titleKey: "Privacy & Security", descriptionKey: "How BeneCare protects your data...", duration: "0:26", src: "/videos/Benete_Vaaka.mp4" },
-];
+
+
 
 function SupportVideoCard({ video, activeVideoId, setActiveVideoId }) {
   const videoRef = useRef(null);
@@ -75,20 +67,86 @@ function SupportVideoCard({ video, activeVideoId, setActiveVideoId }) {
 function Support() {
   const { t } = useLanguage();
   const [activeVideoId, setActiveVideoId] = useState(null);
+  const supportVideos = [
+  { 
+    id: 1, 
+    titleKey: t("SafetyBraceletTitle"), 
+    descriptionKey: t("SafetyBraceletIntro"), 
+    duration: "0:33", 
+    src: "/videos/Benete_Turvaranneke.mp4" 
+  },
+  { 
+    id: 2, 
+    titleKey: t("PIR1Title"), 
+    descriptionKey: t("PIR1Intro"), 
+    duration: "0:22", 
+    src: "/videos/Benete_PIR_1.mp4" 
+  },
+  { 
+    id: 3, 
+    titleKey: t("RouterTitle"), 
+    descriptionKey: t("RouterIntro"), 
+    duration: "1:03", 
+    src: "/videos/Benete_Reititin.mp4" 
+  },
+  { 
+    id: 4, 
+    titleKey: t("AM6Title"), 
+    descriptionKey: t("AM6Intro"), 
+    duration: "0:33", 
+    src: "/videos/Benete_sensori_Am-6.mp4" 
+  },
+  { 
+    id: 5, 
+    titleKey: t("AR1Title"), 
+    descriptionKey: t("AR1Intro"), 
+    duration: "0:33", 
+    src: "/videos/Benete_sensori_AR-1.mp4" 
+  },
+  { 
+    id: 6, 
+    titleKey: t("PIR2Title"), 
+    descriptionKey: t("PIR2Intro"), 
+    duration: "0:33", 
+    src: "/videos/Benete_sensori_Pir2.mp4" 
+  },
+  { 
+    id: 7, 
+    titleKey: t("TP10Title"), 
+    descriptionKey: t("TP10Intro"), 
+    duration: "0:18", 
+    src: "/videos/Benete_sensori_TP-10.mp4" 
+  },
+  { 
+    id: 8, 
+    titleKey: t("SleepMonitorTitle"), 
+    descriptionKey: t("SleepMonitorIntro"), 
+    duration: "0:33", 
+    src: "/videos/Benete_unimittari.mp4" 
+  },
+  { 
+    id: 9, 
+    titleKey: t("SmartScaleTitle"), 
+    descriptionKey: t("SmartScaleIntro"), 
+    duration: "0:26", 
+    src: "/videos/Benete_Vaaka.mp4" 
+  },
+];
+
 
   return (
     <section className="support-container">
       <Header
           image={headerImg}
-          title={t("supportTitle")}
+          title={t("supportHeader")}
           titleColor='white'
-          subtitle={t("supportSutitle")}
+          subtitle={t("supportIntro")}
           isWhite={true}
          
         />
       <div className="support-hero">
-        <h1>{t("support.title")}</h1>
-        <p>{t("support.subtitle")}</p>
+        <h1>{t("supportTitle")}</h1>
+        <p>{t("supportSubtitle")}</p>
       </div>
 
       <div className="support-grid">
@@ -103,10 +161,10 @@ function Support() {
       </div>
 
       <div className="support-contact">
-        <h2>{t("support.needHelp")}</h2>
-        <p>{t("support.helpDescription")}</p>
+        <h2>{t("supportHelp")}</h2>
+        <p>{t("supportHelpDescription")}</p>
         <a href="mailto:support@benecare.fi" className="support-button">
-          {t("support.contactSupport")}
+          {t("supportContact")}
         </a>
       </div>
     </section>
