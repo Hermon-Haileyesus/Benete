@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom";
 
 function Header({ image, title, titleColor = "white", subtitle, subtitleLines = [], isCentered }) {
   const location = useLocation();
-  const isSpecialStylePage = ["/companycustomers", "/privatecustomers","/ideology"].includes(location.pathname);
+  const isSpecialStylePage = ["/companycustomers", "/privatecustomers","/ideology","/support"].includes(location.pathname);
 
   const linesToRender = subtitleLines.length > 0
     ? subtitleLines

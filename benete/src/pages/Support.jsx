@@ -112,8 +112,8 @@ function Support() {
   },
   { 
     id: 7, 
-    titleKey: t("TP10Title"), 
-    descriptionKey: t("TP10Intro"), 
+    titleKey: t("TP16Title"), 
+    descriptionKey: t("TP16Intro"), 
     duration: "0:18", 
     src: "/videos/Benete_sensori_TP-10.mp4" 
   },
