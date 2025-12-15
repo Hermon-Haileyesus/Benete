@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "../css/UserList.css";
+import "../css/TextEditor.css";
 
 function ContentManager() {
   const [translations, setTranslations] = useState([]);

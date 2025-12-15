@@ -1,0 +1,84 @@
+
+.translation-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+
+@media (min-width: 768px) {
+  .translation-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1200px) {
+  .translation-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.translation-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+
+.translation-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: #555;
+  font-weight: 500;
+}
+
+.translation-lang {
+  color: #0077cc;
+}
+
+.translation-key {
+  font-style: italic;
+}
+
+/* Input area */
+.translation-input {
+  width: 100%;
+  min-height: 2.5rem;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  resize: none;        
+  overflow: hidden;    
+  line-height: 1.4;
+  transition: border-color 0.2s ease;
+}
+
+.translation-input:focus {
+  outline: none;
+  border-color: #4d1edf;
+  box-shadow: 0 0 0 2px rgba(0,119,204,0.2);
+}
+
+
+.translation-card button {
+  align-self: flex-end;
+  background: #4d1edf;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1.25rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.translation-card button:hover {
+  background: #2b1096 ;
+}
