@@ -172,7 +172,7 @@ const translations = [
 
    //support
   "supportHeader": "BeneCare",
-  "supportIntro": "Tarvitsetko apua? Tukitiimimme varmistaa, että Benete-palvelusi toimii sujuvasti ja luotettavasti joka päivä.",
+  "supportIntro": "Tarvitsetko apua? Tukitiimimme varmistaa Benete-palvelun sujuvan toiminnan joka päivä.",
   "supportTitle": "Tukivideot",
   "supportSubtitle": "Katso ohjevideoita ja opi käyttämään BeneCare-palvelua sekä ratkaisemaan yleisimpiä ongelmia.",
   "PIR1Title": "PIR 1 -sensori",
@@ -438,7 +438,7 @@ const translations = [
 
    //support
   "supportHeader":"BeneCare",
-  "supportIntro":"Need help? Our support team is here to ensure your Benete service works smoothly and reliably every day.",
+  "supportIntro":"Need help? Our support team ensures your Benete service runs smoothly every day.",
   "supportTitle":"Support Videos",
   "supportSubtitle":"Watch tutorial videos to learn how to use the BeneCare service and resolve common issues.",
   "PIR1Title":"PIR 1 Sensor",
@@ -699,7 +699,7 @@ const translations = [
   "ideologySection5P2": "Med vår tjänst är det möjligt att identifiera funktionella och minnesrelaterade störningar så tidigt som möjligt och påbörja nödvändiga behandlingsåtgärder så tidigt som möjligt.",
  //support
   "supportHeader": "BeneCare",
-  "supportIntro": "Behöver du hjälp? Vårt supportteam ser till att din Benete-tjänst fungerar smidigt och pålitligt varje dag.",
+  "supportIntro": "Behöver du hjälp? Vårt supportteam säkerställer att din Benete‑tjänst fungerar smidigt varje dag.",
   "supportTitle": "Supportvideor",
   "supportSubtitle": "Titta på instruktionsvideor för att lära dig hur du använder BeneCare-tjänsten och löser vanliga problem.",
   "PIR1Title": "PIR 1-sensor",

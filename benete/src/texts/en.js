@@ -177,7 +177,7 @@ export default {
 
    //support
   "supportHeader":"BeneCare",
-  "supportIntro":"Need help? Our support team is here to ensure your Benete service works smoothly and reliably every day.",
+  "supportIntro":"Need help? Our support team ensures your Benete service runs smoothly every day.",
   "supportTitle":"Support Videos",
   "supportSubtitle":"Watch tutorial videos to learn how to use the BeneCare service and resolve common issues.",
   "PIR1Title":"PIR 1 Sensor",

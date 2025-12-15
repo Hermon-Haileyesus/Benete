@@ -167,7 +167,7 @@ export default{
 
    //support
   "supportHeader": "BeneCare",
-  "supportIntro": "Tarvitsetko apua? Tukitiimimme varmistaa, että Benete-palvelusi toimii sujuvasti ja luotettavasti joka päivä.",
+  "supportIntro": "Tarvitsetko apua? Tukitiimimme varmistaa Benete-palvelun sujuvan toiminnan joka päivä.",
   "supportTitle": "Tukivideot",
   "supportSubtitle": "Katso ohjevideoita ja opi käyttämään BeneCare-palvelua sekä ratkaisemaan yleisimpiä ongelmia.",
   "PIR1Title": "PIR 1 -sensori",

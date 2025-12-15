@@ -169,7 +169,7 @@ export default {
   "ideologySection5P2": "Med vår tjänst är det möjligt att identifiera funktionella och minnesrelaterade störningar så tidigt som möjligt och påbörja nödvändiga behandlingsåtgärder så tidigt som möjligt.",
  //support
   "supportHeader": "BeneCare",
-  "supportIntro": "Behöver du hjälp? Vårt supportteam ser till att din Benete-tjänst fungerar smidigt och pålitligt varje dag.",
+  "supportIntro": "Behöver du hjälp? Vårt supportteam säkerställer att din Benete‑tjänst fungerar smidigt varje dag.",
   "supportTitle": "Supportvideor",
   "supportSubtitle": "Titta på instruktionsvideor för att lära dig hur du använder BeneCare-tjänsten och löser vanliga problem.",
   "PIR1Title": "PIR 1-sensor",
