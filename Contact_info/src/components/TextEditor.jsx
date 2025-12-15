@@ -131,7 +131,7 @@ function ContentManager() {
           className="translation-input"
           rows={1}
         />
-        <button onClick={() => handleSave(t._id)}>Save</button>
+        <button onClick={() => handleSave(t._id)}>Change</button>
       </div>
     ))
   )}
