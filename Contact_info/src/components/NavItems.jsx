@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 
-function NavItem({ to, label, exact }) {
+function NavItem({ to, label, exact, onClick }) {
   return (
     <NavLink
       to={to}
@@ -8,6 +8,7 @@ function NavItem({ to, label, exact }) {
       className={({ isActive }) =>
         isActive ? "nav-link active" : "nav-link"
       }
+      onClick={onClick}
     >
       {label}
     </NavLink>
