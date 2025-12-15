@@ -93,6 +93,12 @@ function ContentManager() {
       console.error("Error saving translation:", err);
     }
   };
+  const handleAutoGrow = (e) => {
+  e.target.style.height = "auto";
+  e.target.style.height = e.target.scrollHeight + "px"; 
+};
+
+
 
   if (loading) {
     return (
@@ -103,48 +109,35 @@ function ContentManager() {
   }
 
   return (
-    <div style={{ padding: "2rem" }}>
-      <h1>Admin Translation Editor</h1>
-      <table
-        border="1"
-        cellPadding="8"
-        style={{ width: "100%", borderCollapse: "collapse" }}
-      >
-        <thead>
-          <tr>
-            <th>Language</th>
-            <th>Key</th>
-            <th>Value</th>
-            <th>Actions</th>
-          </tr>
-        </thead>
-        <tbody>
-          {translations.map((t) =>
-            Object.entries(t.translations || {}).map(([key, value]) => (
-              <tr key={`${t._id}-${key}`}>
-                <td>{t.language}</td>
-                <td>{key}</td>
-                <td>
-                  <input
-                    type="text"
-                    value={
-                      edited[t._id]?.[key] !== undefined
-                        ? edited[t._id][key]
-                        : value
-                    }
-                    onChange={(e) => handleChange(t._id, key, e.target.value)}
-                    style={{ width: "100%" }}
-                  />
-                </td>
-                <td>
-                  <button onClick={() => handleSave(t._id)}>Save</button>
-                </td>
-              </tr>
-            ))
-          )}
-        </tbody>
-      </table>
-    </div>
+   <div className="translation-list">
+  {translations.map((t) =>
+    Object.entries(t.translations || {}).map(([key, value]) => (
+      <div key={`${t._id}-${key}`} className="translation-card">
+        <div className="translation-meta">
+          <span className="translation-lang">{t.language}</span>
+          <span className="translation-key">{key}</span>
+        </div>
+        <textarea
+          value={
+            edited[t._id]?.[key] !== undefined
+              ? edited[t._id][key]
+              : value
+          }
+          onChange={(e) => {
+               handleChange(t._id, key, e.target.value);
+               handleAutoGrow(e);
+          }}
+
+          className="translation-input"
+          rows={1}
+        />
+        <button onClick={() => handleSave(t._id)}>Save</button>
+      </div>
+    ))
+  )}
+</div>
+
+
   );
 }
 
