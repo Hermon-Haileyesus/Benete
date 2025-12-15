@@ -22,6 +22,7 @@
 .contacts-title {
   font-size: 1.8rem;
   margin: 0;
+  background-color: #4d1edf;
 }
 
 .search-bar {
@@ -30,7 +31,8 @@
   font-size: 1rem;
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
   width: 90%;
-  color: #2b1096;
+  color: #fff;
+  background: #4d1edf;
  
 }
 
@@ -39,7 +41,7 @@
   outline: none;
 }
 .search-bar::placeholder{
-  color: #2b1096;
+  color:#fff;
 }
 .contacts-list ul {
   list-style: none;
@@ -116,6 +118,11 @@
 
 /* Responsive design */
 @media (max-width: 600px) {
+.contacts-page {
+ 
+  padding: 0;
+  
+}
   .search-bar {
   width: 80%;
  
