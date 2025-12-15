@@ -1,15 +1,10 @@
-{
-  "framework": "vite",
-  "outputDirectory": "dist",
-  "build": {
-    "env": {
-      "GIT_LFS_ENABLED": "true"
-    }
-  },
-  "scripts": {
-    "build": "git lfs install && git lfs pull && vite build"
-  }
-}
 
+
+
+{
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/" }
+  ]
+}
 
 
