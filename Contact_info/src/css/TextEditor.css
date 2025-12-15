@@ -7,16 +7,6 @@
 }
 
 
-@media (min-width: 768px) {
-  .translation-list {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media (min-width: 1200px) {
-  .translation-list {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
 
 .translation-card {
   background: #fff;
