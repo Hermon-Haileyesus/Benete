@@ -51,6 +51,7 @@ function NavBar() {
         <div className="nav-links">
           <NavItem to="/contact-list" label="Contacts"  />
           <NavItem to="/content-manager" label="Content Manager" />
+          <button onClick={() => fetch("/api/seed-translations", { method: "POST" })}>Seed Translations</button>
           <LogoutButton/>
         </div>
 
